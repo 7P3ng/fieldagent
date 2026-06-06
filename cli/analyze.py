@@ -27,7 +27,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if os.environ.get("FIELDAGENT_LIVE") != "1":
         print("Refusing to run: set FIELDAGENT_LIVE=1 to opt in to paid DeepSeek calls.\n"
-              "  source /etc/skill-tuning/skill-tuning.env  # or export OSSLLM_API_KEY=...\n"
+              "  export OSSLLM_API_KEY=...   # or source your DeepSeek env file\n"
               "  FIELDAGENT_LIVE=1 python cli/analyze.py <contract.txt>", file=sys.stderr)
         return 2
     if not args.contract.exists():

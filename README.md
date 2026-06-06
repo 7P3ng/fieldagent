@@ -1,6 +1,6 @@
 # FieldAgent — Contract Red-Flag Finder
 
-> Portfolio artifact #3 (sibling to [Quorum](https://github.com/) agent infra and Aegis agent-safety).
+> Portfolio artifact #3 (sibling to [Quorum](https://github.com/7P3ng/quorum) agent infra and [Aegis](https://github.com/7P3ng/aegis) agent-safety).
 > Drop an agent into a messy real-world vertical — commercial-contract review — and **measure** that
 > the agentic design beats naive single-shot, graded against a public gold dataset (CUAD).
 
@@ -27,15 +27,19 @@ Source Code Escrow, Audit Rights).
 `chunk → focused taxonomy extraction (fan-out) → skeptic verification → dedupe/merge → structured findings`,
 fully traced. Vendors Quorum's kernel (`core/`): the `ModelClient` seam (Fake/Recorded/DeepSeek/Anthropic),
 SQLite tracing, the concurrent orchestrator, and per-model pricing. Grading is **span-IoU** (no LLM judge in
-the success path). See `docs/writeup.md`.
+the success path). See [`docs/writeup.md`](docs/writeup.md) for the full methodology + ablations + threats.
+
+![architecture](docs/architecture.svg)
 
 ## Run it
 ```bash
 python -m venv .venv && .venv/bin/pip install -e ".[dev]"
-make test          # unit suite, no network
+make test          # unit suite, no network, no paid calls
+make fetch-cuad    # sha256-pinned CUAD_v1.json (raw text stays local, gitignored)
 make eval-dry      # reproduce the headline tables from committed fixtures (zero cost)
 # Live (needs a DeepSeek key + opt-in; prints a cost estimate and refuses runs over $1):
-source /etc/skill-tuning/skill-tuning.env && FIELDAGENT_LIVE=1 make eval-live
+export OSSLLM_API_KEY=...   # or source your DeepSeek env file
+FIELDAGENT_LIVE=1 make eval-live
 # Analyze your own contract:
 FIELDAGENT_LIVE=1 .venv/bin/python cli/analyze.py path/to/contract.txt
 ```

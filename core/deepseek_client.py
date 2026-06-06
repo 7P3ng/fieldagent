@@ -24,8 +24,8 @@ class DeepSeekClient:
         key = api_key or os.environ.get("OSSLLM_API_KEY")
         if not key:
             raise RuntimeError(
-                "OSSLLM_API_KEY is not set. Source your DeepSeek env file "
-                "(e.g. `source /etc/skill-tuning/skill-tuning.env`) before live runs."
+                "OSSLLM_API_KEY is not set. Export it (export OSSLLM_API_KEY=...) "
+                "or source your DeepSeek env file before live runs."
             )
         self._key = key
         # This VPS sets OSSLLM_URL (no /v1 suffix); fall back to OSSLLM_BASE_URL,

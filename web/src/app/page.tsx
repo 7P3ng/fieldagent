@@ -95,7 +95,7 @@ export default function Home() {
 
       <footer className="mt-12 pt-6 border-t border-subtle text-[12px] text-tertiary flex flex-wrap gap-x-6 gap-y-2">
         <span>FieldAgent · portfolio artifact</span>
-        <a href="https://github.com/" className="hover:text-secondary">source on GitHub</a>
+        <a href="https://github.com/7P3ng/fieldagent" className="hover:text-secondary">source on GitHub</a>
         <span>Dataset: CUAD v1 — The Atticus Project (CC BY 4.0)</span>
         <span className="ml-auto">static demo · no live backend</span>
       </footer>
