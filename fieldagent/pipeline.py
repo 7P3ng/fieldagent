@@ -59,8 +59,8 @@ def _dedupe(cands: list[Candidate], *, iou_threshold: float = 0.5) -> list[Candi
             for k in kept:
                 if _iou((c.start, c.end), (k.start, k.end)) >= iou_threshold or \
                    (c.start < k.end and k.start < c.end):  # any overlap of same type
-                    # keep the one with higher confidence, else the longer span
-                    if _conf(c) > _conf(k) or (c.end - c.start) > (k.end - k.start):
+                    # keep higher confidence; longer span only breaks a confidence tie
+                    if (_conf(c), c.end - c.start) > (_conf(k), k.end - k.start):
                         kept[kept.index(k)] = c
                     merged = True
                     break

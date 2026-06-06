@@ -8,11 +8,15 @@ output is treated as a conservative DROP — an unverifiable finding is not kept
 """
 from __future__ import annotations
 
+import logging
+
 from core.model_client import ModelClient
 from core.orchestrator import fan_out
 from fieldagent.clauses import CLAUSES
 from fieldagent.extractor import _parse_json_obj
 from fieldagent.types import Candidate
+
+_log = logging.getLogger(__name__)
 
 _SYSTEM = (
     "You are a skeptical senior contract attorney reviewing a junior's flagged clause. "
@@ -75,7 +79,11 @@ def verify_candidates(
             client, c, context, model=model, min_confidence=min_confidence)
         return (c, keep, conf, reason)
 
-    results = fan_out(cands, _v, max_concurrency=concurrency)
+    results = fan_out(
+        cands, _v, max_concurrency=concurrency,
+        on_error=lambda c, e: _log.warning("verification failed for %s [%d:%d]: %s",
+                                            c.clause_type, c.start, c.end, e),
+    )
     kept: list[Candidate] = []
     for r in results:
         if r is None:

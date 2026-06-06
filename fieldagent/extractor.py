@@ -50,7 +50,7 @@ def _parse_json_obj(text: str) -> dict[str, Any] | None:
     if not text:
         return None
     # strip ```json ... ``` fences if present
-    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
+    fenced = re.search(r"```(?:json)?\s*(\{.*\})\s*```", text, re.DOTALL)
     candidate = fenced.group(1) if fenced else None
     if candidate is None:
         start = text.find("{")
