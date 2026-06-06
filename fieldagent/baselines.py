@@ -93,12 +93,13 @@ def keyword_baseline(text: str) -> list[Candidate]:
     return out
 
 
-_SINGLE_SHOT_SYSTEM = (
-    "You are a contract reviewer. Read the whole contract and list every risk-bearing clause. "
-    "Return strict JSON only."
-)
-# Naive baseline: cap the whole-contract prompt (no chunking — that's the point).
-_SINGLE_SHOT_BUDGET = 28000
+# Fair baseline: identical system prompt to the extractor, so the single-shot vs.
+# pipeline comparison isolates the SCAFFOLDING (chunking + verification), not prompt
+# wording. The only handicap is the naive one under test: the whole contract in one pass.
+from fieldagent.extractor import _SYSTEM as _SINGLE_SHOT_SYSTEM  # noqa: E402
+
+# Generous cap; the held-out subset is size-bounded so this never truncates in the eval.
+_SINGLE_SHOT_BUDGET = 60000
 
 
 def single_shot(
@@ -109,11 +110,16 @@ def single_shot(
 
     body = text[:_SINGLE_SHOT_BUDGET]
     prompt = (
-        "List every risk-bearing clause in this contract matching one of the clause types below. "
-        "Quote each verbatim.\n\n"
+        "Identify every risk-bearing clause in the COMPLETE CONTRACT below that matches one of "
+        "these clause types. Quote each verbatim.\n\n"
         f"CLAUSE TYPES:\n{extraction_taxonomy_block()}\n\n"
-        '- Use the clause-type name EXACTLY as written. Copy quotes character-for-character.\n'
-        '- Quote the COMPLETE clause (the full operative sentence(s)), not a fragment.\n'
+        "Rules:\n"
+        "- Only flag text actually present; copy the quote character-for-character.\n"
+        "- Quote the COMPLETE clause: the full operative sentence(s), not a fragment.\n"
+        "- Use the clause-type name EXACTLY as written above.\n"
+        "- This is the entire contract. A commercial contract typically contains SEVERAL "
+        "(often 5-12) risk-bearing clauses spanning multiple types — be exhaustive and do not "
+        "stop after the first few. A clause type may appear zero, one, or several times.\n"
         '- Respond with JSON ONLY: {"findings": [{"clause_type": "...", "quote": "...", "why": "..."}]}.\n\n'
         f'CONTRACT:\n"""\n{body}\n"""'
     )

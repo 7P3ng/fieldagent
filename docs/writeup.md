@@ -63,27 +63,38 @@ _(from `evals/results/metrics.md`; reproduce with `make eval-dry`)_
 | Arm | P | R | F1 | 95% CI |
 |---|---|---|---|---|
 | Keyword / regex floor | 0.490 | 0.257 | 0.337 | [0.275, 0.392] |
-| Single-shot LLM (baseline) | 0.700 | 0.073 | 0.133 | [0.018, 0.282] |
+| Single-shot LLM (steelmanned baseline) | 0.769 | 0.052 | 0.098 | [0.000, 0.213] |
 | Pipeline − verifier (chunked) | 0.721 | 0.461 | 0.562 | [0.473, 0.654] |
 | **Pipeline (full, agentic)** | 0.741 | 0.435 | **0.548** | [0.460, 0.637] |
 
-**Claim 1 — detection:** F1 = **0.548** (P 0.741 / R 0.435) on held-out CUAD.
-**Claim 2 — agentic lift:** full − single-shot = **+0.415 F1** (0.133 → 0.548). The chunked
+**Claim 1 — detection:** F1 = **0.548** (P 0.741 / R 0.435) on held-out CUAD. **Detection recall
+is 0.592** (a prediction of the correct type overlaps the gold span at all): of the 56% of gold
+not counted at IoU 0.5, ~16 pts are clauses *found in the right place but quoted too tightly* to
+clear the span threshold, and ~41% are true misses.
+**Claim 2 — agentic lift:** full − single-shot = **+0.450 F1** (0.098 → 0.548). The chunked
 no-verifier arm is 0.562 and the full pipeline 0.548 — see the ablation.
 
 ### Ablation reading
-- **Chunking dominates the lift.** (pipeline−verifier) − single-shot = **+0.429 F1**. The
-  single-shot model, asked to read a whole 15–28 K-char contract in one pass, *under-extracts*
-  badly: it claimed only **21 findings across 20 contracts** (avg 1.1/contract; 20 of 21 located
-  cleanly, so this is genuine recall collapse, not a parsing artifact). Windowing into focused
-  chunks recovers **122 candidate spans → 88 true positives** — the recall jumps 0.073 → 0.461.
-- **Verification is precision-positive, F1-neutral.** full − (pipeline−verifier) = **−0.014 F1**:
-  the skeptic pass dropped 5 false positives *and* 5 true positives, nudging precision 0.721 →
-  0.741 while shaving recall 0.461 → 0.435. Reported as measured — *not* threshold-tuned on the
-  held-out set to manufacture a positive number. For a red-flag tool, fewer false alarms at equal
-  F1 is a favorable trade.
+- **Chunking dominates the lift.** (pipeline−verifier) − single-shot = **+0.464 F1**. The
+  single-shot model, asked to read the whole contract in one pass, *under-extracts* badly. To rule
+  out a strawman, the baseline is **steelmanned**: it uses the *identical* system prompt to the
+  extractor, the same taxonomy block, an explicit "this is the complete contract — a commercial
+  contract typically contains 5–12 risk-bearing clauses, be exhaustive" instruction, and **no
+  truncation** (the held-out subset is size-bounded; the 60 K cap never fires). It found only
+  **0.7 findings/contract** — *fewer* than a weaker-prompted variant (1.1), i.e. equalizing prompts
+  made single-shot worse, confirming the collapse is genuine long-context under-extraction, not a
+  prompt artifact. Windowing into focused chunks recovers **122 candidate spans → 88 TP**; recall
+  jumps 0.052 → 0.461.
+- **Verification: no F1 effect distinguishable from noise.** full − (pipeline−verifier) =
+  **−0.014 F1**. The skeptic pass dropped 5 false positives *and* 5 true positives, shifting
+  precision 0.721 → 0.741 and recall 0.461 → 0.435 — but the two arms' 95% CIs overlap almost
+  entirely ([0.460, 0.637] vs [0.473, 0.654]), so at n=20 the verifier's contribution is **not
+  statistically distinguishable from zero**. Reported as measured — *not* threshold-tuned on the
+  held-out set. The adversarial-verification *idea* is the design through-line across Quorum/Aegis/
+  FieldAgent; on this high-precision CUAD extractor there is little false-positive headroom for it
+  to recover, and we say so rather than overclaim it.
 - **IoU sensitivity:** the lift holds across IoU ∈ {0.1, 0.3, 0.5, 0.7} — full pipeline F1
-  {0.654, 0.640, 0.548, 0.462} vs single-shot {0.171, 0.161, 0.133, 0.085} — so it is not an
+  {0.654, 0.640, 0.548, 0.462} vs single-shot {0.171, 0.161, 0.098, 0.085} — so it is not an
   artifact of the 0.5 threshold.
 
 ## 5. Threats to validity
@@ -97,6 +108,13 @@ no-verifier arm is 0.562 and the full pipeline 0.548 — see the ablation.
 - **Span granularity.** CUAD gold spans are whole clauses (median ~250 chars); an extractor that
   quotes a correct-but-short fragment is penalized at IoU 0.5. We prompt for complete clauses and
   report the threshold sweep so the reader can see the granularity effect.
+- **Recall on the highest-value types is weak.** Span-IoU recall on Cap On Liability (0.22) and
+  IP Ownership Assignment (0.26) — two of the most deal-critical types and the largest gold buckets
+  — is low; detection recall (any-overlap) is higher but these types still drive most of the misses.
+  A reviewer should treat FieldAgent as high-precision triage, not exhaustive coverage.
+- **Verifier effect is within noise.** The −0.014 F1 and the 0.72→0.74 precision shift are not
+  separable from sampling noise at n=20 (overlapping CIs). The verifier is retained as the shared
+  design pattern, not because it is shown to help here.
 - **One model.** Numbers are deepseek-v4-pro. Cross-model (Claude/GPT) is gated on a key and not
   run here; the harness populates a cross-model table when `ANTHROPIC_API_KEY` is present.
 - **Verifier shares a family with the extractor.** Skeptic and extractor are the same model in

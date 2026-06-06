@@ -254,15 +254,15 @@
     },
     "single_shot": {
       "name": "single_shot",
-      "tp": 14,
-      "fp": 6,
-      "fn": 177,
-      "precision": 0.7,
-      "recall": 0.0733,
-      "f1": 0.1327,
+      "tp": 10,
+      "fp": 3,
+      "fn": 181,
+      "precision": 0.7692,
+      "recall": 0.0524,
+      "f1": 0.098,
       "ci95": [
-        0.0178,
-        0.2817
+        0.0,
+        0.2126
       ],
       "per_type": {
         "Uncapped Liability": {
@@ -270,16 +270,16 @@
           "recall": 0.0,
           "f1": 0.0,
           "tp": 0,
-          "fp": 1,
+          "fp": 0,
           "fn": 6,
           "gold": 6
         },
         "Cap On Liability": {
-          "precision": 0.5,
+          "precision": 1.0,
           "recall": 0.031,
-          "f1": 0.059,
+          "f1": 0.061,
           "tp": 1,
-          "fp": 1,
+          "fp": 0,
           "fn": 31,
           "gold": 32
         },
@@ -294,29 +294,29 @@
         },
         "Renewal Term": {
           "precision": 1.0,
-          "recall": 0.2,
-          "f1": 0.333,
-          "tp": 2,
+          "recall": 0.1,
+          "f1": 0.182,
+          "tp": 1,
           "fp": 0,
-          "fn": 8,
+          "fn": 9,
           "gold": 10
         },
         "Non-Compete": {
-          "precision": 0.5,
+          "precision": 1.0,
           "recall": 0.067,
-          "f1": 0.118,
+          "f1": 0.125,
           "tp": 1,
-          "fp": 1,
+          "fp": 0,
           "fn": 14,
           "gold": 15
         },
         "Exclusivity": {
           "precision": 1.0,
-          "recall": 0.143,
-          "f1": 0.25,
-          "tp": 2,
+          "recall": 0.071,
+          "f1": 0.133,
+          "tp": 1,
           "fp": 0,
-          "fn": 12,
+          "fn": 13,
           "gold": 14
         },
         "No-Solicit Of Employees": {
@@ -357,11 +357,11 @@
         },
         "Termination For Convenience": {
           "precision": 1.0,
-          "recall": 0.167,
-          "f1": 0.286,
-          "tp": 2,
+          "recall": 0.083,
+          "f1": 0.154,
+          "tp": 1,
           "fp": 0,
-          "fn": 10,
+          "fn": 11,
           "gold": 12
         },
         "Anti-Assignment": {
@@ -374,12 +374,12 @@
           "gold": 20
         },
         "Change Of Control": {
-          "precision": 1.0,
-          "recall": 0.091,
-          "f1": 0.167,
-          "tp": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
           "fp": 0,
-          "fn": 10,
+          "fn": 11,
           "gold": 11
         },
         "Source Code Escrow": {
@@ -409,7 +409,7 @@
         ],
         [
           0,
-          3,
+          0,
           6
         ],
         [
@@ -428,9 +428,9 @@
           11
         ],
         [
-          6,
           0,
-          3
+          0,
+          9
         ],
         [
           0,
@@ -453,9 +453,9 @@
           13
         ],
         [
-          5,
-          2,
-          6
+          0,
+          0,
+          11
         ],
         [
           0,
@@ -463,9 +463,9 @@
           15
         ],
         [
+          5,
           0,
-          0,
-          12
+          7
         ],
         [
           0,
@@ -478,9 +478,9 @@
           13
         ],
         [
-          1,
           0,
-          3
+          0,
+          4
         ],
         [
           0,
@@ -488,9 +488,9 @@
           13
         ],
         [
-          0,
-          0,
-          6
+          3,
+          2,
+          3
         ],
         [
           0,
@@ -1009,24 +1009,26 @@
       ]
     }
   },
-  "agentic_lift_f1": 0.4152,
+  "agentic_lift_f1": 0.4498,
   "verifier_contribution_f1": -0.0144,
+  "detection_recall_full": 0.5916,
+  "span_recall_full": 0.4346,
   "iou_threshold_sweep": {
     "0.1": {
       "pipeline_full": 0.6535,
-      "single_shot": 0.1706
+      "single_shot": 0.098
     },
     "0.3": {
       "pipeline_full": 0.6403,
-      "single_shot": 0.1611
+      "single_shot": 0.098
     },
     "0.5": {
       "pipeline_full": 0.5479,
-      "single_shot": 0.1327
+      "single_shot": 0.098
     },
     "0.7": {
       "pipeline_full": 0.462,
-      "single_shot": 0.0853
+      "single_shot": 0.0686
     }
   },
   "meta": {

@@ -19,6 +19,7 @@ from evals.metrics import (
     bootstrap_f1_ci,
     match_contract,
     prf1,
+    span_iou,
 )
 from fieldagent import baselines, extractor, verifier
 from fieldagent.chunker import chunk_text
@@ -118,6 +119,20 @@ def _grade(name: str, cases: list[ContractCase],
     return ArmResult(name, tp, fp, fn, p, r, f1, ci, per_type, per_contract)
 
 
+def _detection_recall(cases: list[ContractCase], preds_per_case: list[list[Prediction]]) -> float:
+    """Loose recall: fraction of gold clauses for which a prediction of the CORRECT type
+    overlaps the gold span at all (IoU>0). Separates 'found the clause' from 'span tight
+    enough for IoU>=0.5' — the gap is span-boundary loss, not a true miss."""
+    found = total = 0
+    for case, preds in zip(cases, preds_per_case, strict=True):
+        for g in case.gold:
+            total += 1
+            if any(p.clause_type == g.clause_type
+                   and span_iou((p.start, p.end), (g.start, g.end)) > 0 for p in preds):
+                found += 1
+    return round(found / total, 4) if total else 0.0
+
+
 def evaluate(
     cases: list[ContractCase], client: ModelClient, *, model: str,
     window: int = 6000, overlap: int = 800, concurrency: int = 4,
@@ -163,6 +178,8 @@ def evaluate(
         "arms": {a: arms[a].to_dict() for a in ARMS},
         "agentic_lift_f1": round(full_f1 - arms["single_shot"].f1, 4),
         "verifier_contribution_f1": round(full_f1 - arms["pipeline_no_verifier"].f1, 4),
+        "detection_recall_full": _detection_recall(cases, preds["pipeline_full"]),
+        "span_recall_full": round(arms["pipeline_full"].recall, 4),
         "iou_threshold_sweep": sweep,
         "meta": {
             "contracts_processed": len(cases),

@@ -1790,5 +1790,165 @@
 "output_tokens": 316,
 "latency_ms": 7333.657965995371,
 "stop_reason": "stop"
+},
+"5ae15bd96f381adfce57661a4ec1c32eb8d4654ddd39faab5084a0c4bc21c0fd": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 6478,
+"output_tokens": 4000,
+"latency_ms": 70615.0094360346,
+"stop_reason": "length"
+},
+"3f189e1e26bee5f2285500252eaad66104c0b5fd4fe66fb05a18630e9deba995": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4147,
+"output_tokens": 4000,
+"latency_ms": 70202.77361606713,
+"stop_reason": "length"
+},
+"1272e3fafb31beefae8bb22c5f7a49eea5f119efeeeec021c0a936793485eb42": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4525,
+"output_tokens": 4000,
+"latency_ms": 73717.99280296545,
+"stop_reason": "length"
+},
+"c796732a224e7a5d1f070183d1bd52e365a1e3abefc0c2af5e31afb70b81e1a3": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4335,
+"output_tokens": 4000,
+"latency_ms": 79644.06905299984,
+"stop_reason": "length"
+},
+"54370d4ccfe756e7945f0032e0d6ecccb5230c6af24b3628294a37dc0aa64fe6": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 6157,
+"output_tokens": 4000,
+"latency_ms": 60475.55894800462,
+"stop_reason": "length"
+},
+"a5332e16f201269b03e1764efa8a79faf7b5b8ea155995956dbf2d0b2c059429": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"Distributor's appointment is for a term of one year from the Effective Date, renewable automatically unless terminated under Section 18\",\n      \"why\": \"Specifies an automatic renewal of the one-year term without requiring further action, creating an evergreen arrangement.\"\n    },\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"The terms of this Agreement shall be one year from the effective date and will be automatically renewed on",
+"model": "deepseek-chat",
+"input_tokens": 5942,
+"output_tokens": 4000,
+"latency_ms": 68739.76362892427,
+"stop_reason": "length"
+},
+"cfcb77f4980963d5f1ad33cab4d7d76dce408849d2e5bbdf2420fe0c921ca14c": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 3983,
+"output_tokens": 4000,
+"latency_ms": 77917.90392494295,
+"stop_reason": "length"
+},
+"4c8f31796281c7d4ad0fc147773e59a696c25327a8670d87925fbe534bdfa691": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4741,
+"output_tokens": 4000,
+"latency_ms": 64515.31618798617,
+"stop_reason": "length"
+},
+"875d6b57ea9994721b4b0dd7982e5e968b87337f07114205c250f93244f1c151": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5499,
+"output_tokens": 4000,
+"latency_ms": 69531.09730989672,
+"stop_reason": "length"
+},
+"64745b2be6d2bf2456cd59643c6fe844b867a6d486daf7622c85020572696e66": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5326,
+"output_tokens": 4000,
+"latency_ms": 76003.30964103341,
+"stop_reason": "length"
+},
+"8401fa2f7ef7e177870765c6a66752fa47b4c6032c0f060695622bd09084cfb6": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 3988,
+"output_tokens": 4000,
+"latency_ms": 62748.480800073594,
+"stop_reason": "length"
+},
+"c6bbc39577ffa3346dca86a60c01776aadf968fb3ef1e5068cf51e852319dd49": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5728,
+"output_tokens": 4000,
+"latency_ms": 67370.44413399417,
+"stop_reason": "length"
+},
+"4ac313d537ea7298a95659b648f20bd53fbff029fc1bbad24bf94c9a681cbd1b": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"EXCEPT WITH RESPECT TO CONTRACTOR'S OBLIGATIONS PURSUANT TO PARAGRAPH 9 HEREOF, CONTRACTOR'S MAXIMUM LIABILITY TO COMPANY ARISING FOR ANY REASON RELATING TO CONTRACTOR'S PERFORMANCE OF SERVICES UNDER A STATEMENT OF WORK SHALL BE LIMITED TO THE AMOUNT OF FEES PAID TO CONTRACTOR FOR THE PERFORMANCE OF SUCH SERVICES. COMPANYS' MAXIMUM LIABILITY TO CONTRACTOR FOR ANY REASON ARISING OUT OF THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT OF FEES PAID TO CONTRACTOR.\",\n      \"why\": \"This clause expressly limits the maximum aggregate liability of each party to the amount of fees paid, fitting the definition of a cap on liability.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"At any time that there is no uncompleted Statement of Work outstanding, either party may terminate this Agreement for any or no reason upon fifteen (15) days advance notice to the other.\",\n      \"why\": \"This clause grants both parties the right to terminate the agreement without cause, on notice, which is a termination for convenience.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"The parties agree that all drawings, documents, designs, models, inventions, computer programs, computer systems, data, computer documentation and other tangible materials authored or prepared by Contractor for Company as the work product required by a Statement of Work (collectively, the \\\"Works\\\"), are the property of Company to the extent that such Works were created by Contractor for Company over a time period for which Company has been invoiced and said invoice has been paid. Contractor agrees to render, at Company's sole cost and expense, all reasonably required assistance to Company to protect the rights herein above described, including executing other documents as requested by Company.\",\n      \"why\": \"This clause assigns ownership of all work product (intellectual property) created under the agreement to the Company, making it an IP ownership assignment.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"To the extent that Contractor incorporates any of Contractor's Information into the Works, Contractor hereby grants to Company a royalty-free, non- exclusive perpetual license (including the right to grant a sublicense) to use, copy, modify, create, derivative version, publicly perform and publicly display such Contractor's Information in connection with Company's business operations.\",\n      \"why\": \"This clause grants a non-exclusive, perpetual license to use Contractor's proprietary information, falling squarely under a license grant.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Neither party shall assign, transfer, or subcontract this Agreement or any of its obligations hereunder without the other party's express, prior written consent, which will not be unreasonably withheld.\",\n      \"why\": \"This clause restricts assignment or transfer of the agreement without the other party's consent, making it an anti-assignment provision.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"Neither party shall, during the term of this Agreement and for one (1) year after its termination, solicit for hire as an employee, consultant or otherwise any of the other party's personnel who have had direct involvement with the Services, without such other party's express written consent, which shall not be unreasonably withheld.\",\n      \"why\": \"This clause prohibits solicitation and hiring of the other party's personnel for a period post-termination, fitting the no-solicitation-of-employees type.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 4969,
+"output_tokens": 3329,
+"latency_ms": 48182.326019974425,
+"stop_reason": "stop"
+},
+"24a0c7765ec2d2b1b0aa666a4b3e3fc3fcd005d108e3e72300100a0493679c3f": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5415,
+"output_tokens": 4000,
+"latency_ms": 74170.75899301562,
+"stop_reason": "length"
+},
+"eaf692229b023875720ffe1e3b4f527dc1a63d152f65c2d0a32e85b871f95df5": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4427,
+"output_tokens": 4000,
+"latency_ms": 72417.09639504552,
+"stop_reason": "length"
+},
+"82ff114df1a0da7e503de30a64f644a42fa669c8a63155d4ed883157de98c5cb": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Member covenants and agrees that during the term of the Franchise Agreement, except as otherwise approved in writing by Franchisor, Member shall not, either directly or indirectly, for itself, or through, on behalf of, or in conjunction with any person, persons, partnership, corporation, or entity: (i) Own, manage, engage in, be employed by, advise, make loans to, consult for, rent or lease to, or have any other interest in business that (directly or indirectly) operates, or grants franchises or licenses to operate, a restaurant featuring pizza and related food",
+"model": "deepseek-chat",
+"input_tokens": 2219,
+"output_tokens": 4000,
+"latency_ms": 72424.52411493286,
+"stop_reason": "length"
+},
+"234635155c0f12a93505a121c194381e2d36b8d9647137b1a19d3fc447965031": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5991,
+"output_tokens": 4000,
+"latency_ms": 71304.15267194621,
+"stop_reason": "length"
+},
+"7207cf0da2f5461b6212d6a838fcaa56f0040098c1f08a198e761025ad25dc14": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"The Marketing Affiliate agrees to pay a late charge of 1 l/2% per month on the unpaid, past-due amount as well as a returned check fee of not less than $35.00 per returned item.\",\n      \"why\": \"Pre-agreed fixed sum (monthly late charge and returned check fee) payable upon late payment, independent of actual damages.\"\n    },\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"This Agreement shall be for the term of one year; thereafter, the Agreement shall renew automatically under these same terms and agreements unless superceded by future agreements.\",\n      \"why\": \"Automatic renewal (evergreen) clause that extends the agreement for successive terms without requiring express renewal.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Marketing Affiliate shall not directly or indirectly solicit an existing business customer of Equidata during the term and condition of this Agreement other than for joint marketing purposes. Further, Marketing Affiliate shall not market similar products from competing companies on any Web Site Landing Page containing the Equidata or Marketing Affiliate Web link as long as this Agreement is in effect.\",\n      \"why\": \"Restricts Marketing Affiliate from marketing competing products on the same landing page, effectively limiting competition with Equidata during the term.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Subject to the terms and conditions of this Agreement, Marketing Affiliate may display Marketing Materials at its principal place(s) of business, or at the principal place(s) of its third party partners, together with a link from the Marketing Affiliate Web Site to Fquidata (and its partners) Web Site. Marketing Materials may also be used in the marketing of potential customers through direct mail and personal solicitation as well as inbound and outbound telemarketing. Marketing Affiliate may not otherwise offer for sale, market, sell or distribute the Services of Equidata without express written permission.\",\n      \"why\": \"Grants a limited license to use Equidata's Marketing Materials and link to its website, with defined permissible uses.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"Equidata may audit, at Equidata's expense, the Marketing Affiliate's marketing, practices and activities for the purpose of assuring compliance with this Agreement. Equidata reserves the right to site inspect Marketing Affiliate's physical location of business at any time.\",\n      \"why\": \"Grants Equidata the right to audit and physically inspect Marketing Affiliate's marketing activities and premises to verify compliance.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 4613,
+"output_tokens": 3592,
+"latency_ms": 67315.58662909083,
+"stop_reason": "stop"
+},
+"548186e0deea365a2481eb86d9a95db35fa34861b9e64c47ee71f11192297ef8": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4250,
+"output_tokens": 4000,
+"latency_ms": 69385.29935199767,
+"stop_reason": "length"
+},
+"94776f34da8f9291424c82071394cb99f14a3156e6f9433d7bea784956ba98c3": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"In the event that Oceanic Time Warner Cable removes the above content and or terminates this agreement prior to December 31, 2006, Oceanic Time Warner Cable agrees to pay a cancellation fee of Five Thousand Dollars ($5,000) per month multiplied by the number of months remain on the agreement.\",\n      \"why\": \"This clause establishes a pre-agreed fixed sum (cancellation fee) payable on early termination or content removal, independent of actual damages. The formula ($5,000 per remaining month) serves as liquidated damages for breach or early exit.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Watchit shall have the exclusive right to sell third party advertising as sponsors of their content and will have the right to brand the content under the Watchit brand and place a \\\"bug\\\" on the screen identifying the content with a Watchit trademark.\",\n      \"why\": \"This grants Watchit the exclusive right to sell third-party advertising associated with the content, preventing Oceanic from engaging in similar ad sales, which is a classic exclusivity provision.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Watchit agrees to provide Oceanic Time Warner Cable the following content:\\n\\n- Watchit Gaming Guides - Lunchtime with Ira segments every week\\n\\nWatchit will provide the content on BetaSp format and reserves the right to modify the content to reflect sponsorship by an advertiser and advertisers.\\n\\nOceanic Time Warner Cable agrees to not edit or modify the above content.\\n\\nOceanic Time Warner Cable will use the content solely on channel 777, the Las Vegas channel.\",\n      \"why\": \"These sentences collectively grant Oceanic a license to use Watchit's content, specifying the scope (solely on channel 777), restrictions (no editing), and delivery format, thereby defining the license terms.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1222,
+"output_tokens": 3086,
+"latency_ms": 59070.43413002975,
+"stop_reason": "stop"
 }
 }

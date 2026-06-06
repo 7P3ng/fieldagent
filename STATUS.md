@@ -32,3 +32,18 @@ All phases 0–6 done. Live demo: https://fieldagent.thomaspeng.ca
 - Visual verification via chrome-headless-shell (full chromium + Playwright MCP were wedged/locked
   by a sibling job on this box); rendered SSG HTML + screenshots confirm the demo.
 - Phase 7 (cross-model Claude/GPT) intentionally NOT built — gated on ANTHROPIC_API_KEY.
+
+## Post-review hardening (objective critique pass)
+An adversarial review flagged the single-shot baseline as a possible strawman. Addressed:
+- **Fair/steelmanned baseline:** single-shot now uses the IDENTICAL system prompt to the extractor
+  + an explicit "be exhaustive (5-12 clauses), full contract" instruction + no truncation (held-out
+  is size-bounded; cap never fires). It found *fewer* clauses (0.7 vs 1.1/contract), so the lift is
+  genuine long-context under-extraction, not a prompt handicap. Agentic lift **+0.415 → +0.450 F1**.
+- **Detection-recall metric:** strict span-IoU recall 0.435 vs detection recall (right type, any
+  overlap) **0.592** — 16 pts of the gap is tight-quote span loss, not true misses. Surfaced in
+  README + writeup + metrics.md.
+- **Verifier honesty:** reframed as not-distinguishable-from-noise (overlapping CIs at n=20), not
+  "precision-positive" spin.
+- **Demo:** now visualizes MISSED gold clauses (dashed, false negatives) + per-contract recall +
+  a legend — so the demo shows recall, not just precision.
+- Cost: +$0.11 (single-shot-only re-run, 20 calls) on top of the ~$0.5 first run.

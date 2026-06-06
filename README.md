@@ -11,8 +11,8 @@ _(`make eval-dry` reproduces these offline from committed fixtures, zero cost �
 
 | Claim | Result |
 |---|---|
-| **Detection** | **F1 = 0.548** (P = 0.74 / R = 0.44), 95% CI [0.46, 0.64] — 20 held-out CUAD contracts, 15 risk clause types, 191 gold spans, span-IoU ≥ 0.5 |
-| **Agentic lift** | full pipeline vs. single-shot LLM = **+0.415 F1** (0.133 → 0.548). Chunking is the dominant driver; the skeptic verifier raises precision 0.72 → 0.74 (≈F1-neutral). |
+| **Detection** | **F1 = 0.548** (P = 0.74 / R = 0.44), 95% CI [0.46, 0.64] — 20 held-out CUAD contracts, 15 risk clause types, 191 gold spans, span-IoU ≥ 0.5. **Detection recall 0.59** (right clause type, any overlap): most of the recall gap is clauses found but quoted too tightly to clear IoU 0.5, not true misses. |
+| **Agentic lift** | full pipeline vs. a **steelmanned** single-shot LLM (identical system prompt, "be exhaustive" instruction, full untruncated contract) = **+0.450 F1** (0.098 → 0.548). The single-pass model under-extracts on long contracts (~0.7 findings/contract) regardless of prompt strength; **chunking is the driver**. The skeptic verifier shifts precision 0.72 → 0.74 but its F1 effect (−0.014) is **not distinguishable from zero** at n=20 (overlapping CIs). |
 
 ![demo](docs/assets/demo.gif)
 

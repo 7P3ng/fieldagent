@@ -5,11 +5,13 @@ Held-out CUAD contracts: **20** · clause types: **15** · IoU threshold: **0.5*
 | Arm | Precision | Recall | F1 | 95% CI (F1) |
 |---|---|---|---|---|
 | Keyword/regex floor | 0.490 | 0.257 | **0.337** | [0.275, 0.392] |
-| Single-shot LLM (baseline) | 0.700 | 0.073 | **0.133** | [0.018, 0.282] |
+| Single-shot LLM (baseline) | 0.769 | 0.052 | **0.098** | [0.000, 0.213] |
 | Pipeline − verifier (chunked) | 0.721 | 0.461 | **0.562** | [0.473, 0.654] |
 | **Pipeline (full, agentic)** | 0.741 | 0.435 | **0.548** | [0.460, 0.637] |
 
-**Agentic lift** (full − single-shot): **+0.415 F1**  ·  **Verifier contribution** (full − no-verifier): **-0.014 F1** (precision 0.721→0.741)
+**Agentic lift** (full − single-shot): **+0.450 F1**  ·  **Verifier contribution** (full − no-verifier): **-0.014 F1** (precision 0.721→0.741)
+
+**Detection recall** (right clause type, any span overlap): **0.592** — vs. strict span-IoU≥0.5 recall 0.435. The gap is clauses found in the right place but quoted too tightly to clear IoU 0.5, not true misses.
 
 ## Per-clause-type F1 (full pipeline)
 
@@ -35,7 +37,7 @@ Held-out CUAD contracts: **20** · clause types: **15** · IoU threshold: **0.5*
 
 | IoU | Single-shot | Pipeline (full) |
 |---|---|---|
-| 0.1 | 0.171 | 0.653 |
-| 0.3 | 0.161 | 0.640 |
-| 0.5 | 0.133 | 0.548 |
-| 0.7 | 0.085 | 0.462 |
+| 0.1 | 0.098 | 0.653 |
+| 0.3 | 0.098 | 0.640 |
+| 0.5 | 0.098 | 0.548 |
+| 0.7 | 0.069 | 0.462 |

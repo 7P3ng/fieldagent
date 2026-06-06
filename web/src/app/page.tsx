@@ -75,9 +75,18 @@ export default function Home() {
           </button>
         ))}
       </div>
-      <p className="text-tertiary text-[11px] mb-4 font-mono">
+      <p className="text-tertiary text-[11px] mb-3 font-mono">
         {contract.title} · party names & dollar figures redacted (█) · CUAD excerpt, CC BY 4.0
       </p>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mb-4 text-[11px] text-secondary">
+        <span className="flex items-center gap-1.5"><span className="hl hl-high px-2">&nbsp;</span> high</span>
+        <span className="flex items-center gap-1.5"><span className="hl hl-medium px-2">&nbsp;</span> medium</span>
+        <span className="flex items-center gap-1.5"><span className="hl hl-low px-2">&nbsp;</span> low</span>
+        <span className="flex items-center gap-1.5"><span className="hl hl-missed px-2">&nbsp;</span> missed gold (false negative)</span>
+        <span className="ml-auto font-mono text-tertiary">
+          recall this contract: {contract.gold_spans.filter((g) => g.matched).length}/{contract.gold_spans.length} gold clauses found
+        </span>
+      </div>
 
       {/* Document + findings */}
       <section className="grid lg:grid-cols-[1.4fr_1fr] gap-5 mb-10">

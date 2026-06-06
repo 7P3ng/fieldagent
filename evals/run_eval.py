@@ -137,6 +137,11 @@ def render_markdown(r: dict[str, Any]) -> str:
         f"**Verifier contribution** (full − no-verifier): **{r['verifier_contribution_f1']:+.3f} F1** "
         f"(precision {arms['pipeline_no_verifier']['precision']:.3f}→{arms['pipeline_full']['precision']:.3f})",
         "",
+        f"**Detection recall** (right clause type, any span overlap): **{r.get('detection_recall_full', 0):.3f}** — "
+        f"vs. strict span-IoU≥0.5 recall {r.get('span_recall_full', arms['pipeline_full']['recall']):.3f}. "
+        f"The gap is clauses found in the right place but quoted too tightly to clear IoU 0.5, "
+        f"not true misses.",
+        "",
         "## Per-clause-type F1 (full pipeline)",
         "",
         "| Clause type | Gold | P | R | F1 |",
