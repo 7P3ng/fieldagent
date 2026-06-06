@@ -35,6 +35,8 @@ def build_prompt(chunk_text: str) -> str:
         f"CLAUSE TYPES:\n{extraction_taxonomy_block()}\n\n"
         "Rules:\n"
         "- Only flag text actually present in the excerpt; copy the quote character-for-character.\n"
+        "- Quote the COMPLETE clause: the full operative sentence(s) that constitute the risk, from "
+        "the start of the sentence to its end — not a short fragment or a few words.\n"
         "- Use the clause-type name EXACTLY as written above.\n"
         "- A clause type may appear zero, one, or several times. Omit types that do not appear.\n"
         '- Respond with JSON ONLY: {"findings": [{"clause_type": "...", "quote": "...", '

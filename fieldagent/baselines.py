@@ -113,6 +113,7 @@ def single_shot(
         "Quote each verbatim.\n\n"
         f"CLAUSE TYPES:\n{extraction_taxonomy_block()}\n\n"
         '- Use the clause-type name EXACTLY as written. Copy quotes character-for-character.\n'
+        '- Quote the COMPLETE clause (the full operative sentence(s)), not a fragment.\n'
         '- Respond with JSON ONLY: {"findings": [{"clause_type": "...", "quote": "...", "why": "..."}]}.\n\n'
         f'CONTRACT:\n"""\n{body}\n"""'
     )
