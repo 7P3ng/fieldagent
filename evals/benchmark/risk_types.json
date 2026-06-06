@@ -1,0 +1,19 @@
+{
+ "risk_types": [
+  "Uncapped Liability",
+  "Cap On Liability",
+  "Liquidated Damages",
+  "Renewal Term",
+  "Non-Compete",
+  "Exclusivity",
+  "No-Solicit Of Employees",
+  "Most Favored Nation",
+  "Ip Ownership Assignment",
+  "License Grant",
+  "Termination For Convenience",
+  "Anti-Assignment",
+  "Change Of Control",
+  "Source Code Escrow",
+  "Audit Rights"
+ ]
+}

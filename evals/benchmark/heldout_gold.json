@@ -1,0 +1,1483 @@
+{
+ "dataset": "CUAD_v1",
+ "dataset_sha256": "ed0b77d85bdf4014d7495800e8e4a70565b48ee6f8a2e5dca9cf8655dbf10eae",
+ "license": "CC BY 4.0",
+ "attribution": "The Contract Understanding Atticus Dataset (CUAD) v1, The Atticus Project, https://www.atticusprojectai.org/cuad (CC BY 4.0).",
+ "risk_types": [
+  "Uncapped Liability",
+  "Cap On Liability",
+  "Liquidated Damages",
+  "Renewal Term",
+  "Non-Compete",
+  "Exclusivity",
+  "No-Solicit Of Employees",
+  "Most Favored Nation",
+  "Ip Ownership Assignment",
+  "License Grant",
+  "Termination For Convenience",
+  "Anti-Assignment",
+  "Change Of Control",
+  "Source Code Escrow",
+  "Audit Rights"
+ ],
+ "iou_threshold": 0.5,
+ "contracts": [
+  {
+   "doc_id": "ADIANUTRITION,INC_04_01_2005-EX-10.D2-RESELLER AGREEMENT",
+   "n_chars": 26347,
+   "gold_spans": [
+    {
+     "clause_type": "Exclusivity",
+     "start": 808,
+     "end": 1260,
+     "len": 452,
+     "text_sha8": "c65590c7"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 808,
+     "end": 1557,
+     "len": 749,
+     "text_sha8": "ff6d0985"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 2966,
+     "end": 3158,
+     "len": 192,
+     "text_sha8": "78d531d8"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 5550,
+     "end": 5829,
+     "len": 279,
+     "text_sha8": "caef796d"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 10086,
+     "end": 10252,
+     "len": 166,
+     "text_sha8": "a7197c75"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 16880,
+     "end": 17135,
+     "len": 255,
+     "text_sha8": "c23b6997"
+    },
+    {
+     "clause_type": "Uncapped Liability",
+     "start": 16880,
+     "end": 17135,
+     "len": 255,
+     "text_sha8": "c23b6997"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 18650,
+     "end": 18775,
+     "len": 125,
+     "text_sha8": "777ee9dc"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 20479,
+     "end": 20841,
+     "len": 362,
+     "text_sha8": "8d627bcb"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 23336,
+     "end": 23644,
+     "len": 308,
+     "text_sha8": "e74c444e"
+    }
+   ]
+  },
+  {
+   "doc_id": "ADMA BioManufacturing, LLC -  Amendment #3 to Manufacturing Agreement ",
+   "n_chars": 15312,
+   "gold_spans": [
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 3814,
+     "end": 4115,
+     "len": 301,
+     "text_sha8": "2c770fe7"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 4384,
+     "end": 4867,
+     "len": 483,
+     "text_sha8": "3c643b76"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 9639,
+     "end": 9802,
+     "len": 163,
+     "text_sha8": "51f344fa"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 11196,
+     "end": 11459,
+     "len": 263,
+     "text_sha8": "cd20ec33"
+    },
+    {
+     "clause_type": "Uncapped Liability",
+     "start": 11460,
+     "end": 11888,
+     "len": 428,
+     "text_sha8": "6b820345"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 11889,
+     "end": 12072,
+     "len": 183,
+     "text_sha8": "b32f7a88"
+    }
+   ]
+  },
+  {
+   "doc_id": "AMERICASSHOPPINGMALLINC_12_10_1999-EX-10.2-SITE DEVELOPMENT AND HOSTING AGREEMENT",
+   "n_chars": 19351,
+   "gold_spans": [
+    {
+     "clause_type": "License Grant",
+     "start": 1509,
+     "end": 1778,
+     "len": 269,
+     "text_sha8": "e82726e0"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 4631,
+     "end": 4924,
+     "len": 293,
+     "text_sha8": "68c191e6"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 5327,
+     "end": 5541,
+     "len": 214,
+     "text_sha8": "0b5a0dc7"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 5714,
+     "end": 6036,
+     "len": 322,
+     "text_sha8": "dfdf960f"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 5714,
+     "end": 6036,
+     "len": 322,
+     "text_sha8": "dfdf960f"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 8206,
+     "end": 8598,
+     "len": 392,
+     "text_sha8": "19c5b479"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 8603,
+     "end": 8778,
+     "len": 175,
+     "text_sha8": "e9a1a4f6"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 8798,
+     "end": 9056,
+     "len": 258,
+     "text_sha8": "e7216e29"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 9452,
+     "end": 9904,
+     "len": 452,
+     "text_sha8": "fd805a1d"
+    }
+   ]
+  },
+  {
+   "doc_id": "BLACKBOXSTOCKSINC_08_05_2014-EX-10.1-DISTRIBUTOR AGREEMENT",
+   "n_chars": 17234,
+   "gold_spans": [
+    {
+     "clause_type": "Exclusivity",
+     "start": 627,
+     "end": 857,
+     "len": 230,
+     "text_sha8": "87478929"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 1593,
+     "end": 1711,
+     "len": 118,
+     "text_sha8": "0b8a22e4"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 1981,
+     "end": 2153,
+     "len": 172,
+     "text_sha8": "9c5e6bcb"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 4204,
+     "end": 4301,
+     "len": 97,
+     "text_sha8": "e327a6ea"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 7412,
+     "end": 7593,
+     "len": 181,
+     "text_sha8": "caa8d342"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 7826,
+     "end": 7944,
+     "len": 118,
+     "text_sha8": "92c8fe1d"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 7966,
+     "end": 8004,
+     "len": 38,
+     "text_sha8": "7aad23ff"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 8260,
+     "end": 8359,
+     "len": 99,
+     "text_sha8": "db311243"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 16182,
+     "end": 16314,
+     "len": 132,
+     "text_sha8": "6051a9d5"
+    }
+   ]
+  },
+  {
+   "doc_id": "DRIVENDELIVERIES,INC_05_22_2020-EX-10.4-CONSULTING AGREEMENT",
+   "n_chars": 27899,
+   "gold_spans": [
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 7391,
+     "end": 8416,
+     "len": 1025,
+     "text_sha8": "a2e1bfab"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 8500,
+     "end": 9519,
+     "len": 1019,
+     "text_sha8": "a51fc469"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 10461,
+     "end": 11060,
+     "len": 599,
+     "text_sha8": "22a6ec9e"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 11086,
+     "end": 11817,
+     "len": 731,
+     "text_sha8": "c2f14bd4"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 11976,
+     "end": 12907,
+     "len": 931,
+     "text_sha8": "c4e5719a"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 14454,
+     "end": 14914,
+     "len": 460,
+     "text_sha8": "09089315"
+    },
+    {
+     "clause_type": "No-Solicit Of Employees",
+     "start": 14937,
+     "end": 15444,
+     "len": 507,
+     "text_sha8": "b21a341b"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 17741,
+     "end": 17936,
+     "len": 195,
+     "text_sha8": "10d3688b"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 21421,
+     "end": 21893,
+     "len": 472,
+     "text_sha8": "296ecddc"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 21894,
+     "end": 22138,
+     "len": 244,
+     "text_sha8": "e4090006"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 24530,
+     "end": 24676,
+     "len": 146,
+     "text_sha8": "cdfcfb6e"
+    }
+   ]
+  },
+  {
+   "doc_id": "ETELOS,INC_03_09_2004-EX-10.8-DISTRIBUTOR AGREEMENT",
+   "n_chars": 25647,
+   "gold_spans": [
+    {
+     "clause_type": "Non-Compete",
+     "start": 3435,
+     "end": 3546,
+     "len": 111,
+     "text_sha8": "2d595136"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 12492,
+     "end": 12850,
+     "len": 358,
+     "text_sha8": "04d9b245"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 13914,
+     "end": 14137,
+     "len": 223,
+     "text_sha8": "703afbb8"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 18444,
+     "end": 18796,
+     "len": 352,
+     "text_sha8": "ee269267"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 18915,
+     "end": 19014,
+     "len": 99,
+     "text_sha8": "5bcc5503"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 23080,
+     "end": 23326,
+     "len": 246,
+     "text_sha8": "333437c9"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 23362,
+     "end": 23444,
+     "len": 82,
+     "text_sha8": "2787b39b"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 23480,
+     "end": 23718,
+     "len": 238,
+     "text_sha8": "0e8930bf"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 23750,
+     "end": 23880,
+     "len": 130,
+     "text_sha8": "402daa8d"
+    }
+   ]
+  },
+  {
+   "doc_id": "GAINSCOINC_01_21_2010-EX-10.41-SPONSORSHIP AGREEMENT",
+   "n_chars": 15696,
+   "gold_spans": [
+    {
+     "clause_type": "Non-Compete",
+     "start": 1262,
+     "end": 1733,
+     "len": 471,
+     "text_sha8": "4ff8ab82"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 3533,
+     "end": 3850,
+     "len": 317,
+     "text_sha8": "8c7b2436"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 5636,
+     "end": 6097,
+     "len": 461,
+     "text_sha8": "689d4755"
+    },
+    {
+     "clause_type": "Most Favored Nation",
+     "start": 7433,
+     "end": 8067,
+     "len": 634,
+     "text_sha8": "b924efd9"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 12758,
+     "end": 12881,
+     "len": 123,
+     "text_sha8": "833c08c4"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 14362,
+     "end": 14570,
+     "len": 208,
+     "text_sha8": "5db5a9b7"
+    }
+   ]
+  },
+  {
+   "doc_id": "HfEnterprisesInc_20191223_S-1_EX-10.22_11931299_EX-10.22_Development Agreement",
+   "n_chars": 19435,
+   "gold_spans": [
+    {
+     "clause_type": "License Grant",
+     "start": 1604,
+     "end": 1979,
+     "len": 375,
+     "text_sha8": "d6d9eaa8"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 2484,
+     "end": 2685,
+     "len": 201,
+     "text_sha8": "d49d0af3"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 2868,
+     "end": 3544,
+     "len": 676,
+     "text_sha8": "a5118713"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 4034,
+     "end": 4332,
+     "len": 298,
+     "text_sha8": "768e2958"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 5002,
+     "end": 5204,
+     "len": 202,
+     "text_sha8": "d1a31959"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 11137,
+     "end": 11402,
+     "len": 265,
+     "text_sha8": "9e27269b"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 11580,
+     "end": 11865,
+     "len": 285,
+     "text_sha8": "eab02f8c"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 11580,
+     "end": 11865,
+     "len": 285,
+     "text_sha8": "eab02f8c"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 11866,
+     "end": 12218,
+     "len": 352,
+     "text_sha8": "f124f9e8"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 11866,
+     "end": 12218,
+     "len": 352,
+     "text_sha8": "f124f9e8"
+    }
+   ]
+  },
+  {
+   "doc_id": "IVILLAGEINC_03_17_1999-EX-10.16-SPONSORSHIP AGREEMENT",
+   "n_chars": 23723,
+   "gold_spans": [
+    {
+     "clause_type": "Renewal Term",
+     "start": 1691,
+     "end": 2164,
+     "len": 473,
+     "text_sha8": "edd6a446"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 5744,
+     "end": 5951,
+     "len": 207,
+     "text_sha8": "1e06ab2c"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 9355,
+     "end": 9465,
+     "len": 110,
+     "text_sha8": "531f5796"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 9644,
+     "end": 9906,
+     "len": 262,
+     "text_sha8": "dc494901"
+    },
+    {
+     "clause_type": "Most Favored Nation",
+     "start": 10022,
+     "end": 10375,
+     "len": 353,
+     "text_sha8": "987b7d64"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 12174,
+     "end": 12505,
+     "len": 331,
+     "text_sha8": "007be67a"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 14360,
+     "end": 14623,
+     "len": 263,
+     "text_sha8": "4481f4f4"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 16689,
+     "end": 16936,
+     "len": 247,
+     "text_sha8": "40d91dae"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 21837,
+     "end": 22047,
+     "len": 210,
+     "text_sha8": "fbe27241"
+    }
+   ]
+  },
+  {
+   "doc_id": "InnerscopeHearingTechnologiesInc_20181109_8-K_EX-10.6_11419704_EX-10.6_Distributor Agreement",
+   "n_chars": 22396,
+   "gold_spans": [
+    {
+     "clause_type": "Exclusivity",
+     "start": 1112,
+     "end": 1412,
+     "len": 300,
+     "text_sha8": "b5c25702"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 1112,
+     "end": 1412,
+     "len": 300,
+     "text_sha8": "b5c25702"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 1413,
+     "end": 1579,
+     "len": 166,
+     "text_sha8": "7e45329f"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 3586,
+     "end": 3677,
+     "len": 91,
+     "text_sha8": "4c7b2257"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 4753,
+     "end": 4871,
+     "len": 118,
+     "text_sha8": "3fc5736b"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 5697,
+     "end": 6002,
+     "len": 305,
+     "text_sha8": "0d757c90"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 8396,
+     "end": 8563,
+     "len": 167,
+     "text_sha8": "a39dad2c"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 11963,
+     "end": 12256,
+     "len": 293,
+     "text_sha8": "230efcd4"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 12325,
+     "end": 12393,
+     "len": 68,
+     "text_sha8": "d8ae2381"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 13648,
+     "end": 13817,
+     "len": 169,
+     "text_sha8": "f01e3d56"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 15376,
+     "end": 15720,
+     "len": 344,
+     "text_sha8": "3aa877a6"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 17724,
+     "end": 17923,
+     "len": 199,
+     "text_sha8": "51e596ea"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 18171,
+     "end": 18330,
+     "len": 159,
+     "text_sha8": "c0976638"
+    }
+   ]
+  },
+  {
+   "doc_id": "LUCIDINC_04_15_2011-EX-10.9-DISTRIBUTOR AGREEMENT",
+   "n_chars": 15540,
+   "gold_spans": [
+    {
+     "clause_type": "Exclusivity",
+     "start": 359,
+     "end": 475,
+     "len": 116,
+     "text_sha8": "8fde2e3a"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 1472,
+     "end": 1598,
+     "len": 126,
+     "text_sha8": "9a5bb0b0"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 2013,
+     "end": 2108,
+     "len": 95,
+     "text_sha8": "e4222ee2"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 3238,
+     "end": 3448,
+     "len": 210,
+     "text_sha8": "1c222101"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 6845,
+     "end": 7057,
+     "len": 212,
+     "text_sha8": "39f07741"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 10306,
+     "end": 10474,
+     "len": 168,
+     "text_sha8": "04f8b0de"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 10488,
+     "end": 10570,
+     "len": 82,
+     "text_sha8": "943f7bef"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 11019,
+     "end": 11220,
+     "len": 201,
+     "text_sha8": "864a6faf"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 12508,
+     "end": 12688,
+     "len": 180,
+     "text_sha8": "493634f4"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 12696,
+     "end": 13467,
+     "len": 771,
+     "text_sha8": "3fb523a9"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 13468,
+     "end": 13691,
+     "len": 223,
+     "text_sha8": "8a213444"
+    }
+   ]
+  },
+  {
+   "doc_id": "MEDALISTDIVERSIFIEDREIT,INC_05_18_2020-EX-10.1-CONSULTING AGREEMENT",
+   "n_chars": 24315,
+   "gold_spans": [
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 5822,
+     "end": 6676,
+     "len": 854,
+     "text_sha8": "e3f5da40"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 6677,
+     "end": 7052,
+     "len": 375,
+     "text_sha8": "eea835cb"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 7053,
+     "end": 7335,
+     "len": 282,
+     "text_sha8": "7d1932a1"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 7336,
+     "end": 7564,
+     "len": 228,
+     "text_sha8": "6893f3de"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 7565,
+     "end": 7787,
+     "len": 222,
+     "text_sha8": "0172072b"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 7788,
+     "end": 8215,
+     "len": 427,
+     "text_sha8": "adf8d21e"
+    },
+    {
+     "clause_type": "No-Solicit Of Employees",
+     "start": 8281,
+     "end": 9091,
+     "len": 810,
+     "text_sha8": "b79e9bc4"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 10070,
+     "end": 10978,
+     "len": 908,
+     "text_sha8": "4c87cc09"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 10979,
+     "end": 11660,
+     "len": 681,
+     "text_sha8": "0d3d03ad"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 12589,
+     "end": 12683,
+     "len": 94,
+     "text_sha8": "5c89ae91"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 12867,
+     "end": 13086,
+     "len": 219,
+     "text_sha8": "9077f57c"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 14470,
+     "end": 14820,
+     "len": 350,
+     "text_sha8": "f87943f1"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 14470,
+     "end": 14820,
+     "len": 350,
+     "text_sha8": "f87943f1"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 17126,
+     "end": 17232,
+     "len": 106,
+     "text_sha8": "e19c5819"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 23261,
+     "end": 23489,
+     "len": 228,
+     "text_sha8": "d0aba336"
+    }
+   ]
+  },
+  {
+   "doc_id": "MERITLIFEINSURANCECO_06_19_2020-EX-10.(XIV)-MASTER SERVICES AGREEMENT",
+   "n_chars": 22090,
+   "gold_spans": [
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 7650,
+     "end": 8133,
+     "len": 483,
+     "text_sha8": "01d1aac2"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 8602,
+     "end": 9623,
+     "len": 1021,
+     "text_sha8": "5ce4ff58"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 9628,
+     "end": 10015,
+     "len": 387,
+     "text_sha8": "cccc5c02"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 13478,
+     "end": 13664,
+     "len": 186,
+     "text_sha8": "ee9a58fb"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 14200,
+     "end": 14323,
+     "len": 123,
+     "text_sha8": "7fb0b28b"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 14388,
+     "end": 14703,
+     "len": 315,
+     "text_sha8": "a109e26b"
+    },
+    {
+     "clause_type": "Uncapped Liability",
+     "start": 14388,
+     "end": 14703,
+     "len": 315,
+     "text_sha8": "a109e26b"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 14704,
+     "end": 14849,
+     "len": 145,
+     "text_sha8": "8d1c11e5"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 14854,
+     "end": 15063,
+     "len": 209,
+     "text_sha8": "7b324d7a"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 17114,
+     "end": 17316,
+     "len": 202,
+     "text_sha8": "bdd4a59f"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 18085,
+     "end": 18236,
+     "len": 151,
+     "text_sha8": "6c030b94"
+    },
+    {
+     "clause_type": "No-Solicit Of Employees",
+     "start": 18796,
+     "end": 19131,
+     "len": 335,
+     "text_sha8": "c99d7bc3"
+    }
+   ]
+  },
+  {
+   "doc_id": "MOSSIMOINC_04_14_2000-EX-10.14-ENDORSEMENT AGREEMENT",
+   "n_chars": 24307,
+   "gold_spans": [
+    {
+     "clause_type": "License Grant",
+     "start": 2418,
+     "end": 2733,
+     "len": 315,
+     "text_sha8": "810da401"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 2734,
+     "end": 2897,
+     "len": 163,
+     "text_sha8": "eadc91db"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 2898,
+     "end": 3062,
+     "len": 164,
+     "text_sha8": "48106457"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 6041,
+     "end": 6262,
+     "len": 221,
+     "text_sha8": "b35b0fbc"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 6263,
+     "end": 6425,
+     "len": 162,
+     "text_sha8": "0c7aaee1"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 6426,
+     "end": 6669,
+     "len": 243,
+     "text_sha8": "c682f5f9"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 16599,
+     "end": 16916,
+     "len": 317,
+     "text_sha8": "353feaef"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 19071,
+     "end": 19479,
+     "len": 408,
+     "text_sha8": "822ff9af"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 19480,
+     "end": 19734,
+     "len": 254,
+     "text_sha8": "6b0af7cf"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 20701,
+     "end": 20906,
+     "len": 205,
+     "text_sha8": "a919d230"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 20907,
+     "end": 21177,
+     "len": 270,
+     "text_sha8": "8802b2f6"
+    }
+   ]
+  },
+  {
+   "doc_id": "MorganStanleyDirectLendingFund_20191119_10-12GA_EX-10.5_11898508_EX-10.5_Trademark License Agreement",
+   "n_chars": 16153,
+   "gold_spans": [
+    {
+     "clause_type": "License Grant",
+     "start": 1498,
+     "end": 1734,
+     "len": 236,
+     "text_sha8": "ca3a783f"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 3594,
+     "end": 3773,
+     "len": 179,
+     "text_sha8": "1833ceef"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 3774,
+     "end": 4078,
+     "len": 304,
+     "text_sha8": "9142b701"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 5289,
+     "end": 5482,
+     "len": 193,
+     "text_sha8": "d2b05a08"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 6267,
+     "end": 6588,
+     "len": 321,
+     "text_sha8": "d572630e"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 6662,
+     "end": 6825,
+     "len": 163,
+     "text_sha8": "09f30668"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 9320,
+     "end": 9572,
+     "len": 252,
+     "text_sha8": "f12f12bf"
+    },
+    {
+     "clause_type": "Uncapped Liability",
+     "start": 9320,
+     "end": 9572,
+     "len": 252,
+     "text_sha8": "f12f12bf"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 9646,
+     "end": 9764,
+     "len": 118,
+     "text_sha8": "2cea43a2"
+    },
+    {
+     "clause_type": "Uncapped Liability",
+     "start": 9646,
+     "end": 9764,
+     "len": 118,
+     "text_sha8": "2cea43a2"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 11266,
+     "end": 11648,
+     "len": 382,
+     "text_sha8": "87f9a9ff"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 11266,
+     "end": 11648,
+     "len": 382,
+     "text_sha8": "87f9a9ff"
+    },
+    {
+     "clause_type": "Change Of Control",
+     "start": 11649,
+     "end": 11973,
+     "len": 324,
+     "text_sha8": "15aa37c6"
+    }
+   ]
+  },
+  {
+   "doc_id": "PfHospitalityGroupInc_20150923_10-12G_EX-10.1_9266710_EX-10.1_Franchise Agreement3",
+   "n_chars": 6772,
+   "gold_spans": [
+    {
+     "clause_type": "No-Solicit Of Employees",
+     "start": 2504,
+     "end": 2803,
+     "len": 299,
+     "text_sha8": "b4c27827"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 2504,
+     "end": 3218,
+     "len": 714,
+     "text_sha8": "a09ea57b"
+    },
+    {
+     "clause_type": "No-Solicit Of Employees",
+     "start": 3410,
+     "end": 3495,
+     "len": 85,
+     "text_sha8": "cc04b9d5"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 3500,
+     "end": 4046,
+     "len": 546,
+     "text_sha8": "fc33f759"
+    }
+   ]
+  },
+  {
+   "doc_id": "SPARKLINGSPRINGWATERHOLDINGSLTD_07_03_2002-EX-10.13-SOFTWARE LICENSE AND MAINTENANCE AGREEMENT",
+   "n_chars": 27714,
+   "gold_spans": [
+    {
+     "clause_type": "License Grant",
+     "start": 2225,
+     "end": 2548,
+     "len": 323,
+     "text_sha8": "615566ce"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 2777,
+     "end": 2793,
+     "len": 16,
+     "text_sha8": "7381ce6c"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 3135,
+     "end": 3304,
+     "len": 169,
+     "text_sha8": "0b200917"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 10077,
+     "end": 10329,
+     "len": 252,
+     "text_sha8": "217c6e74"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 17191,
+     "end": 17322,
+     "len": 131,
+     "text_sha8": "a93bcae6"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 17323,
+     "end": 17648,
+     "len": 325,
+     "text_sha8": "a96089f5"
+    },
+    {
+     "clause_type": "Source Code Escrow",
+     "start": 17950,
+     "end": 19034,
+     "len": 1084,
+     "text_sha8": "1fadf92e"
+    },
+    {
+     "clause_type": "Source Code Escrow",
+     "start": 19269,
+     "end": 19466,
+     "len": 197,
+     "text_sha8": "7a08fee4"
+    },
+    {
+     "clause_type": "Source Code Escrow",
+     "start": 19467,
+     "end": 19718,
+     "len": 251,
+     "text_sha8": "b1f5da7c"
+    },
+    {
+     "clause_type": "License Grant",
+     "start": 19732,
+     "end": 20337,
+     "len": 605,
+     "text_sha8": "69f1adc1"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 20873,
+     "end": 20980,
+     "len": 107,
+     "text_sha8": "cb2c2e03"
+    },
+    {
+     "clause_type": "No-Solicit Of Employees",
+     "start": 23312,
+     "end": 23658,
+     "len": 346,
+     "text_sha8": "318b0555"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 25356,
+     "end": 25513,
+     "len": 157,
+     "text_sha8": "364967c5"
+    }
+   ]
+  },
+  {
+   "doc_id": "SteelVaultCorp_20081224_10-K_EX-10.16_3074935_EX-10.16_Affiliate Agreement",
+   "n_chars": 18157,
+   "gold_spans": [
+    {
+     "clause_type": "Non-Compete",
+     "start": 7195,
+     "end": 7408,
+     "len": 213,
+     "text_sha8": "74f93133"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 8971,
+     "end": 9136,
+     "len": 165,
+     "text_sha8": "a2599252"
+    },
+    {
+     "clause_type": "Audit Rights",
+     "start": 9137,
+     "end": 9246,
+     "len": 109,
+     "text_sha8": "79056199"
+    },
+    {
+     "clause_type": "Renewal Term",
+     "start": 9480,
+     "end": 9660,
+     "len": 180,
+     "text_sha8": "797512eb"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 14060,
+     "end": 14310,
+     "len": 250,
+     "text_sha8": "25fbf829"
+    },
+    {
+     "clause_type": "Uncapped Liability",
+     "start": 14060,
+     "end": 14310,
+     "len": 250,
+     "text_sha8": "25fbf829"
+    }
+   ]
+  },
+  {
+   "doc_id": "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT",
+   "n_chars": 17917,
+   "gold_spans": [
+    {
+     "clause_type": "Exclusivity",
+     "start": 2948,
+     "end": 3167,
+     "len": 219,
+     "text_sha8": "361565b3"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 3169,
+     "end": 3393,
+     "len": 224,
+     "text_sha8": "39d10a42"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 3401,
+     "end": 3580,
+     "len": 179,
+     "text_sha8": "73c5ed58"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 3588,
+     "end": 4022,
+     "len": 434,
+     "text_sha8": "334b9b16"
+    },
+    {
+     "clause_type": "Non-Compete",
+     "start": 3588,
+     "end": 4022,
+     "len": 434,
+     "text_sha8": "334b9b16"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 6486,
+     "end": 6889,
+     "len": 403,
+     "text_sha8": "13385a3c"
+    },
+    {
+     "clause_type": "Termination For Convenience",
+     "start": 7316,
+     "end": 7526,
+     "len": 210,
+     "text_sha8": "ef5613a7"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 10654,
+     "end": 10809,
+     "len": 155,
+     "text_sha8": "9dcdbe73"
+    },
+    {
+     "clause_type": "Cap On Liability",
+     "start": 10817,
+     "end": 11010,
+     "len": 193,
+     "text_sha8": "45190d47"
+    },
+    {
+     "clause_type": "Anti-Assignment",
+     "start": 13987,
+     "end": 14128,
+     "len": 141,
+     "text_sha8": "612cec28"
+    },
+    {
+     "clause_type": "Ip Ownership Assignment",
+     "start": 14141,
+     "end": 14935,
+     "len": 794,
+     "text_sha8": "f66adb5b"
+    }
+   ]
+  },
+  {
+   "doc_id": "WatchitMediaInc_20061201_8-K_EX-10.1_4148672_EX-10.1_Content License Agreement",
+   "n_chars": 2106,
+   "gold_spans": [
+    {
+     "clause_type": "Exclusivity",
+     "start": 514,
+     "end": 606,
+     "len": 92,
+     "text_sha8": "b881f558"
+    },
+    {
+     "clause_type": "Liquidated Damages",
+     "start": 608,
+     "end": 901,
+     "len": 293,
+     "text_sha8": "c20236c0"
+    },
+    {
+     "clause_type": "Exclusivity",
+     "start": 903,
+     "end": 1153,
+     "len": 250,
+     "text_sha8": "a799cdf2"
+    }
+   ]
+  }
+ ]
+}

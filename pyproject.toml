@@ -1,0 +1,39 @@
+[project]
+name = "fieldagent"
+version = "0.1.0"
+description = "Contract red-flag finder: an agent that flags risk-bearing clauses in commercial contracts, scored span-IoU against CUAD gold, with a measured agentic lift over single-shot."
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "anthropic>=0.40"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["core", "fieldagent", "evals"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["web", "evals/benchmark/raw"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]  # long lines tolerated in prompt/docstrings
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = true
+exclude = ["web/", "evals/benchmark/raw/"]

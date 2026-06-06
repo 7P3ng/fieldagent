@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.db
+traces.db
+.env
+node_modules/
+web/.next/
+web/out/
+web/node_modules/
+*.live.log
+.DS_Store
+.playwright-mcp/
+*.egg-info/
+# Data hygiene: never commit raw CUAD contract text (real commercial contracts / PII)
+evals/benchmark/raw/
+evals/benchmark/CUAD_v1.json
+*.zip
