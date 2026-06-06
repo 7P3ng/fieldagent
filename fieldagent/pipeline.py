@@ -102,7 +102,7 @@ def analyze(
     min_confidence: float = 0.5,
     trace: TraceStore | None = None,
     run_id: str | None = None,
-    extract_max_tokens: int = 4000,
+    extract_max_tokens: int = 6000,
 ) -> list[Finding]:
     """Run the full agentic pipeline on one contract → structured findings."""
     chunks: list[Chunk] = chunk_text(contract_text, window=window, overlap=overlap)

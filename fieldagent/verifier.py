@@ -43,7 +43,7 @@ def build_prompt(cand: Candidate, context: str) -> str:
 
 def verify_candidate(
     client: ModelClient, cand: Candidate, context: str, *,
-    model: str, min_confidence: float = 0.5, max_tokens: int = 2000,
+    model: str, min_confidence: float = 0.5, max_tokens: int = 3000,
 ) -> tuple[bool, float, str]:
     """Return ``(keep, confidence, reason)``. Conservative drop on malformed output."""
     resp = client.complete(

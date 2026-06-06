@@ -178,7 +178,7 @@ def main(argv: list[str] | None = None) -> int:
               f"  estimated cost: ${est.usd:.2f}  (cap ${args.max_usd:.2f})\n", file=sys.stderr)
         check_cost_gate(est, args.max_usd)  # refuses over cap (raises)
         inner = _build_live_client(args.target)
-        client: ModelClient = RecordingClient(inner)
+        client: ModelClient = RecordingClient(inner, budget_usd=args.max_usd)
     else:
         fixtures = _load_fixtures(args.target)
         client = RecordedClient(fixtures, strict=True)

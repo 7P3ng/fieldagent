@@ -215,19 +215,32 @@ class RecordingClient:
     """Wraps a real client: caches by prompt_key (no double-spend across arms) AND
     serializes every response so the run replays for free via RecordedClient."""
 
-    def __init__(self, inner: ModelClient) -> None:
+    def __init__(self, inner: ModelClient, budget_usd: float = 2.0) -> None:
         self._inner = inner
         self.fixtures: dict[str, dict[str, Any]] = {}
         self.live_calls = 0
+        self.spent_usd = 0.0
+        self._budget_usd = budget_usd
 
     def complete(self, *, model: str, system: str,
                  messages: list[dict[str, Any]], max_tokens: int):  # noqa: ANN201
         key = prompt_key(model, system, messages)
         if key in self.fixtures:
             return self._replay(key)
-        resp = self._inner.complete(model=model, system=system, messages=messages,
-                                    max_tokens=max_tokens)
+        from core.orchestrator import retry
+        from core.types import ModelError, RateLimitError
+        resp = retry(
+            lambda: self._inner.complete(model=model, system=system, messages=messages,
+                                         max_tokens=max_tokens),
+            attempts=4, backoff=1.0, exceptions=(RateLimitError, ModelError),
+        )
         self.live_calls += 1
+        self.spent_usd += resp.cost_usd
+        if self.spent_usd > self._budget_usd:
+            raise CostGateError(
+                f"live spend ${self.spent_usd:.2f} exceeded the ${self._budget_usd:.2f} hard "
+                f"ceiling after {self.live_calls} calls — aborting to contain cost."
+            )
         self.fixtures[key] = {
             "text": resp.text, "model": resp.model,
             "input_tokens": resp.input_tokens, "output_tokens": resp.output_tokens,

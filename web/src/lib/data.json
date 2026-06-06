@@ -1,0 +1,38 @@
+{
+  "generated_at": "placeholder",
+  "results": {
+    "contracts_processed": 20, "n_clause_types": 15, "iou_threshold": 0.5,
+    "model": "deepseek-v4-pro", "total_gold_spans": 191,
+    "arms": {
+      "keyword": {"precision": 0.49, "recall": 0.26, "f1": 0.337, "ci95": [0.25, 0.42]},
+      "single_shot": {"precision": 0.55, "recall": 0.45, "f1": 0.49, "ci95": [0.40, 0.58]},
+      "pipeline_no_verifier": {"precision": 0.52, "recall": 0.60, "f1": 0.56, "ci95": [0.47, 0.64]},
+      "pipeline_full": {"precision": 0.68, "recall": 0.58, "f1": 0.62, "ci95": [0.54, 0.70]}
+    },
+    "agentic_lift_f1": 0.13, "verifier_contribution_f1": 0.06,
+    "iou_threshold_sweep": {
+      "0.1": {"pipeline_full": 0.71, "single_shot": 0.58},
+      "0.3": {"pipeline_full": 0.67, "single_shot": 0.53},
+      "0.5": {"pipeline_full": 0.62, "single_shot": 0.49},
+      "0.7": {"pipeline_full": 0.50, "single_shot": 0.38}
+    },
+    "per_type": [
+      {"clause_type": "Anti-Assignment", "gold": 18, "precision": 0.7, "recall": 0.66, "f1": 0.68},
+      {"clause_type": "Termination For Convenience", "gold": 16, "precision": 0.72, "recall": 0.6, "f1": 0.65}
+    ]
+  },
+  "contracts": [
+    {
+      "doc_id": "PLACEHOLDER", "title": "Placeholder Agreement", "agreement_type": "Distributor",
+      "text": "This DISTRIBUTOR AGREEMENT is made between ████████ and ████████. Either party may terminate this Agreement for convenience upon thirty (30) days written notice. The Distributor is appointed on an exclusive basis in the Territory. In no event shall liability exceed ██████.",
+      "findings": [
+        {"clause_type": "Termination For Convenience", "span_text": "Either party may terminate this Agreement for convenience upon thirty (30) days written notice.", "start": 58, "end": 153, "severity": "high", "risk_note": "The counterparty can walk away at will on short notice.", "confidence": 0.95, "rationale": "either party may exit", "matched_gold": true},
+        {"clause_type": "Exclusivity", "span_text": "The Distributor is appointed on an exclusive basis in the Territory.", "start": 154, "end": 221, "severity": "high", "risk_note": "Forecloses alternatives.", "confidence": 0.9, "rationale": "exclusive appointment", "matched_gold": true}
+      ],
+      "gold_spans": [
+        {"clause_type": "Termination For Convenience", "start": 58, "end": 153, "matched": true},
+        {"clause_type": "Exclusivity", "start": 154, "end": 221, "matched": true}
+      ]
+    }
+  ]
+}

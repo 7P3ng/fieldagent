@@ -1,0 +1,114 @@
+'use client'
+import { useState } from 'react'
+import data from '@/lib/data.json'
+import type { DemoData } from '@/lib/types'
+import { ContractViewer } from '@/components/ContractViewer'
+import { FindingsPanel } from '@/components/FindingsPanel'
+import { ResultsPanel } from '@/components/ResultsPanel'
+
+const demo = data as unknown as DemoData
+
+export default function Home() {
+  const [ci, setCi] = useState(0)
+  const [active, setActive] = useState<number | null>(null)
+  const contract = demo.contracts[ci]
+  const r = demo.results
+
+  return (
+    <main className="max-w-[1180px] mx-auto px-6 py-10">
+      {/* Hero */}
+      <header className="mb-10">
+        <div className="flex items-center gap-2 mb-3">
+          <div className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--color-accent)' }} />
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-tertiary">
+            Contract Red-Flag Finder · CUAD-graded
+          </span>
+        </div>
+        <h1 className="text-[34px] font-semibold tracking-tight leading-none mb-3">
+          FieldAgent
+        </h1>
+        <p className="text-secondary text-[15px] max-w-2xl leading-relaxed">
+          An agent reads a real commercial contract and flags risk-bearing clauses — the exact span,
+          a severity, and a plain-English “why this is risky” — graded span-IoU against{' '}
+          <a href="https://www.atticusprojectai.org/cuad" className="accent underline decoration-dotted"
+             target="_blank" rel="noreferrer">CUAD</a> gold, with a measured agentic lift over single-shot.
+        </p>
+
+        <div className="flex flex-wrap gap-4 mt-6">
+          <Stat label="Detection F1" value={r.arms.pipeline_full.f1.toFixed(3)}
+                sub={`P ${(r.arms.pipeline_full.precision * 100).toFixed(0)} / R ${(r.arms.pipeline_full.recall * 100).toFixed(0)} · ${r.contracts_processed} held-out contracts`}
+                color="var(--color-accent)" />
+          <Stat label="Agentic lift" value={`+${r.agentic_lift_f1.toFixed(3)}`}
+                sub={`F1 over single-shot · verifier +${r.verifier_contribution_f1.toFixed(3)}`}
+                color="var(--color-low)" />
+          <Stat label="Risk clause types" value={String(r.n_clause_types)}
+                sub={`${r.total_gold_spans} gold spans · IoU ≥ ${r.iou_threshold}`}
+                color="var(--color-text-primary)" />
+        </div>
+      </header>
+
+      {/* Pipeline strip */}
+      <div className="surface-2 border border-subtle rounded-lg px-5 py-3 mb-8 flex items-center gap-2 flex-wrap font-mono text-[11px] text-secondary">
+        {['chunk', 'focused extraction', 'skeptic verification', 'dedupe / merge', 'structured findings'].map((s, i, a) => (
+          <span key={s} className="flex items-center gap-2">
+            <span>{s}</span>
+            {i < a.length - 1 && <span className="text-tertiary">→</span>}
+          </span>
+        ))}
+        <span className="ml-auto text-tertiary">model: {r.model}</span>
+      </div>
+
+      {/* Contract selector */}
+      <div className="flex gap-1.5 mb-4 flex-wrap">
+        {demo.contracts.map((c, i) => (
+          <button
+            key={c.doc_id}
+            onClick={() => { setCi(i); setActive(null) }}
+            className="font-mono text-[11px] px-2.5 py-1.5 rounded border transition-colors"
+            style={{
+              borderColor: i === ci ? 'var(--color-accent)' : 'var(--color-border)',
+              background: i === ci ? 'var(--color-accent-dim)' : 'transparent',
+              color: i === ci ? 'var(--color-accent)' : 'var(--color-text-secondary)',
+            }}
+          >
+            {c.agreement_type}
+          </button>
+        ))}
+      </div>
+      <p className="text-tertiary text-[11px] mb-4 font-mono">
+        {contract.title} · party names & dollar figures redacted (█) · CUAD excerpt, CC BY 4.0
+      </p>
+
+      {/* Document + findings */}
+      <section className="grid lg:grid-cols-[1.4fr_1fr] gap-5 mb-10">
+        <ContractViewer contract={contract} activeIndex={active} onSelect={setActive} />
+        <FindingsPanel contract={contract} activeIndex={active} onSelect={setActive} />
+      </section>
+
+      {/* Results */}
+      <h2 className="text-lg font-semibold tracking-tight mb-1">Measured results</h2>
+      <p className="text-secondary text-[13px] mb-5">
+        Span-IoU grading against CUAD gold (no LLM judge in the success path). Reproduce offline,
+        zero cost: <code className="accent">make eval-dry</code>.
+      </p>
+      <ResultsPanel r={r} />
+
+      <footer className="mt-12 pt-6 border-t border-subtle text-[12px] text-tertiary flex flex-wrap gap-x-6 gap-y-2">
+        <span>FieldAgent · portfolio artifact</span>
+        <a href="https://github.com/" className="hover:text-secondary">source on GitHub</a>
+        <span>Dataset: CUAD v1 — The Atticus Project (CC BY 4.0)</span>
+        <span className="ml-auto">static demo · no live backend</span>
+      </footer>
+    </main>
+  )
+}
+
+function Stat({ label, value, sub, color }: { label: string; value: string; sub: string; color: string }) {
+  return (
+    <div className="surface-1 border border-subtle rounded-lg px-5 py-4 min-w-[200px] flex-1">
+      <div className="text-[11px] uppercase tracking-wider text-tertiary mb-1">{label}</div>
+      <div className="font-mono text-3xl leading-none mb-1.5" style={{ color }}>{value}</div>
+      <div className="text-[11px] text-tertiary leading-snug">{sub}</div>
+    </div>
+  )
+}

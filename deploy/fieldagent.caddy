@@ -1,0 +1,4 @@
+fieldagent.thomaspeng.ca {
+    root * /home/tpeng/projects/fieldagent/web/out
+    file_server
+}
