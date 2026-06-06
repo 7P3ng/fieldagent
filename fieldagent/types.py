@@ -25,6 +25,7 @@ class Candidate:
     end: int
     rationale: str = ""
     chunk_index: int = -1
+    confidence: float = 1.0
 
 
 @dataclass
