@@ -71,20 +71,26 @@ _(from `evals/results/metrics.md`; reproduce with `make eval-dry`)_
 is 0.592** (a prediction of the correct type overlaps the gold span at all): of the 56% of gold
 not counted at IoU 0.5, ~16 pts are clauses *found in the right place but quoted too tightly* to
 clear the span threshold, and ~41% are true misses.
-**Claim 2 — agentic lift:** full − single-shot = **+0.450 F1** (0.098 → 0.548). The chunked
-no-verifier arm is 0.562 and the full pipeline 0.548 — see the ablation.
+**Claim 2 — agentic lift:** the clean, baseline-independent claim is **+0.211 F1 over a
+keyword/regex floor** (0.337 → 0.548). A naive single-shot LLM scores far lower (0.098 F1), but
+that number is *output-budget-confounded* (see the ablation) — treat the single-shot gap as an
+upper bound, not a headline.
 
 ### Ablation reading
-- **Chunking dominates the lift.** (pipeline−verifier) − single-shot = **+0.464 F1**. The
-  single-shot model, asked to read the whole contract in one pass, *under-extracts* badly. To rule
-  out a strawman, the baseline is **steelmanned**: it uses the *identical* system prompt to the
-  extractor, the same taxonomy block, an explicit "this is the complete contract — a commercial
-  contract typically contains 5–12 risk-bearing clauses, be exhaustive" instruction, and **no
-  truncation** (the held-out subset is size-bounded; the 60 K cap never fires). It found only
-  **0.7 findings/contract** — *fewer* than a weaker-prompted variant (1.1), i.e. equalizing prompts
-  made single-shot worse, confirming the collapse is genuine long-context under-extraction, not a
-  prompt artifact. Windowing into focused chunks recovers **122 candidate spans → 88 TP**; recall
-  jumps 0.052 → 0.461.
+- **The single-shot baseline is output-budget-confounded — disclosed, not hidden.** The committed
+  single-shot fixtures cap the response at 4 000 tokens, and deepseek-v4-pro's hidden reasoning eats
+  that budget: **17/20 single-shot responses truncate** (`stop_reason=length`) into unparseable JSON
+  → near-zero findings (0.052 recall, 0.098 F1). This is the brief's own documented gotcha, so the
+  headline "+0.45 vs single-shot" **overstates** the gap. A fair re-run at 8 000 tokens was started;
+  the two contracts that completed before the shared DeepSeek account hit *Insufficient Balance*
+  returned **5 and 7 complete findings** (vs 0 truncated) — a fair single-shot would score materially
+  higher and the true lift is smaller (~+0.2–0.3, unquantified pending credit). The clean,
+  truncation-free comparison is the **+0.211 F1 over the keyword floor**; `make eval-live` re-records
+  the fair single-shot baseline once credit is restored.
+- **Chunking still helps, baseline-independently.** Per-window focused extraction recovers **122
+  candidate spans → 88 TP** (recall 0.461) where a single 4 K-budget pass collapses. The magnitude of
+  the *single-shot* gap is confounded; the direction (chunking > one naive pass) and the floor
+  comparison are not.
 - **Verification: no F1 effect distinguishable from noise.** full − (pipeline−verifier) =
   **−0.014 F1**. The skeptic pass dropped 5 false positives *and* 5 true positives, shifting
   precision 0.721 → 0.741 and recall 0.461 → 0.435 — but the two arms' 95% CIs overlap almost
@@ -93,9 +99,10 @@ no-verifier arm is 0.562 and the full pipeline 0.548 — see the ablation.
   held-out set. The adversarial-verification *idea* is the design through-line across Quorum/Aegis/
   FieldAgent; on this high-precision CUAD extractor there is little false-positive headroom for it
   to recover, and we say so rather than overclaim it.
-- **IoU sensitivity:** the lift holds across IoU ∈ {0.1, 0.3, 0.5, 0.7} — full pipeline F1
-  {0.654, 0.640, 0.548, 0.462} vs single-shot {0.171, 0.161, 0.098, 0.085} — so it is not an
-  artifact of the 0.5 threshold.
+- **IoU sensitivity:** full-pipeline F1 across IoU ∈ {0.1, 0.3, 0.5, 0.7} = {0.654, 0.640, 0.548,
+  0.462}; the +0.21 lift over the keyword floor (which barely moves with IoU) holds throughout, so
+  the result is not an artifact of the 0.5 threshold. (Single-shot numbers inherit the truncation
+  confound above.)
 
 ## 5. Threats to validity
 
@@ -115,6 +122,10 @@ no-verifier arm is 0.562 and the full pipeline 0.548 — see the ablation.
 - **Verifier effect is within noise.** The −0.014 F1 and the 0.72→0.74 precision shift are not
   separable from sampling noise at n=20 (overlapping CIs). The verifier is retained as the shared
   design pattern, not because it is shown to help here.
+- **Single-shot baseline is output-budget-limited.** The committed single-shot fixtures truncate at
+  4 000 tokens (v4-pro reasoning), so the single-shot F1 is a floor and "+0.45 vs single-shot" an
+  upper bound. The robust claims (pipeline F1, detection recall, +0.21 over the keyword floor) do not
+  depend on it; a fair re-run is gated on DeepSeek credit.
 - **One model.** Numbers are deepseek-v4-pro. Cross-model (Claude/GPT) is gated on a key and not
   run here; the harness populates a cross-model table when `ANTHROPIC_API_KEY` is present.
 - **Verifier shares a family with the extractor.** Skeptic and extractor are the same model in

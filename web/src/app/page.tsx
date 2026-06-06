@@ -38,8 +38,8 @@ export default function Home() {
           <Stat label="Detection F1" value={r.arms.pipeline_full.f1.toFixed(3)}
                 sub={`P ${(r.arms.pipeline_full.precision * 100).toFixed(0)} / R ${(r.arms.pipeline_full.recall * 100).toFixed(0)} · ${r.contracts_processed} held-out contracts`}
                 color="var(--color-accent)" />
-          <Stat label="Agentic lift" value={`+${r.agentic_lift_f1.toFixed(3)}`}
-                sub={`F1 over single-shot · verifier ΔF1 ${r.verifier_contribution_f1 >= 0 ? '+' : ''}${r.verifier_contribution_f1.toFixed(3)}`}
+          <Stat label="Lift vs keyword floor" value={`+${(r.arms.pipeline_full.f1 - r.arms.keyword.f1).toFixed(3)}`}
+                sub={`F1 over a regex floor (0.337→${r.arms.pipeline_full.f1.toFixed(3)}) · single-shot LLM lower but output-budget-limited`}
                 color="var(--color-low)" />
           <Stat label="Risk clause types" value={String(r.n_clause_types)}
                 sub={`${r.total_gold_spans} gold spans · IoU ≥ ${r.iou_threshold}`}

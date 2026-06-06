@@ -47,3 +47,21 @@ An adversarial review flagged the single-shot baseline as a possible strawman. A
 - **Demo:** now visualizes MISSED gold clauses (dashed, false negatives) + per-contract recall +
   a legend — so the demo shows recall, not just precision.
 - Cost: +$0.11 (single-shot-only re-run, 20 calls) on top of the ~$0.5 first run.
+
+## Honesty correction + KNOWN BLOCKER (DeepSeek balance)
+**Finding:** the single-shot baseline is *output-budget-confounded*. Its committed fixtures cap the
+response at 4 000 tokens, and deepseek-v4-pro's hidden reasoning truncates 17/20 responses
+(`stop_reason=length`) → near-zero findings → an inflated "+0.45 vs single-shot" lift. An 8 000-token
+spot-check returned 5 and 7 complete findings on the 2 contracts that ran before the shared DeepSeek
+account hit **402 Insufficient Balance**.
+
+**Action taken (honest, no fabrication):**
+- Re-anchored the headline lift on the **truncation-free keyword floor: +0.211 F1** (0.337→0.548),
+  in README, writeup, and the demo. The single-shot comparison is disclosed as an *upper bound*.
+- `single_shot` default max_tokens raised 4 000 → 8 000 (fair going forward); committed fixtures
+  remain the 4 000 run (dry-run still reproduces), clearly labelled as budget-limited.
+- Pipeline F1 (0.548), detection recall (0.592), and the keyword-floor lift do NOT depend on the
+  single-shot baseline and stand.
+
+**needs operator:** top up the shared DeepSeek credit, then `FIELDAGENT_LIVE=1 make eval-live`
+re-records the fair single-shot baseline at 8 000 tokens and regenerates the honest lift number.

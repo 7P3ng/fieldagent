@@ -12,7 +12,7 @@ _(`make eval-dry` reproduces these offline from committed fixtures, zero cost �
 | Claim | Result |
 |---|---|
 | **Detection** | **F1 = 0.548** (P = 0.74 / R = 0.44), 95% CI [0.46, 0.64] — 20 held-out CUAD contracts, 15 risk clause types, 191 gold spans, span-IoU ≥ 0.5. **Detection recall 0.59** (right clause type, any overlap): most of the recall gap is clauses found but quoted too tightly to clear IoU 0.5, not true misses. |
-| **Agentic lift** | full pipeline vs. a **steelmanned** single-shot LLM (identical system prompt, "be exhaustive" instruction, full untruncated contract) = **+0.450 F1** (0.098 → 0.548). The single-pass model under-extracts on long contracts (~0.7 findings/contract) regardless of prompt strength; **chunking is the driver**. The skeptic verifier shifts precision 0.72 → 0.74 but its F1 effect (−0.014) is **not distinguishable from zero** at n=20 (overlapping CIs). |
+| **Agentic lift** | full pipeline = **+0.21 F1 over a keyword/regex floor** (0.337 → 0.548) — the clean, baseline-independent comparison. The skeptic verifier shifts precision 0.72 → 0.74 but its F1 effect (−0.014) is **not distinguishable from zero** at n=20 (overlapping CIs). _Caveat on the single-shot LLM baseline: it scores far lower (0.10 F1), but that number is **output-budget-confounded** — deepseek-v4-pro's reasoning truncates the one-pass response on 17/20 contracts (the committed fixtures use a 4k-token cap); an 8k-token spot-check recovered 5–7 clauses/contract. The single-shot gap is therefore an **upper bound**; a full fair-baseline re-run is pending DeepSeek credit (`make eval-live`). See [writeup §4](docs/writeup.md)._ |
 
 ![demo](docs/assets/demo.gif)
 

@@ -103,7 +103,7 @@ _SINGLE_SHOT_BUDGET = 60000
 
 
 def single_shot(
-    client: ModelClient, text: str, *, model: str, max_tokens: int = 4000
+    client: ModelClient, text: str, *, model: str, max_tokens: int = 8000
 ) -> list[Candidate]:
     """One naive pass over the whole contract — no chunking, no verification."""
     from fieldagent.clauses import extraction_taxonomy_block

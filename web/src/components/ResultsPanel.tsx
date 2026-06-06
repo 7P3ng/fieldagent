@@ -48,8 +48,8 @@ export function ResultsPanel({ r }: { r: Results }) {
         </div>
         <div className="mt-5 pt-4 border-t border-subtle grid grid-cols-2 gap-3 text-center">
           <div>
-            <div className="font-mono text-2xl accent">+{r.agentic_lift_f1.toFixed(3)}</div>
-            <div className="text-[11px] text-tertiary mt-0.5">agentic lift (vs single-shot)</div>
+            <div className="font-mono text-2xl accent">+{(r.arms.pipeline_full.f1 - r.arms.keyword.f1).toFixed(3)}</div>
+            <div className="text-[11px] text-tertiary mt-0.5">lift vs keyword floor (single-shot lower, budget-limited)</div>
           </div>
           <div>
             <div className="font-mono text-2xl" style={{ color: 'var(--color-low)' }}>
