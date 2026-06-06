@@ -1,0 +1,1040 @@
+{
+  "arms": {
+    "keyword": {
+      "name": "keyword",
+      "tp": 49,
+      "fp": 51,
+      "fn": 142,
+      "precision": 0.49,
+      "recall": 0.2565,
+      "f1": 0.3368,
+      "ci95": [
+        0.2753,
+        0.3923
+      ],
+      "per_type": {
+        "Uncapped Liability": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 6,
+          "gold": 6
+        },
+        "Cap On Liability": {
+          "precision": 1.0,
+          "recall": 0.094,
+          "f1": 0.171,
+          "tp": 3,
+          "fp": 0,
+          "fn": 29,
+          "gold": 32
+        },
+        "Liquidated Damages": {
+          "precision": 0.5,
+          "recall": 0.333,
+          "f1": 0.4,
+          "tp": 3,
+          "fp": 3,
+          "fn": 6,
+          "gold": 9
+        },
+        "Renewal Term": {
+          "precision": 0.667,
+          "recall": 0.6,
+          "f1": 0.632,
+          "tp": 6,
+          "fp": 3,
+          "fn": 4,
+          "gold": 10
+        },
+        "Non-Compete": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 15,
+          "gold": 15
+        },
+        "Exclusivity": {
+          "precision": 0.19,
+          "recall": 0.286,
+          "f1": 0.229,
+          "tp": 4,
+          "fp": 17,
+          "fn": 10,
+          "gold": 14
+        },
+        "No-Solicit Of Employees": {
+          "precision": 0.167,
+          "recall": 0.167,
+          "f1": 0.167,
+          "tp": 1,
+          "fp": 5,
+          "fn": 5,
+          "gold": 6
+        },
+        "Most Favored Nation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2
+        },
+        "Ip Ownership Assignment": {
+          "precision": 1.0,
+          "recall": 0.174,
+          "f1": 0.296,
+          "tp": 4,
+          "fp": 0,
+          "fn": 19,
+          "gold": 23
+        },
+        "License Grant": {
+          "precision": 0.8,
+          "recall": 0.421,
+          "f1": 0.552,
+          "tp": 8,
+          "fp": 2,
+          "fn": 11,
+          "gold": 19
+        },
+        "Termination For Convenience": {
+          "precision": 0.273,
+          "recall": 0.25,
+          "f1": 0.261,
+          "tp": 3,
+          "fp": 8,
+          "fn": 9,
+          "gold": 12
+        },
+        "Anti-Assignment": {
+          "precision": 0.846,
+          "recall": 0.55,
+          "f1": 0.667,
+          "tp": 11,
+          "fp": 2,
+          "fn": 9,
+          "gold": 20
+        },
+        "Change Of Control": {
+          "precision": 0.273,
+          "recall": 0.273,
+          "f1": 0.273,
+          "tp": 3,
+          "fp": 8,
+          "fn": 8,
+          "gold": 11
+        },
+        "Source Code Escrow": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 3,
+          "gold": 3
+        },
+        "Audit Rights": {
+          "precision": 1.0,
+          "recall": 0.333,
+          "f1": 0.5,
+          "tp": 3,
+          "fp": 0,
+          "fn": 6,
+          "gold": 9
+        }
+      },
+      "per_contract": [
+        [
+          5,
+          5,
+          5
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          3,
+          2,
+          6
+        ],
+        [
+          3,
+          2,
+          6
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          5,
+          6,
+          4
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          4,
+          2,
+          6
+        ],
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          4,
+          2,
+          9
+        ],
+        [
+          2,
+          1,
+          9
+        ],
+        [
+          4,
+          4,
+          11
+        ],
+        [
+          4,
+          2,
+          8
+        ],
+        [
+          2,
+          0,
+          9
+        ],
+        [
+          3,
+          3,
+          10
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          1,
+          2,
+          10
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    },
+    "single_shot": {
+      "name": "single_shot",
+      "tp": 14,
+      "fp": 6,
+      "fn": 177,
+      "precision": 0.7,
+      "recall": 0.0733,
+      "f1": 0.1327,
+      "ci95": [
+        0.0178,
+        0.2817
+      ],
+      "per_type": {
+        "Uncapped Liability": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "gold": 6
+        },
+        "Cap On Liability": {
+          "precision": 0.5,
+          "recall": 0.031,
+          "f1": 0.059,
+          "tp": 1,
+          "fp": 1,
+          "fn": 31,
+          "gold": 32
+        },
+        "Liquidated Damages": {
+          "precision": 0.5,
+          "recall": 0.111,
+          "f1": 0.182,
+          "tp": 1,
+          "fp": 1,
+          "fn": 8,
+          "gold": 9
+        },
+        "Renewal Term": {
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.333,
+          "tp": 2,
+          "fp": 0,
+          "fn": 8,
+          "gold": 10
+        },
+        "Non-Compete": {
+          "precision": 0.5,
+          "recall": 0.067,
+          "f1": 0.118,
+          "tp": 1,
+          "fp": 1,
+          "fn": 14,
+          "gold": 15
+        },
+        "Exclusivity": {
+          "precision": 1.0,
+          "recall": 0.143,
+          "f1": 0.25,
+          "tp": 2,
+          "fp": 0,
+          "fn": 12,
+          "gold": 14
+        },
+        "No-Solicit Of Employees": {
+          "precision": 1.0,
+          "recall": 0.167,
+          "f1": 0.286,
+          "tp": 1,
+          "fp": 0,
+          "fn": 5,
+          "gold": 6
+        },
+        "Most Favored Nation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "gold": 2
+        },
+        "Ip Ownership Assignment": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 23,
+          "gold": 23
+        },
+        "License Grant": {
+          "precision": 0.333,
+          "recall": 0.053,
+          "f1": 0.091,
+          "tp": 1,
+          "fp": 2,
+          "fn": 18,
+          "gold": 19
+        },
+        "Termination For Convenience": {
+          "precision": 1.0,
+          "recall": 0.167,
+          "f1": 0.286,
+          "tp": 2,
+          "fp": 0,
+          "fn": 10,
+          "gold": 12
+        },
+        "Anti-Assignment": {
+          "precision": 1.0,
+          "recall": 0.05,
+          "f1": 0.095,
+          "tp": 1,
+          "fp": 0,
+          "fn": 19,
+          "gold": 20
+        },
+        "Change Of Control": {
+          "precision": 1.0,
+          "recall": 0.091,
+          "f1": 0.167,
+          "tp": 1,
+          "fp": 0,
+          "fn": 10,
+          "gold": 11
+        },
+        "Source Code Escrow": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3
+        },
+        "Audit Rights": {
+          "precision": 1.0,
+          "recall": 0.111,
+          "f1": 0.2,
+          "tp": 1,
+          "fp": 0,
+          "fn": 8,
+          "gold": 9
+        }
+      },
+      "per_contract": [
+        [
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          3,
+          6
+        ],
+        [
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          6,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          9
+        ],
+        [
+          0,
+          0,
+          13
+        ],
+        [
+          5,
+          2,
+          6
+        ],
+        [
+          0,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          0,
+          0,
+          13
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          13
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          11
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    "pipeline_no_verifier": {
+      "name": "pipeline_no_verifier",
+      "tp": 88,
+      "fp": 34,
+      "fn": 103,
+      "precision": 0.7213,
+      "recall": 0.4607,
+      "f1": 0.5623,
+      "ci95": [
+        0.4728,
+        0.6544
+      ],
+      "per_type": {
+        "Uncapped Liability": {
+          "precision": 0.333,
+          "recall": 0.333,
+          "f1": 0.333,
+          "tp": 2,
+          "fp": 4,
+          "fn": 4,
+          "gold": 6
+        },
+        "Cap On Liability": {
+          "precision": 0.778,
+          "recall": 0.219,
+          "f1": 0.341,
+          "tp": 7,
+          "fp": 2,
+          "fn": 25,
+          "gold": 32
+        },
+        "Liquidated Damages": {
+          "precision": 0.4,
+          "recall": 0.222,
+          "f1": 0.286,
+          "tp": 2,
+          "fp": 3,
+          "fn": 7,
+          "gold": 9
+        },
+        "Renewal Term": {
+          "precision": 0.833,
+          "recall": 0.5,
+          "f1": 0.625,
+          "tp": 5,
+          "fp": 1,
+          "fn": 5,
+          "gold": 10
+        },
+        "Non-Compete": {
+          "precision": 0.889,
+          "recall": 0.533,
+          "f1": 0.667,
+          "tp": 8,
+          "fp": 1,
+          "fn": 7,
+          "gold": 15
+        },
+        "Exclusivity": {
+          "precision": 0.9,
+          "recall": 0.643,
+          "f1": 0.75,
+          "tp": 9,
+          "fp": 1,
+          "fn": 5,
+          "gold": 14
+        },
+        "No-Solicit Of Employees": {
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1": 0.6,
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "gold": 6
+        },
+        "Most Favored Nation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "gold": 2
+        },
+        "Ip Ownership Assignment": {
+          "precision": 0.8,
+          "recall": 0.348,
+          "f1": 0.485,
+          "tp": 8,
+          "fp": 2,
+          "fn": 15,
+          "gold": 23
+        },
+        "License Grant": {
+          "precision": 0.667,
+          "recall": 0.632,
+          "f1": 0.649,
+          "tp": 12,
+          "fp": 6,
+          "fn": 7,
+          "gold": 19
+        },
+        "Termination For Convenience": {
+          "precision": 0.636,
+          "recall": 0.583,
+          "f1": 0.609,
+          "tp": 7,
+          "fp": 4,
+          "fn": 5,
+          "gold": 12
+        },
+        "Anti-Assignment": {
+          "precision": 0.611,
+          "recall": 0.55,
+          "f1": 0.579,
+          "tp": 11,
+          "fp": 7,
+          "fn": 9,
+          "gold": 20
+        },
+        "Change Of Control": {
+          "precision": 1.0,
+          "recall": 0.545,
+          "f1": 0.706,
+          "tp": 6,
+          "fp": 0,
+          "fn": 5,
+          "gold": 11
+        },
+        "Source Code Escrow": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3
+        },
+        "Audit Rights": {
+          "precision": 0.75,
+          "recall": 0.667,
+          "f1": 0.706,
+          "tp": 6,
+          "fp": 2,
+          "fn": 3,
+          "gold": 9
+        }
+      },
+      "per_contract": [
+        [
+          8,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          5,
+          2,
+          4
+        ],
+        [
+          5,
+          1,
+          4
+        ],
+        [
+          5,
+          3,
+          6
+        ],
+        [
+          6,
+          1,
+          3
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          4,
+          1,
+          6
+        ],
+        [
+          5,
+          2,
+          4
+        ],
+        [
+          5,
+          3,
+          8
+        ],
+        [
+          8,
+          0,
+          3
+        ],
+        [
+          3,
+          6,
+          12
+        ],
+        [
+          9,
+          0,
+          3
+        ],
+        [
+          5,
+          1,
+          6
+        ],
+        [
+          3,
+          1,
+          10
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          5,
+          3,
+          8
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ]
+    },
+    "pipeline_full": {
+      "name": "pipeline_full",
+      "tp": 83,
+      "fp": 29,
+      "fn": 108,
+      "precision": 0.7411,
+      "recall": 0.4346,
+      "f1": 0.5479,
+      "ci95": [
+        0.4597,
+        0.6375
+      ],
+      "per_type": {
+        "Uncapped Liability": {
+          "precision": 0.4,
+          "recall": 0.333,
+          "f1": 0.364,
+          "tp": 2,
+          "fp": 3,
+          "fn": 4,
+          "gold": 6
+        },
+        "Cap On Liability": {
+          "precision": 0.778,
+          "recall": 0.219,
+          "f1": 0.341,
+          "tp": 7,
+          "fp": 2,
+          "fn": 25,
+          "gold": 32
+        },
+        "Liquidated Damages": {
+          "precision": 0.333,
+          "recall": 0.111,
+          "f1": 0.167,
+          "tp": 1,
+          "fp": 2,
+          "fn": 8,
+          "gold": 9
+        },
+        "Renewal Term": {
+          "precision": 0.833,
+          "recall": 0.5,
+          "f1": 0.625,
+          "tp": 5,
+          "fp": 1,
+          "fn": 5,
+          "gold": 10
+        },
+        "Non-Compete": {
+          "precision": 0.875,
+          "recall": 0.467,
+          "f1": 0.609,
+          "tp": 7,
+          "fp": 1,
+          "fn": 8,
+          "gold": 15
+        },
+        "Exclusivity": {
+          "precision": 0.889,
+          "recall": 0.571,
+          "f1": 0.696,
+          "tp": 8,
+          "fp": 1,
+          "fn": 6,
+          "gold": 14
+        },
+        "No-Solicit Of Employees": {
+          "precision": 0.75,
+          "recall": 0.5,
+          "f1": 0.6,
+          "tp": 3,
+          "fp": 1,
+          "fn": 3,
+          "gold": 6
+        },
+        "Most Favored Nation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "gold": 2
+        },
+        "Ip Ownership Assignment": {
+          "precision": 0.75,
+          "recall": 0.261,
+          "f1": 0.387,
+          "tp": 6,
+          "fp": 2,
+          "fn": 17,
+          "gold": 23
+        },
+        "License Grant": {
+          "precision": 0.75,
+          "recall": 0.632,
+          "f1": 0.686,
+          "tp": 12,
+          "fp": 4,
+          "fn": 7,
+          "gold": 19
+        },
+        "Termination For Convenience": {
+          "precision": 0.636,
+          "recall": 0.583,
+          "f1": 0.609,
+          "tp": 7,
+          "fp": 4,
+          "fn": 5,
+          "gold": 12
+        },
+        "Anti-Assignment": {
+          "precision": 0.611,
+          "recall": 0.55,
+          "f1": 0.579,
+          "tp": 11,
+          "fp": 7,
+          "fn": 9,
+          "gold": 20
+        },
+        "Change Of Control": {
+          "precision": 1.0,
+          "recall": 0.545,
+          "f1": 0.706,
+          "tp": 6,
+          "fp": 0,
+          "fn": 5,
+          "gold": 11
+        },
+        "Source Code Escrow": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "gold": 3
+        },
+        "Audit Rights": {
+          "precision": 0.857,
+          "recall": 0.667,
+          "f1": 0.75,
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "gold": 9
+        }
+      },
+      "per_contract": [
+        [
+          8,
+          2,
+          2
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          4,
+          2,
+          5
+        ],
+        [
+          5,
+          0,
+          4
+        ],
+        [
+          4,
+          3,
+          7
+        ],
+        [
+          6,
+          1,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          4,
+          1,
+          6
+        ],
+        [
+          5,
+          2,
+          4
+        ],
+        [
+          5,
+          2,
+          8
+        ],
+        [
+          7,
+          0,
+          4
+        ],
+        [
+          3,
+          5,
+          12
+        ],
+        [
+          9,
+          0,
+          3
+        ],
+        [
+          4,
+          1,
+          7
+        ],
+        [
+          3,
+          1,
+          10
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          5,
+          2,
+          8
+        ],
+        [
+          1,
+          1,
+          5
+        ],
+        [
+          4,
+          0,
+          7
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "agentic_lift_f1": 0.4152,
+  "verifier_contribution_f1": -0.0144,
+  "iou_threshold_sweep": {
+    "0.1": {
+      "pipeline_full": 0.6535,
+      "single_shot": 0.1706
+    },
+    "0.3": {
+      "pipeline_full": 0.6403,
+      "single_shot": 0.1611
+    },
+    "0.5": {
+      "pipeline_full": 0.5479,
+      "single_shot": 0.1327
+    },
+    "0.7": {
+      "pipeline_full": 0.462,
+      "single_shot": 0.0853
+    }
+  },
+  "meta": {
+    "contracts_processed": 20,
+    "total_candidate_extractions": 122,
+    "iou_threshold": 0.5,
+    "model": "deepseek-v4-pro",
+    "window": 6000,
+    "overlap": 800
+  }
+}

@@ -39,6 +39,8 @@ _RESULTS = _ROOT / "evals" / "results"
 
 WINDOW = 6000
 OVERLAP = 800
+# friendly model id for results/display (the live model behind the 'deepseek' target)
+MODEL_DISPLAY = {"deepseek": "deepseek-v4-pro", "anthropic": "claude-sonnet-4-6"}
 
 
 def load_heldout() -> list[ContractCase]:
@@ -131,8 +133,9 @@ def render_markdown(r: dict[str, Any]) -> str:
         row("pipeline_no_verifier", "Pipeline − verifier (chunked)"),
         row("pipeline_full", "**Pipeline (full, agentic)**"),
         "",
-        f"**Agentic lift** (full − single-shot): **+{r['agentic_lift_f1']:.3f} F1**  ·  "
-        f"**Verifier contribution** (full − no-verifier): **+{r['verifier_contribution_f1']:.3f} F1**",
+        f"**Agentic lift** (full − single-shot): **{r['agentic_lift_f1']:+.3f} F1**  ·  "
+        f"**Verifier contribution** (full − no-verifier): **{r['verifier_contribution_f1']:+.3f} F1** "
+        f"(precision {arms['pipeline_no_verifier']['precision']:.3f}→{arms['pipeline_full']['precision']:.3f})",
         "",
         "## Per-clause-type F1 (full pipeline)",
         "",
@@ -194,14 +197,15 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Recorded {len(client.fixtures)} fixtures "
               f"({client.live_calls} live calls) → {_fixture_path(args.target)}", file=sys.stderr)
 
+    results["meta"]["model"] = MODEL_DISPLAY.get(args.target, args.target)
     _write_results(args.target, results)
     f = results["arms"]["pipeline_full"]
     print("\n=== HEADLINE ===")
     print(f"Detection F1 = {f['f1']:.3f}  (P={f['precision']:.3f} / R={f['recall']:.3f}), "
           f"95% CI {f['ci95']}")
-    print(f"Agentic lift = +{results['agentic_lift_f1']:.3f} F1  "
+    print(f"Agentic lift = {results['agentic_lift_f1']:+.3f} F1  "
           f"(vs single-shot {results['arms']['single_shot']['f1']:.3f})")
-    print(f"Verifier contribution = +{results['verifier_contribution_f1']:.3f} F1")
+    print(f"Verifier contribution = {results['verifier_contribution_f1']:+.3f} F1")
     print(f"\nWrote {_RESULTS}/metrics.{{json,md}} + per_contract.json")
     store.close()
     return 0

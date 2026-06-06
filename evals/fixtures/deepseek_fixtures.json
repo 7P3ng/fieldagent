@@ -1,0 +1,1794 @@
+{
+"b468c6f1b66342da73aa4979b6cd21b17e9a18f96392b94b7a95c69707081b6f": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 6400,
+"output_tokens": 4000,
+"latency_ms": 65221.9116371125,
+"stop_reason": "length"
+},
+"5e6a78b53427f311a20bf516d4c51463bfe2afbb439b5c7083bd0b6c8da61165": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 2141,
+"output_tokens": 601,
+"latency_ms": 13685.796980047598,
+"stop_reason": "stop"
+},
+"872cd995ad33ef8f413f1c04f38675733f29101eeedf40087f1162d282a60ab2": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"In addition, Detto shall make its offices and equipment available in person, upon reasonable notice, and to the extent feasible, remotely, to PivX to inspect and test Detto's physical and technical set-up to ensure that Detto is complying with its obligations under this Section.\",\n      \"why\": \"Grants PivX the right to inspect Detto's physical and technical setup, a form of audit right.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"PivX shall have the right, at reasonable times and on reasonable notice, to inspect and audit the books and records of Detto to verify the accuracy of any statements. In the event that such an inspection discloses any error of any amount, the parties shall by appropriate payment promptly adjust for the error.\",\n      \"why\": \"Grants PivX the right to audit Detto's books and records to verify accuracy of statements, a classic audit rights clause.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2147,
+"output_tokens": 1789,
+"latency_ms": 30054.067670018412,
+"stop_reason": "stop"
+},
+"805d5121b8c951c39a043896f318b736e67b91ce3185a8f53aa04af36804c7bb": {
+"text": "{\"findings\": [{\"clause_type\": \"Anti-Assignment\", \"quote\": \"Detto may not assign any of its rights or delegate any of its obligations hereunder, whether by operation of law or otherwise, without PivX's prior written consent.\", \"why\": \"Restricts Detto's ability to assign rights or delegate obligations without PivX's prior written consent.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 1797,
+"output_tokens": 931,
+"latency_ms": 17831.23816899024,
+"stop_reason": "stop"
+},
+"1aa2dd38b1b84d7fe2025bd19c883d321247357bb10ed25b7dab9ce5bd2cedf4": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"EXCEPT FOR PIVX'S OBLIGATIONS UNDER SECTION 4.2, IN NO EVENT SHALL PIVX'S OR ITS LICENSORS' LIABILITY TO DETTO OR ANY THIRD PARTY ARISING OUT OF THIS AGREEMENT EXCEED THE TOTAL AMOUNT ACTUALLY RECEIVED BY PIVX HEREUNDER DURING THE PREVIOUS SIX (6) MONTHS.\",\n      \"why\": \"Caps PivX's aggregate liability to fees received in the prior six months.\"\n    },\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"EXCEPT FOR PIVX'S OBLIGATIONS UNDER SECTION 4.2, IN NO EVENT SHALL PIVX'S OR ITS LICENSORS' LIABILITY TO DETTO OR ANY THIRD PARTY ARISING OUT OF THIS AGREEMENT EXCEED THE TOTAL AMOUNT ACTUALLY RECEIVED BY PIVX HEREUNDER DURING THE PREVIOUS SIX (6) MONTHS.\",\n      \"why\": \"Carves out Section 4.2 obligations from the liability cap, making them uncapped.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"PivX may terminate this Agreement for convenience by giving at least thirty (30) days written notice of termination to Detto.\",\n      \"why\": \"Allows PivX to terminate without cause on 30 days' notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2138,
+"output_tokens": 2523,
+"latency_ms": 43352.98252792563,
+"stop_reason": "stop"
+},
+"055bf3bd12e4a304a95fe7f8531d07cdda68ca58fe2fbad981b76fe85766040c": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Subject to the terms and conditions of this Agreement, PivX hereby grants to Detto a non-transferable, exclusive license to distribute PivX's Qwik-Fix Pro and any documentation supporting Qwik-Fix Pro provided from time to time by PivX (the \\\"Documentation\\\") within North America, solely to third parties to whom Detto licenses Qwik-Fix Pro (\\\"Third Parties\\\"), and as governed by the terms set forth in Exhibit A (PivX/Detto Reseller Agreement Addendum).\",\n      \"why\": \"Grants exclusive distribution rights within North America.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"If Detto, in the course of distributing Qwik-Fix Pro, acquires any goodwill or reputation in any of the Trademarks, all such goodwill or reputation shall automatically be transferred to and shall vest in PivX when and as, on an on-going basis, such acquisition of goodwill or reputation occurs, as well as at the expiration or termination of this Agreement, without any separate payment or other consideration of any kind to Detto, and Detto agrees to take all such actions necessary to effect such vesting.\",\n      \"why\": \"Assigns to PivX all goodwill and reputation in the Trademarks acquired by Detto during the term, which is intellectual property.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Subject to the terms and conditions of this Agreement, PivX hereby grants to Detto a non-transferable, exclusive license to distribute PivX's Qwik-Fix Pro and any documentation supporting Qwik-Fix Pro provided from time to time by PivX (the \\\"Documentation\\\") within North America, solely to third parties to whom Detto licenses Qwik-Fix Pro (\\\"Third Parties\\\"), and as governed by the terms set forth in Exhibit A (PivX/Detto Reseller Agreement Addendum). PivX also hereby grants to Detto a non-transferable, non-exclusive license to distribute PivX's Qwik-Fix Pro and the Documentation outside of North America, solely to Third Parties and as governed by the terms in Exhibit A. Detto shall have no right to reproduce Qwik-Fix Pro or any part thereof. All copies of Qwik-Fix Pro distributed by Detto shall be distributed pursuant to PivX's current Enterprise License Agreement, as amended by PivX from time to time (the \\\"License\\\"), a copy of which PivX will provide Detto. Detto shall not distribute Qwik-Fix Pro to any Third Party unless the Third Party has accepted the terms of PivX's current License under penalty of perjury and in writing.\",\n      \"why\": \"Grants exclusive and non-exclusive distribution licenses and sets scope and restrictions.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Subject to the terms and conditions of this Agreement, PivX hereby grants to Detto a non-transferable, exclusive license to distribute PivX's Qwik-Fix Pro and any documentation supporting Qwik-Fix Pro provided from time to time by PivX (the \\\"Documentation\\\") within North America, solely to third parties to whom Detto licenses Qwik-Fix Pro (\\\"Third Parties\\\"), and as governed by the terms set forth in Exhibit A (PivX/Detto Reseller Agreement Addendum). PivX also hereby grants to Detto a non-transferable, non-exclusive license to distribute PivX's Qwik-Fix Pro and the Documentation outside of North America, solely to Third Parties and as governed by the terms in Exhibit A. Detto shall have no right to reproduce Qwik-Fix Pro or any part thereof. All copies of Qwik-Fix Pro distributed by Detto shall be distributed pursuant to PivX's current Enterprise License Agreement, as amended by PivX from time to time (the \\\"License\\\"), a copy of which PivX will provide Detto. Detto shall not distribute Qwik-Fix Pro to any Third Party unless the Third Party has accepted the terms of PivX's current License under penalty of perjury and in writing.\",\n      \"why\": \"The license grant is non-transferable, restricting assignment of rights under the agreement.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"In addition, Detto shall make its offices and equipment available in person, upon reasonable notice, and to the extent feasible, remotely, to PivX to inspect and test Detto's physical and technical set-up to ensure that Detto is complying with its obligations under this Section.\",\n      \"why\": \"Gives PivX the right to inspect Detto's offices and equipment to verify compliance.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2142,
+"output_tokens": 5503,
+"latency_ms": 83647.52950205002,
+"stop_reason": "stop"
+},
+"647e07f19a4eb0cd2985376ceb62d097898cecfc1cff7ae29b42509614d52ef9": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly grants an exclusive license to distribute the product within a specified territory, fitting the definition of an exclusivity clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 557,
+"output_tokens": 258,
+"latency_ms": 5280.040252022445,
+"stop_reason": "stop"
+},
+"c1ef54f8c64f11690357d5cc88422c966d343096e03f126eb4365c4f7133a5ea": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The quoted text explicitly grants exclusive and non-exclusive licenses to distribute software and documentation, detailing scope, territory, and restrictions, which directly matches the definition of a License Grant clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 882,
+"output_tokens": 274,
+"latency_ms": 6397.457886952907,
+"stop_reason": "stop"
+},
+"627d4d0251a0d70d960af5980fe851283952697ce00bfe4b8a305a444273b73d": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause explicitly assigns ownership of any goodwill or reputation acquired in the Trademarks (which is an IP-related asset) to PivX, fitting the definition of an Ip Ownership Assignment.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 532,
+"output_tokens": 364,
+"latency_ms": 7109.198975027539,
+"stop_reason": "stop"
+},
+"e121c79ea64301c70f37f749323bb34d47be1077277c339dbba4755fd5e305f5": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly states the license is non-transferable, which is a direct restriction on assignment or transfer, fitting the Anti-Assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 876,
+"output_tokens": 407,
+"latency_ms": 8664.948974968866,
+"stop_reason": "stop"
+},
+"08d043593c9c525c3a241ab67c71f5155cb832f74ed4f35757313d688c465c11": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause grants PivX the right to inspect and test Detto's offices, equipment, and technical setup to verify compliance, directly matching the Audit Rights definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 449,
+"output_tokens": 261,
+"latency_ms": 4842.800933052786,
+"stop_reason": "stop"
+},
+"d9c189c364bea6c2068800f329ea91064832795368d7c0414fe58defab7e54f7": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"Directly grants audit rights to inspect records and adjust for errors, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 466,
+"output_tokens": 265,
+"latency_ms": 5434.104755055159,
+"stop_reason": "stop"
+},
+"53857550fc6bc53c3e4a3fb01f278a666031f5b69be2818f1eaa2c4bc70a758e": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.98,\n  \"reason\": \"The quoted text explicitly caps PivX's aggregate liability to amounts received in the previous six months, matching the definition of a Cap On Liability clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 548,
+"output_tokens": 316,
+"latency_ms": 5964.023701963015,
+"stop_reason": "stop"
+},
+"ad71f6dee00e629db65891713a2260a1801856cf43e2c2594ba332b87757bf80": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"Explicitly grants PivX the right to terminate for convenience with notice, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 375,
+"output_tokens": 221,
+"latency_ms": 4577.306743012741,
+"stop_reason": "stop"
+},
+"f85ffb2ed489f684ad1ec19e90e6ed0b39393a820cedc363a36e0136ae544f35": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The flagged text explicitly restricts assignment and delegation of rights and obligations without prior written consent, directly matching the definition of an anti-assignment clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 400,
+"output_tokens": 209,
+"latency_ms": 4333.912290981971,
+"stop_reason": "stop"
+},
+"89a8ba4e4bc9fda58e2da2d61f41042145dd2bad10e435e7728df672b9cf9c02": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause expressly excludes PivX's obligations under Section 4.2 from the liability cap, which is a carve-out where the cap does not apply, fitting the definition of Uncapped Liability language.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 557,
+"output_tokens": 896,
+"latency_ms": 17141.98205305729,
+"stop_reason": "stop"
+},
+"aa7947ed7d00094b5968b955cf2368c6f070b5a9f8fcb942b5b4c46ebd405c22": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"Should ADMA fail to supply a minimum of [***] Batches of Product (the \\\"Minimum Volume\\\") of Product during the time period as specified in this Amendment #3, ADMA agrees that Sanofi Pasteur shall be entitled to obtain from ADMA as liquidated damages, and not a penalty, amounting to $[***] ([***]) USD. ADMA accepts and declares that the amount of the liquidated damages is a fair and equitable compensation, and not a penalty, for such failure in reaching the volume commitment within the timelines agreed herein and in regard to the value and use of the Source Plasma. In addition to the Minimum Volume of Product to be manufactured by ADMA, should ADMA deliver the Minimum Volume of Product but fail to meet the Updated Supply Plan as provided in Exhibit A as attached hereto and made an integral part hereof, then it is agreed upon by the Parties that ADMA shall pay to Sanofi Pasteur an amount equal to $[***] ([***]) USD for each Batch of Product that is less than the agreed upon quantity in Exhibit A, as liquidated damages, and not as a penalty. The foregoing liquidated damages [***] respect to the [***] within the [***] agreed in this Amendment #3. [***] not be entitled to [***] by this Agreement as a result of [***], including without limitation [***]. Notwithstanding the foregoing, [***], sections 6.1 and 6.2 of the Agreement [***].\",\n      \"why\": \"This clause pre-agrees fixed sums payable on failure to meet supply volumes or the Updated Supply Plan, explicitly described as liquidated damages and not a penalty.\"\n    },\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"6.5 Limitation of Liability: In no event shall either party be liable to the other party for incidental, indirect, special and consequential or punitive damages, including without limitation any claims for damages based upon lost profits or lost business opportunity. Except for the obligation of indemnity as set forth in Section 6.1 (c) with respect to claims by third parties for personal injury, illness or death (but not including property damage) resulting from the manufacture of the Product by BPC, aggregate damages for which ADMA shall be liable to Sanofi Pasteur hereunder, including without limitation costs of Source Plasma yield loss and/or rejected Batches, shall not exceed [***]. All claims by Sanofi Pasteur for breach or default under this Agreement shall be brought within [***] year after the cause of action comes into existence or otherwise shall be waived. This limitation of liability will not apply for damages that result from the gross negligence or the willful misconduct of a Party.\",\n      \"why\": \"This clause expressly limits the maximum aggregate liability of ADMA to Sanofi Pasteur to a capped amount (redacted), thereby functioning as a cap on liability.\"\n    },\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"This limitation of liability will not apply for damages that result from the gross negligence or the willful misconduct of a Party.\",\n      \"why\": \"This sentence carves out damages resulting from gross negligence or willful misconduct, expressly excluding them from the liability cap, matching the Uncapped Liability clause type.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 4069,
+"output_tokens": 3762,
+"latency_ms": 60333.205771050416,
+"stop_reason": "stop"
+},
+"f19b47e59c5ba1bd5a03bba18a8b160809e7687ec16b7caf6bd13ac404da0226": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"Should ADMA fail to supply a minimum of [***] Batches of Product (the \\\"Minimum Volume\\\") of Product during the time period as specified in this Amendment #3, ADMA agrees that Sanofi Pasteur shall be entitled to obtain from ADMA as liquidated damages, and not a penalty, amounting to $[***] ([***]) USD. ADMA accepts and declares that the amount of the liquidated damages is a fair and equitable compensation, and not a penalty, for such failure in reaching the volume commitment within the timelines agreed herein and in regard to the value and use of the Source Plasma. In addition to the Minimum Volume of Product to be manufactured by ADMA, should ADMA deliver the Minimum Volume of Product but fail to meet the Updated Supply Plan as provided in Exhibit A as attached hereto and made an integral part hereof, then it is agreed upon by the Parties that ADMA shall pay to Sanofi Pasteur an amount equal to $[***] ([***]) USD for each Batch of Product that is less than the agreed upon quantity in Exhibit A, as liquidated damages, and not as a penalty.\",\n      \"why\": \"Pre-agreed fixed sums payable on failure to meet minimum volume and supply plan, independent of actual damages.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2104,
+"output_tokens": 1738,
+"latency_ms": 28019.858407904394,
+"stop_reason": "stop"
+},
+"ac6907bcd5e22f78cb91c51f1c90863f8c5ea89bcb3d07644a0f6f1b05591c2a": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"Except for the obligation of indemnity as set forth in Section 6.1 (c) with respect to claims by third parties for personal injury, illness or death (but not including property damage) resulting from the manufacture of the Product by BPC, aggregate damages for which ADMA shall be liable to Sanofi Pasteur hereunder, including without limitation costs of Source Plasma yield loss and/or rejected Batches, shall not exceed [***].\",\n      \"why\": \"This sentence limits ADMA's total liability to a redacted dollar amount, which is a classic cap on liability.\"\n    },\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"This limitation of liability will not apply for damages that result from the gross negligence or the willful misconduct of a Party.\",\n      \"why\": \"This carve-out removes the liability cap for gross negligence or willful misconduct, leaving those damages uncapped.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1860,
+"output_tokens": 2546,
+"latency_ms": 42541.997403954156,
+"stop_reason": "stop"
+},
+"bf13a3b993ca9611eea84d2a0c2bc921b58a59db991c810b62e0a25a2f403409": {
+"text": "{\"findings\": [{\"clause_type\": \"Cap On Liability\", \"quote\": \"The liability cap set forth under section 6.5 is hereby amended to adapt to the provisions of this Amendment #3 and is therefore set at \\\"[***]\\\" instead of \\\"[***]\\\".\", \"why\": \"This amends the existing liability cap to a new amount, explicitly limiting the maximum aggregate liability of a party.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 2138,
+"output_tokens": 2165,
+"latency_ms": 48040.66261393018,
+"stop_reason": "stop"
+},
+"c2793f184da49e18da4f1287ccc04cba9ee507e5c52e13d29359cf3261dc3fed": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"Directly states that the limitation of liability does not apply to gross negligence or willful misconduct, which is a carve-out excluding those damages from any cap, fitting the definition exactly.\"}",
+"model": "deepseek-chat",
+"input_tokens": 377,
+"output_tokens": 235,
+"latency_ms": 4872.949257027358,
+"stop_reason": "stop"
+},
+"e3523c5962178ad093c44f8c8fc5d65644375c776e3b004dae6cf87f677dd715": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The clause specifies a fixed sum and a per-batch formula payable upon failure to supply, explicitly labeled as 'liquidated damages and not as a penalty,' matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 809,
+"output_tokens": 232,
+"latency_ms": 5797.638186952099,
+"stop_reason": "stop"
+},
+"8f6865875010b0b59ba9fdc42ccf3d6a65abaf401b185aaf6480c98ad5e33127": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The quote explicitly states that 'aggregate damages for which ADMA shall be liable... shall not exceed [***]', establishing a clear monetary cap on liability, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 493,
+"output_tokens": 448,
+"latency_ms": 7989.496250054799,
+"stop_reason": "stop"
+},
+"088814077690cf1e0244184e7833f9a561bba927245ed5e5bdbe89b5e860ef9a": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause directly amends the liability cap to a specified amount, functioning as a cap on liability.\"}",
+"model": "deepseek-chat",
+"input_tokens": 412,
+"output_tokens": 394,
+"latency_ms": 8230.69549293723,
+"stop_reason": "stop"
+},
+"1313367316c697a1339baaeccd87f148567aaeabc33619882048cca4ecdf7275": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Dam",
+"model": "deepseek-chat",
+"input_tokens": 4447,
+"output_tokens": 4000,
+"latency_ms": 65406.377446022816,
+"stop_reason": "length"
+},
+"6a7e0112bbf5518f85197693a21722f18a36c46f2b730c4e0976f31359964de8": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1480,
+"output_tokens": 500,
+"latency_ms": 9661.204554955475,
+"stop_reason": "stop"
+},
+"237540a1aa24f4752dd819556572a384b085a597aa1dd7b8f3a490dd50afbeb9": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1921,
+"output_tokens": 679,
+"latency_ms": 14359.400863060728,
+"stop_reason": "stop"
+},
+"9ff390b639a9e8f4077b62303ecb844a0c435add24692be171f000f161442715": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"This Agreement shall be automatically renewed for an additional one year period on each anniversary of the Effective Date, unless terminated by either Party hereto upon ninety (90) days written notice to the other.\",\n      \"why\": \"Establishes automatic renewal (evergreen) for additional one-year periods unless terminated with notice.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"This Agreement shall be automatically renewed for an additional one year period on each anniversary of the Effective Date, unless terminated by either Party hereto upon ninety (90) days written notice to the other.\",\n      \"why\": \"Grants either party the right to terminate the agreement without cause on ninety days' written notice.\"\n    },\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"In the event the Company terminates this Agreement, the Company shall pay to HDI a termination payment, (the \\\"Termination Payment\\\") the amount of which shall be an amount equal to the aggregate Net Sales for the twelve (12) months preceding the Termination Date less $800,000, the balan\",\n      \"why\": \"Specifies a predetermined formula payment (Termination Payment) due upon termination by the Company, independent of actual damages.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"HDI's General Manager (as hereinafter defined), may upon no less than thirty (30) days prior written notice to the Company, have the right to inspect the records of the Company's General Manager reasonably related to the calculation of such payments during the Company's normal business hours. The fees incurred by HDI in connection with the inspection shall be borne by HDI.\",\n      \"why\": \"Grants HDI the right to inspect the Company's records to verify payment calculations.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2010,
+"output_tokens": 2301,
+"latency_ms": 39472.33173798304,
+"stop_reason": "stop"
+},
+"04c896dac32760710c3612e1bc32190bcaf7be054f2e5c0430a4be52e2d6865a": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"This Agreement shall be automatically renewed for an additional one year period on each anniversary of the Effective Date, unless terminated by either Party hereto upon ninety (90) days written notice to the other.\",\n      \"why\": \"Provides for automatic annual renewal unless notice of termination is given within a specified window.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"This Agreement shall be automatically renewed for an additional one year period on each anniversary of the Effective Date, unless terminated by either Party hereto upon ninety (90) days written notice to the other.\",\n      \"why\": \"Grants either party the right to terminate without cause upon 90 days' written notice.\"\n    },\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"In the event the Company terminates this Agreement, the Company shall pay to HDI a termination payment, (the \\\"Termination Payment\\\") the amount of which shall be an amount equal to the aggregate Net Sales for the twelve (12) months preceding the Termination Date less $800,000, the balance of which shall be divided by two. (b) In the event that the amount of the Termination Payment is determined pursuant to this Section 4.2 to be less than or equal to zero, then no Termination Payment shall be due to HDI nor shall HDI be required to make any termination payment to the Company if the amount is determined to be less than zero. (c) The Termination Payment, if any, shall be payable by the Company in eight (8) equal payments to be made quarterly, commencing thirty (30) days after the termination date.\",\n      \"why\": \"Pre-agreed formula-based payment triggered upon termination, independent of actual proven damages.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Except as provided in Section 6.2, during the term of this Agreement, the Company shall not participate in any project similar to the Site on the Internet with respect to Deerskin Products or products substantially similar to Deerskin Products (including, without limitation, the products of Wilson's House of Leather, Excelled and companies similar to Wilson's House of Leather and Excelled) and HDI shall have the exclusive right to use of the \\\"Deerskin\\\" brand for a self-contained web site for the offering of Deerskin Products directly to the consumer on the Internet.\",\n      \"why\": \"Grants HDI an exclusive right to use the Deerskin brand for a web site and restricts the Company from similar online projects.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"During the term of this Agreement and for a period of two years after the expiration date of this Agreement, HDI shall not participate in any project similar to the Site on the Internet from which products substantially similar to Deerskin Products (including, without limitation, the products of Wilson's House of Leather, Excelled and and companies similar to Wilson's House of Leather and Excelled) are offered for sale to consumers on the Internet.\",\n      \"why\": \"Imposes a post-term restriction on HDI from engaging in similar online projects for two years after expiration.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"The Company hereby grants to HDI a non-exclusive, limited, non-transferable license to use the Company's \\\"Deerskin\\\" trademarks, service marks, and logos (collectively, \\\"Marks\\\") solely for the purpose of carrying out its obligations under this Agreement.\",\n      \"why\": \"Grants HDI a limited license to use the Company's trademarks and logos.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1960,
+"output_tokens": 4123,
+"latency_ms": 66949.13278892636,
+"stop_reason": "stop"
+},
+"798d6615452685d864267db558cd121d2873d76c1d2c57cf8bae613f4d743de1": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The text contains an automatic renewal provision, matching the definition exactly.\"}",
+"model": "deepseek-chat",
+"input_tokens": 389,
+"output_tokens": 239,
+"latency_ms": 5054.281208082102,
+"stop_reason": "stop"
+},
+"7985ae1734a775a0ec824b3a939c57733b0c82446386ed4188d7ac128ffcb56f": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly grants HDI the right to inspect records related to payment calculations, which is a quintessential audit right for verifying compliance with payment obligations.\"}",
+"model": "deepseek-chat",
+"input_tokens": 454,
+"output_tokens": 294,
+"latency_ms": 6136.4701359998435,
+"stop_reason": "stop"
+},
+"82c7f8f9fc6422447500b671541675384c9b8f24d65c8b593673c5beada0d508": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause grants either party the right to terminate without cause upon 90 days notice.\"}",
+"model": "deepseek-chat",
+"input_tokens": 384,
+"output_tokens": 396,
+"latency_ms": 7688.015911960974,
+"stop_reason": "stop"
+},
+"6e4b89ed273c37f15807019f135b02b03ece0db38e113e17cac6ce3ae15128f9": {
+"text": "{\"verdict\": \"drop\", \"confidence\": 0.95, \"reason\": \"Termination payment upon contractual termination without breach, not a liquidated damages clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 438,
+"output_tokens": 532,
+"latency_ms": 10307.547464966774,
+"stop_reason": "stop"
+},
+"e30a2ac5fb4d593e56c36268def1b247cfe95a9e5f2bc146603b452378e9281c": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.98,\n  \"reason\": \"The quote directly grants a non-exclusive, limited, non-transferable license to use trademarks, including scope and purpose, matching the License Grant definition.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 428,
+"output_tokens": 249,
+"latency_ms": 5327.476689009927,
+"stop_reason": "stop"
+},
+"ceeac871592127db0c36e9fec94d21a4b9b2cc0b1f9755b24f680989aee10449": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause restricts the Company from participating in similar projects and grants HDI an exclusive right, fitting the definition of exclusivity.\"}",
+"model": "deepseek-chat",
+"input_tokens": 547,
+"output_tokens": 441,
+"latency_ms": 7695.553881931119,
+"stop_reason": "stop"
+},
+"ff68b76249a406d2e05e946e52d38ba46b65a101e751d55864a3ac634a8bb3bf": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause explicitly prohibits HDI from participating in competing Internet projects involving similar products during the agreement and two years after, fitting the non-compete definition.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 483,
+"output_tokens": 386,
+"latency_ms": 7167.067645001225,
+"stop_reason": "stop"
+},
+"7fde9249d5accf41e160e3e6c88ff504ecb4568b0ee7f2643f7d1b0f2195e57b": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4257,
+"output_tokens": 4000,
+"latency_ms": 65558.90072800685,
+"stop_reason": "length"
+},
+"12b2791f495319d6b17795335e94823713798a130af2e9dcdb0233475ca34a72": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Distributor shall not assign this Agreement or any rights or obligations hereunder without the prior written consent of the Company.\",\n      \"why\": \"Requires Company's prior written consent for any assignment by Distributor.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1195,
+"output_tokens": 1103,
+"latency_ms": 17895.67881997209,
+"stop_reason": "stop"
+},
+"7ecc8cc084c36a42506fb915fcfa8692941cea4ed1f1e89202fae19d3635c746": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"The Company hereby appoints and grants Distributor the exclusive right to sell the products of the Company, including the Snotarator\u2122 Nasal Aspirator,  (\\\"Products\\\") listed in the current \\\"Price List\\\" (Exhibit \\\"A\\\" attached hereto). The distribution right shall be limited to all countries and all of their territories and possessions within the continent known as South America (\\\"Territory\\\")  (Exhibit \\\"B\\\" attached hereto).\",\n      \"why\": \"Grants exclusive distribution rights in a defined territory.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Distributor shall not assign the rights granted in this Section 1.01 without the prior written consent of the Company.\",\n      \"why\": \"Prohibits assignment of distribution rights without prior consent.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Distributor agrees not to represent or sell other products which are deemed to be competitive with the Company's Products unless agreed to by the Company by written notice.\",\n      \"why\": \"Restricts distributor from selling competitive products.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2062,
+"output_tokens": 2092,
+"latency_ms": 32649.217861006036,
+"stop_reason": "stop"
+},
+"b6f30cb23cd7116e574af644244b28b2003ba9774588041a54db503f3541f63c": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"The Distributor agrees to hold the Company free and harmless from any and all claims, damages, and expenses of every kind or nature whatsoever (a) arising from acts of the Distributor; (b) as a direct or indirect consequence of termination of this Agreement in accordance with its terms; or (c) arising from acts of third parties in relation to Products sold to the Distributor under this Agreement, including, but not limited to execution of liens and security interests by third parties with respect to any such Products.\",\n      \"why\": \"Imposes unlimited indemnity obligation with no cap, exposing Distributor to unbounded liability.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Distributor shall not assign this Agreement or any rights or obligations hereunder without the prior written consent of the Company.\",\n      \"why\": \"Prohibits assignment of the agreement or any rights/obligations without Company's prior written approval.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1930,
+"output_tokens": 2021,
+"latency_ms": 37975.09182698559,
+"stop_reason": "stop"
+},
+"626e246daf721b4de976407648c4e03c8b09df9a213dd138e8a42c9bbdc39611": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"By the Company if: there is an unacceptable change in the control or management of the Distributor;\",\n      \"why\": \"Grants Company a termination right triggered by an unacceptable change in Distributor's control or management, constituting a change-of-control provision.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2042,
+"output_tokens": 2494,
+"latency_ms": 39858.77347900532,
+"stop_reason": "stop"
+},
+"e26078bb57db7ab42915a3fa25fcc648e96906b78e9b9a73c01cf4eef299eeb3": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly restricts assignment of rights and requires prior written consent, fitting the anti-assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 370,
+"output_tokens": 209,
+"latency_ms": 4390.220912988298,
+"stop_reason": "stop"
+},
+"71ecead6896190ae03efc8358507ded6cfc9dd3cd8658c4deac7c3f01f1dc470": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The quote imposes a direct restriction on the distributor from representing or selling products competitive with the company's products, which matches the definition of a non-compete clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 397,
+"output_tokens": 265,
+"latency_ms": 5462.002401007339,
+"stop_reason": "stop"
+},
+"fa57badc2caf5134d626a7b5f3c15e4a46dfcb145ca1d8fe7fdbd313b27c0c1f": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly grants an exclusive distribution right for specified products within a defined territory.\"}",
+"model": "deepseek-chat",
+"input_tokens": 525,
+"output_tokens": 329,
+"latency_ms": 6470.788946026005,
+"stop_reason": "stop"
+},
+"9860d23a418b5e89ce8603892d2de12621ca8b42092d3d94ec3ccf6d89ad43d7": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause provides a termination right triggered by a change in control (or management) of the Distributor, directly matching the definition of a Change of Control provision.\"}",
+"model": "deepseek-chat",
+"input_tokens": 365,
+"output_tokens": 328,
+"latency_ms": 6840.118288062513,
+"stop_reason": "stop"
+},
+"eda87a0308b8e6ab888585e953b9eb99def86f2cf45306c583cac50990140b39": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The quote directly restricts assignment without prior written consent, which matches the definition of an Anti-Assignment clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 382,
+"output_tokens": 213,
+"latency_ms": 4779.43524508737,
+"stop_reason": "stop"
+},
+"e3e1ef0421f282e83c2dd0ba88c48869b7df027c63952cb94c118a4713406e74": {
+"text": "{\n  \"verdict\": \"drop\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause is a standard indemnity provision, not language stating that liability is not limited or that a liability cap does not apply. It does not reference any cap or exclusion from a cap.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 530,
+"output_tokens": 472,
+"latency_ms": 10602.995616965927,
+"stop_reason": "stop"
+},
+"ad96c6a857dcce940ae00320ebffccb3eee51ec52e5c66b359a01b5b8be3cf3d": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 6079,
+"output_tokens": 4000,
+"latency_ms": 100839.30296695326,
+"stop_reason": "length"
+},
+"b64fb8d3fabc3663b14959704cb6f08c920536cc4172579c75fd249f2ca181aa": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1883,
+"output_tokens": 812,
+"latency_ms": 16161.629890091717,
+"stop_reason": "stop"
+},
+"11bfc3e38ed1beb3d76b0b300a932f319ea3edcf85e7e617e798a9c328cbc2e8": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Consultant agrees that all right, title, and interest in and to any material, notes, records, drawings, designs, inventions, improvements, developments, discoveries and trade secrets conceived, discovered, authored, invented, developed or reduced to practice by Consultant, solely or in collaboration with others, whether or not patentable or copyrightable, during the term of this Agreement and arising out of, or in connection with, performing the Services under this Agreement and any copyrights, patents, trade secrets, mask work rights or other intellectual property rights relating to the foregoing (collectively, \\\"Inventions\\\"), are the sole property of the Company. Consultant also agrees to promptly make full written disclosure to the Company of any Inventions and to deliver and assign (or cause to be assigned) and irrevocably assigns fully to the Company all right, title and interest in and to the Inventions. Without limiting the foregoing, all Inventions shall be deemed Confidential Information of the Company.\",\n      \"why\": \"Assigns all Invention rights to the Company.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"the Company is hereby granted a nonexclusive, royalty-free, perpetual, irrevocable, transferable, worldwide license (with the right to grant and authorize sublicenses) to make, have made, use, import, offer for sale, sell, reproduce, distribute, modify, adapt, prepare derivative works of, display, perform, and otherwise exploit such Prior Inventions, without restriction, including, without limitation, as part of or in connection with such Invention, and to practice any method related thereto.\",\n      \"why\": \"Grants a broad, irrevocable license to the Company over Consultant's prior inventions.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1929,
+"output_tokens": 1617,
+"latency_ms": 27531.208834960125,
+"stop_reason": "stop"
+},
+"7fca78e652c06944378508fa2ae9df1ac94236b703e9beb9cd07cc8d9474ca26": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1231,
+"output_tokens": 327,
+"latency_ms": 6801.423655007966,
+"stop_reason": "stop"
+},
+"814d2a5b66ccf1ae2a0541d06a7589a83417ab036c115e911f19b3d74ab25650": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Either Party may terminate this Agreement, with or without cause, upon giving the other party thirty (30) days prior written notice of such termination pursuant to Section 12.7 of this Agreement.\",\n      \"why\": \"Grants both parties the unconditional right to terminate the agreement on 30 days' notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1956,
+"output_tokens": 1991,
+"latency_ms": 35833.22081400547,
+"stop_reason": "stop"
+},
+"f78abcf83e2952fa0067a6b2c7e6adc7122a1767c255be569bcbfb3f836b291e": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"IN NO EVENT SHALL COMPANY'S AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT EXCEED THE AMOUNTS PAID BY COMPANY TO CONSULTANT UNDER THIS AGREEMENT FOR THE SERVICES, DELIVERABLES OR INVENTION GIVING RISE TO SUCH LIABILITY.\",\n      \"why\": \"Limits Company's maximum aggregate liability to fees paid for the specific service/deliverable/invention that caused the claim.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"This Agreement will be binding upon Consultant's assigns, administrators, and other legal representatives, and will be for the benefit of the Company, its successors, and its assigns. Except as may otherwise be provided in this Agreement, Consultant may not sell, assign or delegate any rights or obligations under this Agreement. Notwithstanding anything to the contrary herein, Company may assign this Agreement without Consultant's consent.\",\n      \"why\": \"Restricts Consultant's ability to assign or delegate rights/obligations, while allowing Company unrestricted assignment.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2012,
+"output_tokens": 1652,
+"latency_ms": 27699.74823400844,
+"stop_reason": "stop"
+},
+"79025d65656847e7497b97ac4b688deb43d2257ef88b116c360543bc3c0e7d35": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Consultant does not presently perform or intend to perform, during the term of this Agreement, consulting or other services for, or engage in or intend to engage in an employment relationship with, companies who businesses or proposed businesses in any way involve products or services which would be competitive with the Company's products or services, or those products or services proposed or in development by the Company during the term of this Agreement.\",\n      \"why\": \"Restricts Consultant from working for competitors during the term.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"Consultant expressly agrees that he will not, without the prior written consent of the Company, either directly or indirectly on his own behalf, or in the service or on behalf of others, solicit, divert or hire away, or attempt to solicit, divert or hire away any person employed by the Company for a period of five (5) years for any reason, and without limitation for the purpose of harming the Company or of obtaining and disseminating its trade secrets, or other proprietary and confidential information. Consultant also expressly agrees that he will not, without the prior written consent of the Company, either directly or indirectly on his own behalf, or in the service or on behalf of others, solicit, divert, or attempt to solicit or divert any customer, client, supplier or vendor of the Company for a period of five (5) years for any reason, and without limitation for the purpose of harming the Company or of obtaining and disseminating its trade secrets, or other proprietary and confidential information\",\n      \"why\": \"Prohibits solicitation/hiring of Company employees and solicitation of customers for 5 years.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Consultant agrees to assist Company, or its designee, at the Company's expense, in every proper way to secure the Company's rights in Inventions in any and all countries, including the disclosure to the Company of all pertinent information and data with respect thereto, the execution of all applications, specifications, oaths, assignments and all other instruments that the Company may deem necessary in order to apply for, register, obtain, maintain, defend, and enforce such rights, and in order to deliver, assign and convey to the Company, its successors, assigns and nominees the sole and exclusive right, title, and interest in and to all Inventions and testifying in a suit or other proceeding relating to such Inventions. Consultant further agrees that Consultant's obligations under this Section 3.5 shall continue after the termination of this Agreement.\",\n      \"why\": \"Assigns all right, title, and interest in Inventions to the Company.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1945,
+"output_tokens": 2875,
+"latency_ms": 47079.45467589889,
+"stop_reason": "stop"
+},
+"f4fdc054993220a358ab1ce0601446f0c7cfcb523c2125046092f4be9403a72d": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The quoted text explicitly grants a license with detailed scope terms, matching the definition.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 502,
+"output_tokens": 300,
+"latency_ms": 5872.635897016153,
+"stop_reason": "stop"
+},
+"d750fb7dbd75efaba35f1e4ce28dffd86d4e31e8db5301b9146bcc1de384ccc0": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.98,\n  \"reason\": \"The clause explicitly assigns all right, title, and interest in inventions and other IP created under the agreement to the Company, directly fulfilling the definition of an Ip Ownership Assignment clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 696,
+"output_tokens": 275,
+"latency_ms": 6275.105805019848,
+"stop_reason": "stop"
+},
+"3433fc477b120276cc6fbbad2a27f6e784f73db3eac39fc7305a06f1445809be": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly states the consultant is restricted from performing services or engaging in employment with competitors during the term of the agreement, which directly matches the definition of a non-compete restriction.\"}",
+"model": "deepseek-chat",
+"input_tokens": 475,
+"output_tokens": 369,
+"latency_ms": 7701.036995043978,
+"stop_reason": "stop"
+},
+"8e5b9886c391e90e9be24c234667e33aa6c4b2b7e7957ec45387003fda9e56d2": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause provides an unconditional right to terminate for any reason (with or without cause) upon notice, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 391,
+"output_tokens": 214,
+"latency_ms": 4765.575918019749,
+"stop_reason": "stop"
+},
+"1e1275227acd2b139505ed500b142cc01dcec10f09b90431e84f2fbad107d5db": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The quoted text explicitly limits the company's aggregate liability to amounts paid for the specific services/deliverables/invention, which is a clear cap on liability clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 491,
+"output_tokens": 351,
+"latency_ms": 6709.484994993545,
+"stop_reason": "stop"
+},
+"bb30fcf7b2d69e7d1501801d67ccbff3023734df62fe3e67cd14832c60290819": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The text explicitly restricts assignment by Consultant and permits assignment by Company, fitting the anti-assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 449,
+"output_tokens": 311,
+"latency_ms": 6744.125895085745,
+"stop_reason": "stop"
+},
+"753343f941dc5f11f6f782fdc5147495904edc92e92a8a349cb2e5a2133d1322": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause explicitly prohibits soliciting, diverting, or hiring away the company's employees for a period of five years, fitting the definition of a No-Solicit Of Employees clause, despite also covering customers and other parties.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 700,
+"output_tokens": 554,
+"latency_ms": 12460.460682981648,
+"stop_reason": "stop"
+},
+"0218b404406033d941d902a291675614b9ce67fa043e2e1a87e98199aa179b54": {
+"text": "{\n  \"verdict\": \"drop\",\n  \"confidence\": 0.95,\n  \"reason\": \"The quoted text is from a 'Further Assurances' clause (Section 3.5) that imposes obligations to assist in securing and perfecting IP rights, including the execution of assignments, but does not itself effect a present assignment of ownership. It is ancillary to a separate IP assignment clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 647,
+"output_tokens": 844,
+"latency_ms": 21186.87246006448,
+"stop_reason": "stop"
+},
+"6c23058d93081a356aebf5ce69d6c630093d14c93f361b75e8d4fb84210610c7": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this Agreement at least one month prior to the expiration of the initial or any renewal terms.\",\n      \"why\": \"The clause provides for automatic renewal (evergreen) of the agreement unless timely notice is given.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Distributor will not carry any competitive products without Tripath's consent, which shall not be unreasonable.\",\n      \"why\": \"The clause restricts Distributor from dealing in products that compete with Tripath's products, thereby limiting Distributor's ability to compete.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Tripath grants to Distributor a non-exclusive license to use Tripath's trademarks, trade names and service marks only in connection with the Products and in the performance of Distributor's obligations under this Agreement. All such uses are subject to Tripath's prior review and consent, which will not be unreasonably withheld or delayed.\",\n      \"why\": \"The clause grants a license to use intellectual property (trademarks) with specified scope and conditions.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Tripath or Distributor may terminate this Agreement for any reason with thirty days written notice.\",\n      \"why\": \"The clause allows either party to terminate the agreement without cause, simply by providing written notice.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Assignment. This Agreement is not assignable by Distributor without prior written consent of Tripath, which will not be unreasonably withheld. Tripath is free to assign this contract without Distributor's consent.\",\n      \"why\": \"The clause restricts Distributor's ability to assign the agreement, requiring Tripath's consent, while allowing Tripath to assign freely.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"Tripath may have an authorized Tripath representative, at Tripath's cost, audit Distributor's records relating to sales and inventories of Products, including, without limitation, records pertaining to any claims submitted by Distributor for price protection, stock rotation, returned Products, ship from stock and debit, DPA allowances, and credit requests. Upon prior written notice, Distributor will provide reasonable access to such records during normal business hours at Distributor's office. Distributor agrees to maintain all such records for a minimum of three years.\",\n      \"why\": \"The clause grants Tripath the right to audit Distributor's records to verify compliance with the agreement.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 5864,
+"output_tokens": 3207,
+"latency_ms": 58174.49626198504,
+"stop_reason": "stop"
+},
+"45277eb098184a0efcf64764bc4fcfca13c9a3f3503d3b2409221f749fe0da59": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 2009,
+"output_tokens": 922,
+"latency_ms": 18581.12556603737,
+"stop_reason": "stop"
+},
+"ae983c361b4f0b4bd93f1872cd98f2deed51ee828c53b71fcb2e243ad0cd1e06": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"The terms of this Agreement shall be one year from the effective date and will be automatically renewed on each anniversary of the effective date, for a renewal term of one year unless either party provides written notification of its intention not to renew this Agreement at least one month prior to the expiration of the initial or any renewal terms.\",\n      \"why\": \"Contains automatic renewal (evergreen) with a short one-month non-renewal notice window.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Tripath or Distributor may terminate this Agreement for any reason with thirty days written notice.\",\n      \"why\": \"Provides an unconditional right to terminate without cause on 30 days notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1962,
+"output_tokens": 1045,
+"latency_ms": 18958.750152029097,
+"stop_reason": "stop"
+},
+"d6b55053b894c9aa10975ec973c96e107a6a6290328b263c7e303507887692fb": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"Distributor's appointment is for a term of one year from the Effective Date, renewable automatically unless terminated under Section 18\",\n      \"why\": \"Automatic renewal clause creating an evergreen term unless terminated.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Distributor will not carry any competitive products without Tripath's consent, which shall not be unreasonable.\",\n      \"why\": \"Restriction barring distributor from carrying competitive products.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2026,
+"output_tokens": 1497,
+"latency_ms": 23271.111401962116,
+"stop_reason": "stop"
+},
+"e9525d9a9119236d9ea2c6d26eafc8c669d955898642ccbba2acf20ff05b3c15": {
+"text": "{\"findings\": [{\"clause_type\": \"License Grant\", \"quote\": \"Tripath grants to Distributor a non-exclusive license to use Tripath's trademarks, trade names and service marks only in connection with the Products and in the performance of Distributor's obligations under this Agreement.\", \"why\": \"Grants a non-exclusive trademark license with defined scope and limited purpose.\"}, {\"clause_type\": \"Audit Rights\", \"quote\": \"Tripath may have an authorized Tripath representative, at Tripath's cost, audit Distributor's records relating to sales and inventories of Products, including, without limitation, records pertaining to any claims submitted by Distributor for price protection, stock rotation, returned Products, ship from stock and debit, DPA allowances, and credit requests. Upon prior written notice, Distributor will provide reasonable access to such records during normal business hours at Distributor's office. Distributor agrees to maintain all such records for a minimum of three years.\", \"why\": \"Tripath has the right to audit Distributor's sales and inventory records, with access and record-keeping obligations.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 1989,
+"output_tokens": 1979,
+"latency_ms": 35299.4110439904,
+"stop_reason": "stop"
+},
+"64fa9787858df7fe0b9b8d8537b962345b8f0e3552d97573694aad65316c7b00": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"This Agreement is not assignable by Distributor without prior written consent of Tripath, which will not be unreasonably withheld. Tripath is free to assign this contract without Distributor's consent.\",\n      \"why\": \"It restricts the Distributor's ability to assign the agreement without Tripath's consent, while allowing Tripath to assign freely.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1799,
+"output_tokens": 927,
+"latency_ms": 18035.604918026365,
+"stop_reason": "stop"
+},
+"628ea53704e36355d61bf641344fe7516d013e7937ae9a69365fc56ebdd99300": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The quote explicitly provides for automatic renewal of the appointment unless terminated under Section 18, fitting the definition of a Renewal Term clause with an evergreen aspect.\"}",
+"model": "deepseek-chat",
+"input_tokens": 373,
+"output_tokens": 224,
+"latency_ms": 5115.929840016179,
+"stop_reason": "stop"
+},
+"a57ee60551792547c40175f97e7d95bcb50d508c4e18c764157ff77fdc61cdfe": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The text explicitly grants a non-exclusive license to use trademarks, trade names, and service marks, specifying scope and conditions, directly matching the License Grant clause definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 402,
+"output_tokens": 277,
+"latency_ms": 5466.850821045227,
+"stop_reason": "stop"
+},
+"8c1a2df4b7563711f78e82b4cd8bb9622cb466997b81d0169d52c6a74383976e": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quoted text grants Tripath the right to audit Distributor's records to verify compliance, matching the definition of an audit rights clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 525,
+"output_tokens": 359,
+"latency_ms": 6647.945729084313,
+"stop_reason": "stop"
+},
+"4d1ae95eb4a2232f5e1c0eeb427d89b6e16b99995deaf5beaecfca787e534c51": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly grants both parties the right to terminate the Agreement for any reason with 30 days written notice, which is a textbook example of a Termination For Convenience clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 350,
+"output_tokens": 200,
+"latency_ms": 4627.187808044255,
+"stop_reason": "stop"
+},
+"a473392dc8b5daa188fab392e0af77f91c950d282cb442f750de3d79097f2679": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause directly specifies automatic renewal on each anniversary for one-year terms unless notice is given within a one-month window, matching the Renewal Term definition exactly.\"}",
+"model": "deepseek-chat",
+"input_tokens": 431,
+"output_tokens": 250,
+"latency_ms": 5472.105807042681,
+"stop_reason": "stop"
+},
+"65e1db6c3e2c8b38810bf3483a2d09c5d80584bb9229cfb4a933f032842b89e8": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause restricts Distributor from carrying competitive products, which is a direct restraint on competition. Although it lacks a defined territory or period, it falls within the definition of barring a party from competing or operating a competing business.\"}",
+"model": "deepseek-chat",
+"input_tokens": 369,
+"output_tokens": 494,
+"latency_ms": 10874.34973695781,
+"stop_reason": "stop"
+},
+"70ef981de2e0ac27bf660e2d4fe8f3fdfee615c07d1ad0cf5889be3c7750b61f": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quote explicitly restricts assignment by Distributor without consent, matching the anti-assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 397,
+"output_tokens": 224,
+"latency_ms": 4715.462442021817,
+"stop_reason": "stop"
+},
+"823abf1483803908a148ab8b45bab4dbb6f8691f9645caa53aa096e461c88924": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 3905,
+"output_tokens": 4000,
+"latency_ms": 68619.64049504604,
+"stop_reason": "length"
+},
+"de01e7a00bc5419dc33be4bb265356cd48747b07e2b17e0df2bc9011e915087e": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"11. Assignment. Neither party shall assign any of its rights or obligations hereunder without the prior written consent of the other party.\",\n      \"why\": \"Restricts assignment without consent.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"14. Termination by the Sponsor. Notwithstanding the provisions of Section 1 hereof, the Sponsor shall have the right at any time prior to December 31, 2010 to terminate this Agreement by giving written notice of such termination to Racing. In the event of such a termination, (i) the Sponsor shall have no further obligation to make payments toward the sponsorship fee contemplated in Section 3 hereof, (ii) Racing shall have no further obligation to provide any Benefits hereunder, and (iii) the remaining provisions of this Agreement shall remain in full force and effect.\",\n      \"why\": \"Allows Sponsor to terminate without cause on notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1865,
+"output_tokens": 1922,
+"latency_ms": 32786.46261699032,
+"stop_reason": "stop"
+},
+"2b890291efb4b53fe67121c38de61b1da8b9a5eefa032cf4e51ff24cf9b287de": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"Racing represents to the Sponsor that the Sponsor's aggregate obligation hereunder will not exceed the amount of the sponsorship fee set forth in Section 3 hereof (or such lesser amount as is payable by the Sponsor in the event that this Agreement is terminated pursuant to Section 14 hereof), plus, if applicable, collection costs that may be reasonably incurred by Racing in a legal proceeding to collect all or any part thereof (the \\\"Maximum Obligation\\\").\",\n      \"why\": \"Limits the Sponsor's total liability to the sponsorship fee plus collection costs.\"\n    },\n    {\n      \"clause_type\": \"Most Favored Nation\",\n      \"quote\": \"Racing agrees that, during the term of this Agreement, (i) Sponsor shall have the right to approve or disapprove any additional sponsor identified by Racing, and (ii) unless another proposed sponsor has agreed to pay a sponsorship fee that exceeds the amount paid by Sponsor, no other sponsor shall receive any benefit of greater value (including either an equivalent or a more prominent use of another sponsor's name, logo or other identifying information) than the Benefits provided to the Sponsor hereunder.\",\n      \"why\": \"Ensures Sponsor receives benefits at least as favorable as those given to any other sponsor paying a lower fee, unless the other sponsor pays more.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1963,
+"output_tokens": 3273,
+"latency_ms": 52283.63466402516,
+"stop_reason": "stop"
+},
+"9fa359ce3627882468c092e0a02ff69e64e356705d08bb04e8ca82b21cdefffa": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"Racing represents to the Sponsor that the Sponsor's aggregate obligation hereunder will not exceed the amount of the sponsorship fee set forth in Section 3 hereof (or such lesser amount as is payable by the Sponsor in the event that this Agreement is terminated pursuant to Section 14 hereof), plus, if applicable, collection costs that may be reasonably incurre\",\n      \"why\": \"Limits Sponsor's aggregate liability to the sponsorship fee plus collection costs.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"prohibiting the endorsement by Racing and any members of Racing, including the drivers, of any entities, products or services which are in direct competition or otherwise inconsistent with the Sponsor or it products or services, unless such endorsement activity is approved in writing by Racing and the Sponsor;\",\n      \"why\": \"Restricts Racing and its members from endorsing competing entities.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"making available for the use of the Sponsor (x) the personalities associated with the Racing Team, including without limitation the name, voice, picture, portrait, likeness, persona and/or signature of each driver for endorsements, commercial advertising and promotions in any and all media throughout the world during the term of this Agreement, (y) the Racing Team's home base facilities in Texas, and (z) those facilities designated or assigned for the use of the Racing Team at each race and race location at which the Racing Team actually participates in the race, all for appropriate public relations and other promotional and marketing purposes.\",\n      \"why\": \"Grants sponsor a worldwide, term-limited license to use driver personalities and likenesses.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"allowing the Sponsor the use of the likeness of the Car, including all paint and graphics, for promotion and advertising of or by the Sponsor, and Racing shall be responsible for all necessary consents and permissions from any other sponsors to be sure the Sponsor can use the likeness of the Car as specified herein;\",\n      \"why\": \"Grants sponsor a license to use the car's likeness for promotion and advertising.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2059,
+"output_tokens": 4248,
+"latency_ms": 76138.48488300573,
+"stop_reason": "stop"
+},
+"ad4970483167555d6dd73e50622871c7d29493d56120f11be136f72566fcbc75": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly limits the Sponsor's maximum aggregate obligation to the sponsorship fee plus collection costs, fitting the definition of a cap on liability.\"}",
+"model": "deepseek-chat",
+"input_tokens": 500,
+"output_tokens": 406,
+"latency_ms": 7055.524376104586,
+"stop_reason": "stop"
+},
+"b2b05241bdea8552599a319ed631c25c81cfdad720882e8bb19c61d66eb79e0f": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause grants the Sponsor the right to use the likeness of the Car (including paint and graphics) for promotion and advertising, which constitutes a license of intellectual property with specified scope.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 460,
+"output_tokens": 375,
+"latency_ms": 8118.980544968508,
+"stop_reason": "stop"
+},
+"41509b2aeb2f24ae55dfbf064767e569ea905ca2c9657e3281f3a20211fbf667": {
+"text": "{\n  \"verdict\": \"drop\",\n  \"confidence\": 0.92,\n  \"reason\": \"The clause restricts endorsement activities, not general competition, operation of a competing business, or working in a defined market/territory. It lacks elements like a time period or geographic scope typical of a non-compete.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 432,
+"output_tokens": 373,
+"latency_ms": 8671.984761022031,
+"stop_reason": "stop"
+},
+"baec0b96f2a93efc7b58622963eadbde6ea1206394973751ac0801a5aecfb82f": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quoted text is a direct restriction on assignment, requiring prior written consent, exactly matching the given definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 349,
+"output_tokens": 164,
+"latency_ms": 4136.711749015376,
+"stop_reason": "stop"
+},
+"1233e09a0ee8ad596efeec2ed6aafb94c55347d33ddceff7ba0f6de8f5b08d75": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The clause grants the Sponsor an unconditional right to terminate without cause on written notice prior to a specified date, which is the definition of a Termination for Convenience clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 558,
+"output_tokens": 314,
+"latency_ms": 6224.184522056021,
+"stop_reason": "stop"
+},
+"83de6bdca42dcc54f3c98bf2987e8c46050adfe5df6075c2cf411bd795d29aed": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The text explicitly grants the Sponsor permission to use drivers' personalities (name, voice, likeness, etc.) for endorsements and advertising in any media worldwide during the agreement term, which is a classic license grant for IP/personality rights. The inclusion of facilities access does not negate its primary character as a license grant.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 587,
+"output_tokens": 712,
+"latency_ms": 15472.145637031645,
+"stop_reason": "stop"
+},
+"98d3ac14d0db3b0ec96e4522a6f53466c2deb89ef332a003164623163ee1b806": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"Clause (ii) expressly guarantees the sponsor benefits at least as favorable as those given to any other sponsor unless the other sponsor pays a higher fee, which is a conditional Most Favored Nation provision.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 527,
+"output_tokens": 425,
+"latency_ms": 8626.404016045853,
+"stop_reason": "stop"
+},
+"f95a5aeb37bfe64803f3cb097a71df64eaa3a093571ffa058b01aae0608ca850": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"Developer shall be fully liable, without limitation, for money damages resulting from its improper or unauthorized use, modification, alteration, licensing or transfer of the Technology or Improvements, or resulting from its failure to provide functional and merchantable Improvements hereunder, which failure shall be deemed a material breach of this Agreement by Developer.\",\n      \"why\": \"This clause explicitly states that Developer's liability is 'without limitation', meaning there is no cap on damages for the specified breaches.\"\n    },\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"The initial term of this Agreement shall commence on the Effective Date, and shall continue thereafter for a period of twelve (12) months (the \\\"Initial Term\\\"). The Initial Term shall automatically renew for one-month periods thereafter unless either party provides 30- days advance notice of termination, unless earlier terminated pursuant to Section 2.2 hereof.\",\n      \"why",
+"model": "deepseek-chat",
+"input_tokens": 4663,
+"output_tokens": 4000,
+"latency_ms": 69035.3180479724,
+"stop_reason": "length"
+},
+"8e0ea72366f36cdf631be600a5038d20457f3e9dbc29c7e1fb652a0efe80562c": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1684,
+"output_tokens": 298,
+"latency_ms": 6193.848500028253,
+"stop_reason": "stop"
+},
+"b8f7ee106035ae99123d8cf6b1be160c4d66f9c7060928463d5d209504a16f0e": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"Developer shall be fully liable, without limitation, for money damages resulting from its improper or unauthorized use, modification, alteration, licensing or transfer of the Technology or Improvements, or resulting from its failure to provide functional and merchantable Improvements hereunder, which failure shall be deemed a material breach of this Agreement by Developer.\",\n      \"why\": \"Liability is explicitly expressed as 'without limitation', indicating no cap on damages.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Developer may not assign or transfer this Agreement, nor its ri\",\n      \"why\": \"Explicitly prohibits Developer from assigning or transferring the agreement, constituting an anti-assignment clause.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1946,
+"output_tokens": 1281,
+"latency_ms": 21312.161684036255,
+"stop_reason": "stop"
+},
+"a5a489199f17ad90ceb4933af6e7b2daefd23d282615dff96e2aca3404f9b8f0": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Developer may not assign or transfer this Agreement, nor its rights and obligations hereunder, by operation of law or otherwise, to any third party without the prior express written approval of DSS. Any purported assignment without the consent of DSS shall be void.\",\n      \"why\": \"Directly prohibits assignment or transfer of the agreement without consent, matching the anti-assignment clause definition.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"The rights of Developer under this Agreement shall immediately cease and be terminated upon the sale or transfer of all or substantially all of the assets of Developer unless an assignment of such rights pursuant to such sale or transfer has been previously approved in writing by DSS. The rights of Developer under this Agreement shall immediately cease and be terminated upon the sale or transfer of no less than a majority of, or a controlling interest in or over, the voting capital or ownership capital of Developer unless an assignment of such rights pursuant to such sale or transfer has been previously approved in writing by DSS.\",\n      \"why\": \"Triggers termination of Developer's rights upon a change of ownership or control (asset sale or majority interest transfer) without DSS consent, exactly a change-of-control provision.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1991,
+"output_tokens": 1513,
+"latency_ms": 26802.146954927593,
+"stop_reason": "stop"
+},
+"fc4e7a0b745a3d576daafca689a138af9e4293418a7d9847a9ea81f9f61d46db": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"The Initial Term shall automatically renew for one-month periods thereafter unless either party provides 30-days advance notice of termination, unless earlier terminated pursuant to Section 2.2 hereof.\",\n      \"why\": \"Automatic renewal creates an evergreen term.\"\n    },\n    {\n      \"clause_type\": \"IP Ownership Assignment\",\n      \"quote\": \"Subject to Developer's expressly granted rights under this Agreement, Developer acknowledges and agrees that DSS shall own all right, title, and interest in and to the Technology, the Improvements, its Intellectual Property, and all future derivative works derived therefrom or developed hereunder.\",\n      \"why\": \"Assigns all IP ownership to DSS.\"\n    },\n    {\n      \"clause_type\": \"IP Ownership Assignment\",\n      \"quote\": \"Developer hereby assigns and shall assign in the future to DSS all rights it may acquire by operation of law or otherwise in the Technology or Improvements, along with the goodwill associated therewith.\",\n      \"why\": \"Present and future assignment of IP rights to DSS.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"DSS hereby grants to Developer, and Developer accepts from DSS, for the Term, a non-exclusive, limited, and non-transferable license to install and use the Technology for the sole purpose of developing the Improvements (as defined hereunder) thereto for the benefit of DSS (the \\\"Technology Development Services License\\\").\",\n      \"why\": \"Grants a limited license with scope restrictions.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Either party may terminate this Agreement prior to expiration of the Term: (i) upon thirty (30) days prior written notice, or (ii) immediately upon written notice to the other party if: (a) the other party declares or a petition is filed in any court for insolvency or bankruptcy and such petition is not dismissed in thirty (30) days; (b) the other party reorganizes under the relevant bankruptcy act or any similar statute in such party's jurisdiction of incorporation; (c) the other party consents to the appointment of a trustee in bankruptcy or a receiver or similar entity; or (d) the Developer breaches DSS's Technology or Intellectual Property rights contained herein.\",\n      \"why\": \"Allows termination for any reason on 30 days' notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1998,
+"output_tokens": 2646,
+"latency_ms": 41420.545160071924,
+"stop_reason": "stop"
+},
+"c4da67740df142354faed57281a3d36af46f939481289dd9d8356627f0fd7bd4": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly grants a non-exclusive, limited, non-transferable license to use the Technology for a specific purpose, fitting the definition of a License Grant.\"}",
+"model": "deepseek-chat",
+"input_tokens": 457,
+"output_tokens": 254,
+"latency_ms": 5266.551504959352,
+"stop_reason": "stop"
+},
+"20112d1a7ddea2ad89770ad6baa43180e3ceeecfe17bcec7cca7e320cff53584": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly states Developer shall be 'fully liable, without limitation, for money damages' for specified breaches, directly indicating uncapped liability.\"}",
+"model": "deepseek-chat",
+"input_tokens": 478,
+"output_tokens": 286,
+"latency_ms": 5662.914011976682,
+"stop_reason": "stop"
+},
+"4e25b3fc7bdfad295576f7fb11c1c9f1f96a494c4839850582757d1b0a3e21ac": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"Directly restricts assignment/transfer of the agreement and requires prior written consent, matching the anti-assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 398,
+"output_tokens": 266,
+"latency_ms": 5684.803021023981,
+"stop_reason": "stop"
+},
+"2529495ff4bf21a969d4d1ae6b05a4b72c80dd18e2bfd14caedf2dd86c54bd78": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause contains a right to terminate upon 30 days written notice without cause, matching the definition of Termination for Convenience.\"}",
+"model": "deepseek-chat",
+"input_tokens": 583,
+"output_tokens": 594,
+"latency_ms": 11000.932117924094,
+"stop_reason": "stop"
+},
+"fff158f13034aa00d3ea4a47440bb105fa5cdbf08f715b77d15f3cb5e93388c6": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The flagged text explicitly terminates rights upon sale of all/majority assets or controlling interest, fitting the Change of Control definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 537,
+"output_tokens": 362,
+"latency_ms": 6708.3382699638605,
+"stop_reason": "stop"
+},
+"4d32c15fc63c81a70b48bcfb104cf20c2c23dacd5da729a132129bb3387b3e55": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5421,
+"output_tokens": 4000,
+"latency_ms": 66833.95979704801,
+"stop_reason": "length"
+},
+"68edb80c2abb3f5ca43473638a08e34782d9723a6cf835d60b919943e399748f": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1962,
+"output_tokens": 980,
+"latency_ms": 18313.259106012993,
+"stop_reason": "stop"
+},
+"9f1ec568e41b38802cf985aef66e44043699a4066520e5ef55890687c234ed5b": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Upon execution and delivery of this Agreement, iVillage assigns to FMC all right, title and interest in and to the content, design and intellectual property, rights created specifically for and unique to the Bridge Site, advertising units, and other promotional elements set forth in this Agreement (collectively, the \\\"Materials\\\").\",\n      \"why\": \"Transfers full ownership of Materials created for the Bridge Site to FMC.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"FMM grants to iVillage, during the Initial Term of this Agreement, a royalty-free, non-exclusive, worldwide license to use, reproduce and display Ford's tradenames, trademarks, service marks and logos (collectively, the \\\"Marks\\\") in connection with this Agreement.\",\n      \"why\": \"Grants a non-exclusive, worldwide license to use Ford\u2019s marks.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1990,
+"output_tokens": 1188,
+"latency_ms": 20380.366413970478,
+"stop_reason": "stop"
+},
+"9a83055122b20cd35845aada9b74ce6ac6b9774079d8a9f4acf965107ac87b0d": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 2031,
+"output_tokens": 1146,
+"latency_ms": 21941.835876903497,
+"stop_reason": "stop"
+},
+"943ca54159533347467eeb089d0c203f136a00320affcf14b583d9f0e09cb24b": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Neither Party shall sell, transfer or assign this Agreement or the rights or obligations hereunder, without the prior written consent of the other Party, such consent not to be unreasonably withheld or delayed. Notwithstanding the foregoing, upon prior written notice by Ford Motor Company to iVillage, this Agreement may be assigned by FMM to another advertising agency, and in such event, FMM will be released from all financial and other obligations under this Agreement.\",\n      \"why\": \"This clause restricts assignment without consent, which is a standard anti-assignment risk; exception releases the assigning party from obligations.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1298,
+"output_tokens": 710,
+"latency_ms": 13520.848240004852,
+"stop_reason": "stop"
+},
+"86f69f64b70962c6080ec1f5bfb57261b90626f10ae1df08691494a8485e68a8": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"In the event that iVillage fails to deliver the advertising impressions during the Promotion Period, FMM shall have the option of either (a) extending the Initial Term of this Agreement for an additional three (3) month period to \\\"make good\\\" the undelivered impressions or (b) requiring iVillage to refund to FMM an amount equal to [*] for each [*] impressions which were not delivered.\",\n      \"why\": \"Pre-agreed formula for refund of a specified amount per undelivered unit upon failure to deliver advertising impressions.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"For the Initial Term of this Agreement, iVillage agrees that Ford shall be the exclusive automobile manufacturer sponsor and advertiser throughout the Network, with respect to entities whose primary business is that of an automotive manufacturer and/or retailer.\",\n      \"why\": \"Grants Ford exclusive rights as the sole automobile manufacturer sponsor and advertiser on iVillage's Network.\"\n    },\n    {\n      \"clause_type\": \"Most Favored Nation\",\n      \"quote\": \"In addition, in the event that iVillage desires to form a sponsorship relationship with an automobile rental company during the term of this Agreement, iVillage shall notify Hertz and provide Hertz with an opportunity to enter into such a relationship with iVillage, on not less favorable terms than those offered to any other automobile rental company.\",\n      \"why\": \"Guarantees Hertz the right to sponsorship terms at least as favorable as any other automobile rental company.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"During the Promotion Period, iVillage traffic shall be audited by a third party traffic auditor listed on Exhibit A and iVillage shall provide FMM with relevant reports on a biweekly basis.\",\n      \"why\": \"Mandates third-party auditing of iVillage's traffic and delivery of reports to FMM for verification of impressions.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2024,
+"output_tokens": 2652,
+"latency_ms": 45581.96997700725,
+"stop_reason": "stop"
+},
+"895799286249e4044e4aafd358ca804d7ad1c8ee8eda6aea0edf04b3c0d51475": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quote explicitly grants Ford exclusive rights as the automobile manufacturer sponsor and advertiser, fitting the definition of an exclusivity clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 401,
+"output_tokens": 287,
+"latency_ms": 6627.506271004677,
+"stop_reason": "stop"
+},
+"2d3ec916b89cdd7490513d428b441b9030943f407165d8b62ada2a8ea5f868c2": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"Option (b) provides a pre-agreed formula (a fixed amount per undelivered impression) payable upon breach, which is a classic liquidated damages mechanism.\"}",
+"model": "deepseek-chat",
+"input_tokens": 503,
+"output_tokens": 351,
+"latency_ms": 7307.021507062018,
+"stop_reason": "stop"
+},
+"37d977544776f47077d35643de2e2f76414d80928d39c5461d4d7171da15441f": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause requires iVillage's traffic to be audited by a third party and reports provided to FMM, granting an audit right to verify traffic compliance.\"}",
+"model": "deepseek-chat",
+"input_tokens": 382,
+"output_tokens": 403,
+"latency_ms": 7623.6229710048065,
+"stop_reason": "stop"
+},
+"34bcc4cf808d83a8732be68d641edb9fe11cc47361798237c3e68a18abf2bb5a": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The clause explicitly assigns intellectual property rights from iVillage to FMC.\"}",
+"model": "deepseek-chat",
+"input_tokens": 428,
+"output_tokens": 215,
+"latency_ms": 4145.56679292582,
+"stop_reason": "stop"
+},
+"70b1f5c22fc2aaabf59031771e8956b96b6a458f27cb7a61cb05cfd25ac8db73": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quoted text directly restricts assignment without prior written consent, fitting the definition of an anti-assignment clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 501,
+"output_tokens": 259,
+"latency_ms": 4514.332270016894,
+"stop_reason": "stop"
+},
+"1db36a3bee165c000061521efa0e3ce2ed8e4f2d6584c9184fa35e85aea4aacf": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The quoted text explicitly grants a license to use trademarks and marks, specifying scope (royalty-free, non-exclusive, worldwide, during Initial Term), which directly matches the definition of a License Grant clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 443,
+"output_tokens": 302,
+"latency_ms": 5959.174024988897,
+"stop_reason": "stop"
+},
+"3ad17914a6f89d2dc7d6bd9c8cf830d5afcdf196e4f6e2028efc7966b9d71bc0": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The quoted text explicitly guarantees Hertz terms that are not less favorable than those offered to any other automobile rental company, which directly matches the definition of a Most Favored Nation clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 451,
+"output_tokens": 712,
+"latency_ms": 15185.2946189465,
+"stop_reason": "stop"
+},
+"5a1e40823686019c0e28e08f8a6339959b81943fb0c8c99db16c48191108c5ff": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5248,
+"output_tokens": 4000,
+"latency_ms": 69819.02856298257,
+"stop_reason": "length"
+},
+"29d1a0b284535f0cda64d72ed513cb2c707d7f0c2ff008f66b99f731f330feb8": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Distributor may not assign to any person any duties or obligations arising under this Agreement without Erchonia's prior written consent (which consent may be withheld in Erchonia's sole discretion). Notwithstanding the foregoing, the Distributor may engage individuals, at the sole expense and responsibility of the Distributor, to assist the Distributor in performing any of the Distributor's duties or obligations arising under this Agreement. Erchonia may not assign any duties or obligations arising under this Agreement, except to a successor who acquires substantially all of the assets of Erchonia.\",\n      \"why\": \"Restricts assignment of duties/obligations by Distributor without prior written consent and limits Erchonia's assignment only to successors acquiring substantially all assets.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2018,
+"output_tokens": 1280,
+"latency_ms": 23582.199944998138,
+"stop_reason": "stop"
+},
+"e29c57d78db90b99560e01d4d9811e8bafcece7a8478f22e7c7e71c06b5cff2f": {
+"text": "{\"findings\": [{\"clause_type\": \"Non-Compete\", \"quote\": \"During the term of this agreement, Distributor shall not market, sell advertise or promote the sale or use of any product or device which is competitive with or substantially similar to the Products, without the prior express written consent of Erchonia, nor shall they assist any third party in doing so.\", \"why\": \"Restricts distributor from dealing in competing products.\"}, {\"clause_type\": \"Renewal Term\", \"quote\": \"This agreement shall automatically renew for a period of three (3) years and upon the parties mutual agreement on new minimum performance goals for the renewal period.\", \"why\": \"Provides for automatic renewal contingent on mutual agreement on new performance goals.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 1958,
+"output_tokens": 1391,
+"latency_ms": 25495.80935097765,
+"stop_reason": "stop"
+},
+"de613b3695a53a5b1a80ddf00b132ad35663f9482ff01bf1e1b744a1f3e0a937": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Distributor shall promptly inform Erchonia of any suggested modifications or improvements to the Products and shall, upon Erchonia's request and at Erchonia's expense, execute any documents necessary or appropriate to assign or confirm that all intellectual property rights in any modification or improvement related to the Products are fully vested in Erchonia.\",\n      \"why\": \"It assigns to Erchonia all IP rights in modifications or improvements made by Distributor.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"During the term of this Agreement, Erchonia grants Distributor a non-exclusive, non-transferable license to use the Trademarks for advertising and promotion of Products.\",\n      \"why\": \"It grants a non-exclusive, non-transferable trademark license.\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"Upon Erchonia's request, the Distributor shall at its expense deliver to Erchonia representative samples of labels, advertisements, catalogs, spec sheets, and the like, containing the Trademarks, and to inspect all of Distributors websites, social media accounts and any online information posted by Distributor, to ensure that such Trademarks are used only in a manner complaint with the quality standards.\",\n      \"why\": \"It obligates Distributor to provide samples and allow website/social media inspection for compliance verification.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2019,
+"output_tokens": 2531,
+"latency_ms": 45474.59740401246,
+"stop_reason": "stop"
+},
+"c4f6ce740fcd67cd316019fea9e390e1f46558d3742e4516151691ad45fb3bae": {
+"text": "{\n  \"findings\": []\n}",
+"model": "deepseek-chat",
+"input_tokens": 1151,
+"output_tokens": 1320,
+"latency_ms": 26705.680027022026,
+"stop_reason": "stop"
+},
+"9094845b663d1a2d8b26866e61f15cd80b8be8e6543f8adaac2557414b0a040e": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Restriction on Promotion of Competing Products. During the term of this agreement, Distributor shall not market, sell advertise or promote the sale or use of any product or device which is competitive with or substantially similar to the Products, without the prior express written consent of Erchonia, nor shall they assist any third party in doing s\",\n      \"why\": \"Restricts Distributor from promoting competing products during the term\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Subject to the terms set forth in this agreement, Erchonia grants Distributor the exclusive, non- transferable right and license to promote, distribute and sell the Products identified in Exhibit A to those type of customer specified in Exhibit B and only within the Territory specified in Exhibit B. Distributor shall only distribute or sell the Products to customers who are licensed health care professionals and meet the other requirements set forth in Exhibit B.\",\n      \"why\": \"Grants exclusive rights to distribute the Products\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Subject to the terms set forth in this agreement, Erchonia grants Distributor the exclusive, non- transferable right and license to promote, distribute and sell the Products identified in Exhibit A to those type of customer specified in Exhibit B and only within the Territory specified in Exhibit B. Distributor shall only distribute or sell the Products to customers who are licensed health care professionals and meet the other requirements set forth in Exhibit B.\",\n      \"why\": \"Grants a license to use IP/technology to distribute and sell Products\"\n    },\n    {\n      \"clause_type\": \"Audit Rights\",\n      \"quote\": \"Distributor shall maintain appropriate records concerning the sales of the Products. Such records shall include at a minimum the name, address and telephone number of each customer, the date of sale, a listing of the Products sold to each customer. Upon Erchonia's request, Distributor shall provide Erchonia with regular periodic reports including the information described in this paragraph. All such information shall be available for inspection by Erchonia, upon reasonable notice. Distributor shall also maintain such other records related to sales of the Products as Erchonia may reasonably request.\",\n      \"why\": \"Provides Erchonia with inspection/audit rights over Distributor's sales records\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1999,
+"output_tokens": 3592,
+"latency_ms": 59002.8674879577,
+"stop_reason": "stop"
+},
+"f0404378fad247369c604aa530b3151368ecd88e0da7e8167cd322ee19e064f1": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"Clause grants exclusive distribution rights to Distributor for specified products, customers, and territory, directly fitting the definition of an exclusivity clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 488,
+"output_tokens": 335,
+"latency_ms": 6638.536526937969,
+"stop_reason": "stop"
+},
+"4a09e80f2ceada3cd1fcfb9a0910f5e9e135d8150a6e2458a882033ec00eb847": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The text contains an express grant of an exclusive, non-transferable license with defined scope (field, territory, products, customer restrictions), matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 494,
+"output_tokens": 392,
+"latency_ms": 7233.923416933976,
+"stop_reason": "stop"
+},
+"6ae4d2699e3e46579487133e174437433d7c86dab9235ad9110fd153e269cca1": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"Grants Erchonia the right to inspect Distributor's sales records, which is a clear audit/inspection right.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 551,
+"output_tokens": 412,
+"latency_ms": 7641.4671710226685,
+"stop_reason": "stop"
+},
+"fea9074a44a4978f48a8e46ea1ad95ffe4e20ada86942d66befb572461827904": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause restricts the Distributor from marketing, selling, or promoting competing products, which bars competitive activity and aligns with the definition of a Non-Compete clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 439,
+"output_tokens": 379,
+"latency_ms": 7773.289340897463,
+"stop_reason": "stop"
+},
+"48c8950652dfbfee6fb4c6e10dd35a06103ac156840ae1c517167f2820269336": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The text explicitly grants a license to use Trademarks with specified scope (non-exclusive, non-transferable, limited to advertising/promotion).\"}",
+"model": "deepseek-chat",
+"input_tokens": 393,
+"output_tokens": 244,
+"latency_ms": 5311.911227996461,
+"stop_reason": "stop"
+},
+"15e0e7688417da7a5a78e0c6731cda78c8eda21c294c79e585dcb67fad32ee80": {
+"text": "{\"verdict\": \"drop\", \"confidence\": 0.95, \"reason\": \"Inspection is for trademark quality compliance, not for auditing records, books, or payment verification.\"}",
+"model": "deepseek-chat",
+"input_tokens": 472,
+"output_tokens": 308,
+"latency_ms": 6672.584795975126,
+"stop_reason": "stop"
+},
+"2b31df61975df949f229076a58da221ca08565980bed9396231f8bb23bc9cc77": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The text explicitly restricts assignment of duties/obligations and requires prior written consent, matching the definition precisely.\"}",
+"model": "deepseek-chat",
+"input_tokens": 532,
+"output_tokens": 338,
+"latency_ms": 6884.4287290703505,
+"stop_reason": "stop"
+},
+"f4e98597bf962960af740404a9d729fce69967e9f3538ed8a27aaf0c278ffe24": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The flagged quote directly states a renewal provision, specifying automatic renewal for three years conditional on mutual agreement on new performance goals. It is not a mere mention, definition, or cross-reference.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 382,
+"output_tokens": 492,
+"latency_ms": 10850.631064968184,
+"stop_reason": "stop"
+},
+"084302d75c30bf5065b4e5032bbc0f29cfd8ec9f2df5a88258125edc556087ab": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"19. LIMITATION OF LIABILITY     A) Lucid does not guarantee delivery of Product by any particular date. If Lucid accepts Distributor's order and fails to deliver ordered products, Distributors sole remedy will be limited to refund of money paid to Lucid for any undelivered products.     B) Lucid will not have any liability or responsibility to Distributor or any other person or entity for any consequential, indirect, special, punitive or incidental damages or lost profits, whether foreseeable or unforeseeable, based on claims of Distributor or Distributor's customers (including but not limited to, claims for loss of data, goodwill, profits, use of money or use of product, interruption in use or availability of data stoppage or other work or impairment or assets) arising out of breach or failure of express or implied warranty, breach of contract, misrepresentation, negligence, strict liability in tort or otherwise, except only in the case of death or personal injury where and to the extent that applicable law requires such liability. In no event will the aggregate liability incurred by Lucid in any action or proceeding exceed the total amount actually paid to Lucid by Distributor for the purchase of the products that actually caused the damage or loss.\",\n      \"why\": \"Limits Lucid's aggregate liability to the total amount paid for the specific products causing damage, and excludes consequential damages.\"\n    },\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"The initial term of this Agreement shall be three (3) calendar years from the Agreement date. After the initial term, unless terminated, this Agreement will automatically renew for periods of one (1) calendar year each.\",\n      \"why\": \"Evergreen automatic renewal for successive one-year periods unless terminated.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"The Distributors will not develop, manufacture or sell any equipment or service, which in any way can be considered to be competitive to the equipment or service offered by Lucid to the Distributor as Product. Lucid reserves the right to inform the Distributor from time to time of specific products and companies that Lucid considers to be competitive. A competitive product includes, but is not limited to, any product that would infringe any claim of any Lucid owned or licensed patent issued or pending worldwide, whether or not corresponding patent claims are in force in the Distributors territory or the sale of which would restrict sale of Lucid product.\",\n      \"why\": \"Restricts Distributor from developing, manufacturing, or selling any competitive equipment or service.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"The Distributor is appointed as an exclusive Distributor within the following territories: [*].\",\n      \"why\": \"Grants exclusive distribution rights within specified territories.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Lucid is the sole owner of all trademark symbols and logos under which the products will be sold. Lucid agrees that the Distributor may use the appropriate trademarks to promote the sale of products in the Territory. Such use is only with Lucid's permission and must be related to the sale of Lucid products. The Distributor acquires no rights to Lucid trademarks by selling Lucid products. The Distributor may not use Lucid trademarks, symbols or logos as part of its business or corporate names.\",\n      \"why\": \"Grants a limited, revocable license to use Lucid trademarks for promotion, subject to conditions.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Either party may terminate this agreement by providing Ninety days Written Notice.\",\n      \"why\": \"Allows termination without cause by either party upon 90 days written notice.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"In addition, Lucid may terminate this agreement by giving the Distributor Written Notice if there is any change of control, ownership or management of the Distributor.\",\n      \"why\": \"Gives Lucid a termination right upon a change of control, ownership, or management of Distributor.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 3910,
+"output_tokens": 3824,
+"latency_ms": 61317.632728023455,
+"stop_reason": "stop"
+},
+"20aac9e89ad849a027f42ffa3f5f2818c519a0d60087a7550ce20bbdf2d6d80b": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Lucid appoints the Distributor and the Distributor accepts appointment as an exclusive authorized Lucid Distributor.\",\n      \"why\": \"Grants exclusive distributorship rights.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"The Distributor is appointed as an exclusive Distributor within the following territories: [*].\",\n      \"why\": \"Reiterates exclusive distributorship for defined territory.\"\n    },\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"After the initial term, unless terminated, this Agreement will automatically renew for periods of one (1) calendar year each.\",\n      \"why\": \"Creates automatic renewal (evergreen) unless terminated.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"The Distributors will not develop, manufacture or sell any equipment or service, which in any way can be considered to be competitive to the equipment or service offered by Lucid to the Distributor as Product.\",\n      \"why\": \"Restricts Distributor from competing with Lucid's products.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2036,
+"output_tokens": 1886,
+"latency_ms": 31559.194647008553,
+"stop_reason": "stop"
+},
+"8bdaf3c078dec93b2b91f2db5abc5fc3e6a23a2565999eb51a6ec5a1e4b50bcd": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"ere is any change of control, ownership or  management of the Distributor.\",\n      \"why\": \"Fragment of a clause triggered by a change in control, ownership or management of the Distributor.\"\n    },\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"In no event will the aggregate liability incurred by Lucid in any action or  proceeding exceed the total amount actually paid to Lucid by Distributor for the purchase of the products that actually caused the damage or loss.\",\n      \"why\": \"This limits Lucid's aggregate liability to fees paid for the specific products causing damage.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Either party may terminate this agreement by providing Ninety days Written Notice.\",\n      \"why\": \"Allows either party to terminate without cause on 90 days' notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1853,
+"output_tokens": 1829,
+"latency_ms": 33274.69445508905,
+"stop_reason": "stop"
+},
+"843070cd9f0ad71528dc17b666142cfc4dff20621f459c4606a368cb12187ad3": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Lucid agrees that the Distributor may use the appropriate trademarks to promote the sale of products in the Territory. Such use is only with Lucid's permission and must be related to the sale of Lucid products.\",\n      \"why\": \"This grants the Distributor a limited right to use Lucid's trademarks for promoting sales within the Territory, constituting a license grant.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"In addition, Lucid may terminate this agreement by giving the Distributor Written Notice if there is any change of control, ownership or management of the Distributor.\",\n      \"why\": \"This provision gives Lucid a right to terminate the agreement if a change in control, ownership, or management of the Distributor occurs, a clear change-of-control clause.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Either party may terminate this agreement by providing Ninety days Written Notice.\",\n      \"why\": \"This allows either party to terminate the agreement without cause on notice, a typical termination-for-convenience clause.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2035,
+"output_tokens": 2071,
+"latency_ms": 39370.149205904454,
+"stop_reason": "stop"
+},
+"f12d1e4979a788866991dd985a3409525bf7fe9aa649c6d264e3814beb71b838": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The quoted text explicitly states automatic renewal for one-year periods, directly matching the definition of a Renewal Term clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 386,
+"output_tokens": 176,
+"latency_ms": 4070.520270965062,
+"stop_reason": "stop"
+},
+"74ce42bf3a2cb8a989618f51efe88b288a54e39ffae5a262aad924f2901f885d": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 369,
+"output_tokens": 187,
+"latency_ms": 4824.165057973005,
+"stop_reason": "stop"
+},
+"de52b505f38a89cf788d377cbab98e90737ec68bc43b8fcb7f864320d6db9026": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly restricts the Distributor from developing, manufacturing, or selling any equipment or service competitive to the Product, directly matching the definition of a non-compete restriction.\"}",
+"model": "deepseek-chat",
+"input_tokens": 407,
+"output_tokens": 272,
+"latency_ms": 6154.106646077707,
+"stop_reason": "stop"
+},
+"972efd2dca11207aa43e7a98865780826f04894508e03af853fb8e7a4c086338": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The quoted text explicitly appoints the Distributor as an exclusive authorized Lucid Distributor, granting exclusivity.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 366,
+"output_tokens": 334,
+"latency_ms": 7176.482882001437,
+"stop_reason": "stop"
+},
+"ca996c929d6edb519082ec65ef71b342a5566fc1f85935559ea4f48f15111c4b": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly grants a termination right upon a change of control, ownership, or management, which directly matches the definition of a Change of Control provision.\"}",
+"model": "deepseek-chat",
+"input_tokens": 386,
+"output_tokens": 364,
+"latency_ms": 6896.374186966568,
+"stop_reason": "stop"
+},
+"dd0a658b7de9342cf4d84480159872b74e2bf9ece568bab31474becef456cea5": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly limits the aggregate liability of Lucid to the total amount paid for the specific products that caused the damage, fitting the definition of a Cap On Liability.\"}",
+"model": "deepseek-chat",
+"input_tokens": 409,
+"output_tokens": 239,
+"latency_ms": 4773.808589903638,
+"stop_reason": "stop"
+},
+"64a72ddf97659bec9eb0d5b64410aa5b2e573835deb883a9c948bdbc828b9942": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The flagged text is a clause granting either party the right to terminate with notice, fitting the definition of termination for convenience.\"}",
+"model": "deepseek-chat",
+"input_tokens": 339,
+"output_tokens": 290,
+"latency_ms": 6581.675680004992,
+"stop_reason": "stop"
+},
+"540cf94b7801c995775da0c709b2e97c99d03970739b936f95164ce9b77a9206": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause grants Distributor a limited right to use trademarks for promotion in the territory, subject to permission, which constitutes a license grant.\"}",
+"model": "deepseek-chat",
+"input_tokens": 414,
+"output_tokens": 577,
+"latency_ms": 28091.612886986695,
+"stop_reason": "stop"
+},
+"e00d4d8d560dab0a72eac9eebb030a83c9711ccacf0b7d7ee5d2b8705b9186ec": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 5650,
+"output_tokens": 4000,
+"latency_ms": 59775.49651695881,
+"stop_reason": "length"
+},
+"cf3271595d4617ef93603df2f596e100ef3c77ea8d33dcbac3d526b369f527d4": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"The rights and obligations of REIT under this Agreement shall inure to the benefit of and shall be binding upon the successors and assigns of REIT. CONSULTANT shall not be entitled to assign any of CONSULTANT's rights or obligations under this Agreement.\",\n      \"why\": \"Expressly prohibits Consultant from assigning rights or obligations.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2003,
+"output_tokens": 1330,
+"latency_ms": 24984.815533971414,
+"stop_reason": "stop"
+},
+"9a6eb3ed6d0a1ee07cfa93196452cb1efd67cfa30179adde41c4cf3625d3a456": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"6. Intellectual Property, Inventions and Patents. CONSULTANT acknowledges that CONSULTANT's rights in all discoveries, concepts, ideas, inventions, innovations, improvements, developments, methods, designs, analyses, drawings, reports, patent applications, copyrightable work and mask work (whether or not including any Proprietary Information) and all registrations or applications related thereto, all other proprietary information and all similar or related information (whether or not patentable) which relate to the Company's actual or anticipated business, research and development or existing or future products or services and which were or are conceived, developed, contributed to or made or reduced to practice by CONSULTANT (whether alone or jointly with others) while under contract with the Company, whether before or after the date of this Agreement (\\\"Work Product\\\"), belong to the Company. CONSULTANT shall promptly disclose such Work Product to the Chief Executive Officer of the Company and, at the Company's expense, perform all actions reasonably requested by the Chief Executive Officer of the Company (whether during or after the consultancy) to establish and confirm such ownership (including assignments, consents, powers of attorney and other instruments). CONSULTANT acknowledges that all copyrightable Work Product which is capable of being classified as \\\"works made for hire\\\" under the U.S. Copyright Act of 1976, as amended, shall be deemed \\\"works made for hire\\\" and that the Company shall be the author of, and own all rights therein. To the extent that any such copyrightable work is not a \\\"work made for hire,\\\" CONSULTANT hereby assigns and agrees to assign to the Company all right, title and interest, including a copyright, in and to such copyrightable work. Furthermore, CONSULTANT agrees to sign any written instrument of transfer for any rights relating to the Work Product which may be required to effect or evidence the assignment of rights in the Work Product to the Company. The foregoing provisions of this Section 6 shall not apply to any invention that CONSULTANT developed entirely on CONSULTANT's own time without using the Company's equipment, supplies, facilities or trade secret information, except for those inventions that (i) relate to the Company's business or actual or demonstrably anticipated research or development, or (ii) result from any work performed by CONSULTANT for the Company.\",\n      \"why\": \"This clause assigns all intellectual property rights in work product to the Company, matching the IP ownership assignment type.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"7.1 Solicitation of Employees. CONSULTANT agrees that during its consultancy for REIT and for a period of twelve (12) months immediately following the termination of its consultancy with the Company for any reason, whether with or without cause, it will not, for itself or any other person or entity: (a) solicit, induce, recruit or encourage any of the Company's employees, contractors, independent contractors or any person who provides services to the Company to terminate or reduce their employment or other relationship with the Company; (b) hire any individual who is (or was within the six (6) months immediately preceding such hiring, unless such employee was terminated from such employment by Company) an employee, exclusive contractor, or exclusive independent contractor of the Company; or (c) attempt to do any of the foregoing.\",\n      \"why\": \"This clause prohibits solicitation and hiring of the company's employees and contractors, matching the no-solicit of employees type.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"7.3 Noncompetition. CONSULTANT agrees that during its consultancy for REIT and for a period of twelve (12) months immediately following the termination of its consultancy with the Company for any reason, whether with or without cause, it will not: (a) have any ownership interest in, or participate in the financing, operation, management or control of, any Competitor; or (b) engage in or perform services for any Competitor, if such services either (1) are the same as or similar to (individually or in the aggregate) the services CONSULTANT performed for the Company during its consultancy with the Company, or (2) are performed with respect to products or services of the Competitor that are competitive with the products or services provided by the Company with which CONSULTANT was involved during its consultancy with the Company or about which it received Proprietary Information during its consultancy with the Company. As used in this section, \\\"Competitor\\\" means: (i) any private or publicly traded real estate investment trust, fund or other investment vehicle or program whose principal place of business is in Virginia or any other state\",\n      \"why\": \"This clause restricts the consultant from engaging in any competitive activity, matching the non-compete type.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2012,
+"output_tokens": 2454,
+"latency_ms": 34354.43751595449,
+"stop_reason": "stop"
+},
+"eb3dea849ccc01468e2713e710ced46899c4f15b56b42b0125c99513691ca291": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Renewal Term\",\n      \"quote\": \"Term: twelve (12) months from the date of the Agreement which term shall automatically renew for an additional twelve (12) months on such date if the Agreement is not otherwise terminated according to Section 8 of the Agreement.\",\n      \"why\": \"Automatic renewal provision creates an evergreen term unless terminated per Section 8.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1517,
+"output_tokens": 1241,
+"latency_ms": 21937.595046008937,
+"stop_reason": "stop"
+},
+"cc04edb1e71ddacd23c7563b4f64e0f6d29313eecc23c9c61ed111d9540f6ec8": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"of, any Competitor; or (b) engage in or perform services for any Competitor, if such services either (1) are the same as or similar to (individually or in the aggregate) the services CONSULTANT performed for the Company during its consultancy with the Company, or (2) are performed with respect to products or services of the Competitor that are competitive with the products or services provided by the Company with which CONSULTANT was involved during its consultancy with the Company or about which it received Proprietary Information during its consultancy with the Company. As used in this section, \\\"Competitor\\\" means: (i) any private or publicly traded real estate investment trust, fund or other investment vehicle or program whose principal place of business is in Virginia or any other state in which the Company owns real estate and whose business strategy is based on investing in, acquiring or developing flex/industrial, retail, multifamily and limited service hotel real estate, whether directly or indirectly through joint ventures, or (ii) any entity whose principal place of business is in Virginia or any other state in which the Company owns real estate and that advises (including any external advisor) such investment vehicles or programs. It is agreed that ownership of no more than 1% of the outstanding voting stock of a publicly traded corporation will not constitute a violation of Section 7.3.\",\n      \"why\": \"Restricts consultant from engaging with defined competitors, a non-compete covenant.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"This Agreement shall terminate immediately upon the occurrence of any of the following events: (a) upon the death or bankruptcy of CONSULTANT; or (b) upon the close of business on the date the Company gives CONSULTANT written notice of Termination for Cause (as defined below); (c) ninety (90) days following the date the Company gives CONSULTANT written notice of termination for any or no reason; or (d) CONSULTANT may terminate this Agreement by giving ninety (90) days' written notice to REIT.\",\n      \"why\": \"Allows either party to terminate for any reason with 90 days' notice, a termination-for-convenience right.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"8.3 Change of Control. In the event of a 'Change of Control' of Company, then if CONSULTANT's services are terminated without cause at any time within a twelve (12) month period following such Change of Control, CONSULTANT shall receive a termination fee equal to twelve (12) months compensation hereunder at the then current monthly rate, including any stock compensation. A Change of Control shall be any purchase of equity in the Company by a party that results in the party acquiring (i) voting control of the Company or (ii) the authority to replace or appoint, a majority of the Board, or the CEO or COO or CFO of the Company.\",\n      \"why\": \"Grants a termination fee upon without-cause termination within 12 months after a change of control, a change-of-control provision.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2029,
+"output_tokens": 3207,
+"latency_ms": 50034.283010987565,
+"stop_reason": "stop"
+},
+"75e5b499cb7c340eca9bebd95f37e02e86ca080efaf10f9546341da775f08274": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"CONSULTANT further agrees that it will not assign the responsibilities set forth in the attached Statement of Work to any other CONSULTANT, subcontactor or other individual without the express written agreement of the Company's Chief Executive Officer.\",\n      \"why\": \"Restricts assignment of responsibilities without prior written consent.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"No rights or licenses in or to the Proprietary Information of REIT are granted to CONSULTANT by virtue of this Agreement.\",\n      \"why\": \"Defines the scope of license (none) for Proprietary Information.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2020,
+"output_tokens": 2103,
+"latency_ms": 50524.36809206847,
+"stop_reason": "stop"
+},
+"bacbb4c1a74d02825bd263268d20461a7124ae6d549a980a64c8213c7a799e00": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause explicitly assigns all rights in work product, inventions, and copyrightable works to the Company, matching the definition of an IP Ownership Assignment clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 1286,
+"output_tokens": 194,
+"latency_ms": 5436.963424086571,
+"stop_reason": "stop"
+},
+"f7bf31de018ef7d904a0de239891aa16c9863394860d5cf74e18a002c2c3bc4e": {
+"text": "{\"verdict\": \"drop\", \"confidence\": 0.95, \"reason\": \"The quoted text explicitly disclaims any grant of license, negating rather than granting rights, so it is not a License Grant clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 373,
+"output_tokens": 216,
+"latency_ms": 5592.156401020475,
+"stop_reason": "stop"
+},
+"294f2816d8f497dfee5174303a7597946bc134c2bc347ad96e89e7d62403b2f9": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The clause explicitly prohibits the consultant from soliciting, hiring, or poaching the company's employees and contractors during and after the consultancy period.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 663,
+"output_tokens": 249,
+"latency_ms": 6000.7223630091175,
+"stop_reason": "stop"
+},
+"2654ecacb9fb922fa83bc3ccc7377b3f597222b4acb0cab7e5bc421a40d327e8": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The quoted text directly prohibits the consultant from assigning responsibilities under the agreement without the CEO's written consent, matching the definition of an anti-assignment clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 413,
+"output_tokens": 286,
+"latency_ms": 6715.774119948037,
+"stop_reason": "stop"
+},
+"62b99235c1272d03a3a98289329fa6041ded8d49cddf4f4bcdbd6a4b015a0bca": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The second sentence explicitly prohibits CONSULTANT from assigning rights or obligations, which directly matches the anti-assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 421,
+"output_tokens": 228,
+"latency_ms": 4879.0456460556015,
+"stop_reason": "stop"
+},
+"f92e68abbd64251bec46bcc580041bde60baa2c8319771ca2524cc20397a0854": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause defines Change of Control and provides a termination right/compensation triggered by it, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 594,
+"output_tokens": 268,
+"latency_ms": 6493.676776997745,
+"stop_reason": "stop"
+},
+"e3dfcfbf879983942e5d7369964f81ecae93881ca3a36d1fd6eaf88056acd815": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The flagged text contains a direct restriction on competing, including ownership and service restrictions, with a defined competitor scope and timeframe, matching the Non-Compete definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 883,
+"output_tokens": 339,
+"latency_ms": 7635.350954020396,
+"stop_reason": "stop"
+},
+"8a2b3fdb77c659881b3c2ed7bc1225b2324064660f579164e7df20488a60b49e": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The text explicitly provides for automatic renewal of the agreement term, which directly falls under the definition of a Renewal Term clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 422,
+"output_tokens": 278,
+"latency_ms": 6148.35111098364,
+"stop_reason": "stop"
+},
+"6702ad359bfce0a59bc28d5c64cd52c85208dadfafe839d4fba5cb0ecad996dc": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The text includes subsection (c) allowing Company to terminate for any or no reason with 90 days notice, and subsection (d) allowing Consultant to terminate with 90 days notice, which are classic termination for convenience rights.\"}",
+"model": "deepseek-chat",
+"input_tokens": 535,
+"output_tokens": 819,
+"latency_ms": 16052.997862920165,
+"stop_reason": "stop"
+},
+"6d88ff85c5472127748ca174fb84b4619f14795cdae9b118f3f98ea74f3aa2e4": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"EXCEPT WITH RESPECT TO CONTRACTOR'S OBLIGATIONS PURSUANT TO PARAGRAPH 9 HEREOF, CONTRACTOR'S MAXIMUM LIABILITY TO COMPANY ARISING FOR ANY REASON RELATING TO CONTRACTOR'S PERFORMANCE OF SERVICES UNDER A STATEMENT OF WORK SHALL BE LIMITED TO THE AMOUNT OF FEES PAID TO CONTRACTOR FOR THE PERFORMANCE OF SUCH SERVICES. COMPANYS' MAXIMUM LIABILITY TO CONTRACTOR FOR ANY REASON",
+"model": "deepseek-chat",
+"input_tokens": 4891,
+"output_tokens": 4000,
+"latency_ms": 67361.81151506025,
+"stop_reason": "length"
+},
+"94aa4622a71bc076ee9fe8649150b7669e460934ac586736a539904feb588763": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1861,
+"output_tokens": 460,
+"latency_ms": 10305.201414972544,
+"stop_reason": "stop"
+},
+"654247646fcdee61b2df9ba6f817037a6f2ad90d97e07c8793ad5cc0478c44c9": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Neither party shall assign, transfer, or subcontract this Agreement or any of its obligations hereunder without the other party's express, prior written consent, which will not be unreasonably withheld.\",\n      \"why\": \"Directly restricts assignment and subcontracting without consent.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"Neither party shall, during the term of this Agreement and for one (1) year after its termination, solicit for hire as an employee, consultant or otherwise any of the other party's personnel who have had direct involvement with the Services, without such other party's express written consent, which shall not be unreasonably withheld.\",\n      \"why\": \"Bars solicitation of employees for a defined period post-termination.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Upon receipt of final payment Contractor shall provide to Company, and will assigns to Company, all right, title and interest to any Works in progress.\",\n      \"why\": \"Assigns all rights in Works to Company upon final payment.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1950,
+"output_tokens": 1243,
+"latency_ms": 19934.674272080883,
+"stop_reason": "stop"
+},
+"58e17819e5406b09011049aadd934639b01323c05d980cf85f7fd03e30a73e90": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1064,
+"output_tokens": 619,
+"latency_ms": 12107.949067954905,
+"stop_reason": "stop"
+},
+"1c0a62c18219711bcff33dcab679c2be55dc1eaec05f6c7e9615bdd0601093ac": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"The parties agree that all drawings, documents, designs, models, inventions, computer programs, computer systems, data, computer documentation and other tangible materials authored or prepared by Contractor for Company as the work product required by a Statement of Work (collectively, the \\\"Works\\\"), are the property of Company to the extent that such Works were created by Contractor for Company over a time period for which Company has been invoiced and said invoice has been paid. Contractor agrees to render, at Company's sole cost and expense, all reasonably required assistance to Company to protect the rights herein above described, including executing other documents as requested by Company.\",\n      \"why\": \"Assigns ownership of all Works to Company upon payment, obligating Contractor to provide assistance to protect such rights.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"To the extent that Contractor incorporates any of Contractor's Information into the Works, Contractor hereby grants to Company a royalty-free, non- exclusive perpetual license (including the right to grant a sublicense) to use, copy, modify, create, derivative version, publicly perform and publicly display such Contractor's Information in connection with Company's business operations.\",\n      \"why\": \"Grants a perpetual, sublicenseable, royalty-free license to Contractor's Information when incorporated into Works.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1883,
+"output_tokens": 3189,
+"latency_ms": 53167.40503592882,
+"stop_reason": "stop"
+},
+"8cf6e7f857263e0115a77800a3c3d93d9f171f2f812c85953b6da00b9d3c1f07": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"EXCEPT WITH RESPECT TO CONTRACTOR'S OBLIGATIONS PURSUANT TO PARAGRAPH 9 HEREOF, CONTRACTOR'S MAXIMUM LIABILITY TO COMPANY ARISING FOR ANY REASON RELATING TO CONTRACTOR'S PERFORMANCE OF SERVICES UNDER A STATEMENT OF WORK SHALL BE LIMITED TO THE AMOUNT OF FEES PAID TO CONTRACTOR FOR THE PERFORMANCE OF SUCH SERVICES.\",\n      \"why\": \"Carve-out exempts paragraph 9 obligations from the liability cap, leaving them uncapped.\"\n    },\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"EXCEPT WITH RESPECT TO CONTRACTOR'S OBLIGATIONS PURSUANT TO PARAGRAPH 9 HEREOF, CONTRACTOR'S MAXIMUM LIABILITY TO COMPANY ARISING FOR ANY REASON RELATING TO CONTRACTOR'S PERFORMANCE OF SERVICES UNDER A STATEMENT OF WORK SHALL BE LIMITED TO THE AMOUNT OF FEES PAID TO CONTRACTOR FOR THE PERFORMANCE OF SUCH SERVICES.\",\n      \"why\": \"Limits Contractor's liability to fees paid for the services.\"\n    },\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"COMPANYS' MAXIMUM LIABILITY TO CONTRACTOR FOR ANY REASON ARISING OUT OF THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT OF FEES PAID TO CONTRACTOR.\",\n      \"why\": \"Limits Company's liability to fees paid to Contractor.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Contractor shall provide to Company, and hereby assigns to Company, all right, title and interest to any Works in progress.\",\n      \"why\": \"Assigns IP rights in works in progress to Company.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"At any time that there is no uncompleted Statement of Work outstanding, either party may terminate this Agreement for any or no reason upon fifteen (15) days advance notice to the other.\",\n      \"why\": \"Allows termination without cause with 15 days notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2017,
+"output_tokens": 3529,
+"latency_ms": 58312.38104007207,
+"stop_reason": "stop"
+},
+"9df13f561318cbe786ab7b431e420560d4d890247c72043acf1e57bb23a99eba": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"Directly assigns all right, title, and interest in Works to Company.\"}",
+"model": "deepseek-chat",
+"input_tokens": 386,
+"output_tokens": 184,
+"latency_ms": 4687.479510088451,
+"stop_reason": "stop"
+},
+"3955012a45f05d70d14cf31b29aa9d0643db83fe38853ebf6b85bbe944cc8a9e": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The clause explicitly grants a right to terminate for any or no reason on notice, matching the definition of Termination For Convenience.\"}",
+"model": "deepseek-chat",
+"input_tokens": 396,
+"output_tokens": 240,
+"latency_ms": 4925.440608989447,
+"stop_reason": "stop"
+},
+"90eb23b561f72cc1f4351e712663c7dbb1f5165afa4d73699d2029a8069a709d": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quote contains an explicit grant of a license from Contractor to Company, specifying its royalty-free, non-exclusive, perpetual nature, sublicensing rights, and permitted uses, which directly matches the definition of a License Grant clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 436,
+"output_tokens": 316,
+"latency_ms": 6351.786538027227,
+"stop_reason": "stop"
+},
+"fbc2a396041cfaca61ceb21b40392a5d3ed8ad5f0aa41878802c9d593a141c0a": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quoted text explicitly states a maximum liability limit for Company, capped at the amount of fees paid, which is a direct instance of a cap on liability clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 477,
+"output_tokens": 234,
+"latency_ms": 5131.57880899962,
+"stop_reason": "stop"
+},
+"28ee8eac2a57189b1a4d0bafbc46470670b353e31d52a2192d0e7334ba1f6970": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The clause explicitly limits Contractor's maximum liability to the amount of fees paid for the services, which is a classic cap on liability.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 537,
+"output_tokens": 299,
+"latency_ms": 6431.448395946063,
+"stop_reason": "stop"
+},
+"4502665882350b78ae10c91e73dce8d5e50278d664134c826c6cf116bdd5dff0": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause directly restricts assignment and transfer, requiring prior written consent.\"}",
+"model": "deepseek-chat",
+"input_tokens": 385,
+"output_tokens": 322,
+"latency_ms": 6272.382109076716,
+"stop_reason": "stop"
+},
+"d8bd8ef7f7fabf904a1ddbdfe218bf757100ef18a145db4e0be49e448ce933e3": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The flagged quote expressly excludes obligations under Paragraph 9 from the liability cap, which is a carve-out that falls under the definition of Uncapped Liability.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 546,
+"output_tokens": 672,
+"latency_ms": 13777.539482922293,
+"stop_reason": "stop"
+},
+"3a404c4310a1f2946d247f8006f4dfeb74a35c7388ba8fc2bffea849409a7c67": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"Quote directly prohibits solicitation of the other party's personnel for hire during and after the term, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 445,
+"output_tokens": 311,
+"latency_ms": 6397.251685033552,
+"stop_reason": "stop"
+},
+"05a7b66680af5e835e2f518f95b2dce2a5b9be37e3dc7b0c4f09fcb144d3ced6": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The quoted text is an explicit assignment of intellectual property rights in Works in progress to the Company.\"}",
+"model": "deepseek-chat",
+"input_tokens": 360,
+"output_tokens": 464,
+"latency_ms": 10759.225697023794,
+"stop_reason": "stop"
+},
+"0bf579bb0d29c22045f089c70353d2d929eb94cb741907701d0ba94f77af17ef": {
+"text": "{\"findings\": [{\"clause_type\": \"Exclusivity\", \"quote\": \"GRANT OF RIGHTS. In consideration of the remuneration to be paid to Licensor pursuant hereto, Licensor grants to Company the right and license during the Contract Period to use the Duval Identification solely in connection with the advertisement and promotion of Company's Products within the Contract Territory as set forth herein. Licensor agrees not to grant the right to use the Duval Identification to anyone other than Company in connection with the advertisement and promotion of Products. It is understood that Company may not use the Duval Identification in connection with any items for sale or resale, other than Company Products as specified herein.\", \"why\": \"Licensor promises not to grant the right to use Duval Identification to any third party for Products, giving Company exclusive endorsement rights for that category.\"}, {\"clause_type\": \"License Grant\", \"quote\": \"GRANT OF RIGHTS. In consideration of the remuneration to be paid to Licensor pursuant hereto, Licensor grants to Company the right and license during the Contract Period to use the Duval Identification solely in connection with the advertisement and promotion of Company's Products within the Contract Territory as set forth herein. Licensor agrees not to grant the right to use the Duval Identification to anyone other than Company in connection with the advertisement and promotion of Products. It is understood that Company may not use the Duval Identification in connection with any items for sale or resale, other than Company Products as specified herein.\", \"why\": \"The section grants Company a license to use the Duval Identification for advertising and promotion of its Products, defining scope and territory.\"}, {\"clause_type\": \"Cap On Liability\", \"quote\": \"LIMITED LIABILITY. Notwithstanding anything to the contrary herein, in the event Company incurs any expenses, damages or other liabilities (including, without limitation, reasonable attorneys' fees) in connection with the performance or non-performance of any term or provision hereof, Licensor's liability to Company shall not exceed the remuneration, excluding reimbursement of expenses, actually paid to Licensor by Company. In no event will Licensor be liable for any indirect, incidental, reliance, special or consequential damages arising out of the performance or non-performance of this Agreement, whether or not Licensor had been advised of the possibility of such damages. It is understood that Duval is not a party hereto and has no liability hereunder but is an intended specific third party creditor beneficiary hereof.\", \"why\": \"Licensor\u2019s total liability is capped at the amount of remuneration actually paid, and consequential damages are expressly excluded.\"}, {\"clause_type\": \"Ip Ownership Assignment\", \"quote\": \"TRADEMARKS. Company agrees that it will not file, during the Contract Period or thereafter, any application for trademark registration or otherwise obtain or attempt to obtain ownership of any trademark or trade name within the Contract Territory or in any other country of the world which consists of the Duval Identification or any mark, design or logo intended to make reference to Duval or to identify products endorsed by Duval. In the event that, prior to commencement of the Contract Period, Company has filed one or more applications for registration of any such trademark, or otherwise has obtained any rights to such trademark, Company agrees to cause such applications and/or trademarks to be assigned and transferred to Licensor forthwith.\", \"why\": \"This clause obligates Company to assign any pre-existing or future trademark filings related to Duval Identification to Licensor, transferring IP ownership.\"}, {\"clause_type\": \"Anti-Assignment\", \"quote\": \"ASSIGNMENT. This Agreement shall bind and inure to the benefit of Licensor, and the successors and assigns of Licensor. The rights granted Company hereunder are",
+"model": "deepseek-chat",
+"input_tokens": 5337,
+"output_tokens": 4000,
+"latency_ms": 74770.66911605652,
+"stop_reason": "length"
+},
+"6c32289b0d3c17641955a46053a610f21cd98d202970cc104daced4a830823d6": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1886,
+"output_tokens": 865,
+"latency_ms": 17556.495710043237,
+"stop_reason": "stop"
+},
+"9b7ff28fabea4637d1ffb18d7c8e87507f18ba59595a2cdd5ad98d6b8847789c": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1963,
+"output_tokens": 1430,
+"latency_ms": 31963.355061947368,
+"stop_reason": "stop"
+},
+"2fb4ff9343e9c499ff142b29e0cf0f2e69bee068341be95217ff079539858466": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Licensor agrees not to grant the right to use the Duval Identification to anyone other than Company in connection with the advertisement and promotion of Products.\",\n      \"why\": \"This clause grants Company exclusive rights to the Duval Identification for promoting its products, preventing Licensor from licensing those rights to any other party.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Licensor grants to Company the right and license during the Contract Period to use the Duval Identification solely in connection with the advertisement and promotion of Company's Products within the Contract Territory as set forth herein.\",\n      \"why\": \"This clause provides a license to Company to use the Duval Identification, specifying the scope (advertisement and promotion of Products), territory (worldwide), and term (Contract Period).\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1977,
+"output_tokens": 1776,
+"latency_ms": 33011.21098396834,
+"stop_reason": "stop"
+},
+"b024ceb83a96b6f204cce259f216f4e07bd5a55dcb94e1712100632d6ef3574e": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"and shall not without the prior written consent of Licensor be transferred or assigned to any other party.\",\n      \"why\": \"Prohibits assignment or transfer without Licensor's prior written consent.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"In the event of the merger or consolidation of Company with any other entity, Licensor shall have the right to terminate the Contract Period by so notifying Company in writing within sixty (60) days following Licensor's receipt of notice of such merger or consolidation.\",\n      \"why\": \"Grants Licensor a right to terminate upon a merger or consolidation of Company.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1461,
+"output_tokens": 843,
+"latency_ms": 16109.371667029336,
+"stop_reason": "stop"
+},
+"e3d73ab790656e3445c83b86aa575d14ed679c8d1daefb00fce370c9f34605b2": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Cap On Liability\",\n      \"quote\": \"17. LIMITED LIABILITY. Notwithstanding anything to the contrary herein, in the event Company incurs any expenses, damages or other liabilities (including, without limitation, reasonable attorneys' fees) in connection with the performance or non-performance of any term or provision hereof, Licensor's liability to Company shall not exceed the remuneration, excluding reimbursement of expenses, actually paid to Licensor by Company. In no event will Licensor be liable for any indirect, incidental, reliance, special or consequential damages arising out of the performance or non-performance of this Agreement, whether or not Licensor had been advised of the possibility of such damages. It is understood that Duval is not a party hereto and has no liability hereunder but is an intended specific third party creditor beneficiary hereof.\",\n      \"why\": \"Limits Licensor's aggregate liability to fees paid and excludes indirect damages.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"In the event that, prior to commencement of the Contract Period, Company has filed one or more applications for registration of any such trademark, or otherwise has obtained any rights to such trademark, Company agrees to cause such applications and/or trademarks to be assigned and transferred to Licensor forthwith.\",\n      \"why\": \"Assigns pre-existing trademark applications/rights to Licensor.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"The rights granted Company hereunder are personal to it, shall be used only by it or its affiliate and shall not without the prior written consent of Licensor be transferred or assigned to any other party.\",\n      \"why\": \"Restricts Company from assigning or transferring the agreement without Licensor's written consent.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"In the event of the merger or consolidation of Company with any other entity, Licensor shall have the right to terminate the Contract Period by so notifying Company in writing within sixty (60) days following Licensor's receipt of notice of such merger or consolidation.\",\n      \"why\": \"Licensor may terminate the agreement upon a merger or consolidation of Company.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1929,
+"output_tokens": 3505,
+"latency_ms": 62989.6775719244,
+"stop_reason": "stop"
+},
+"34492bbc860ebf86ea7e59c805ab476841195d13ef40b9e8c7e99aeae496cfc1": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The clause expressly limits Licensor's liability to the remuneration actually paid, which is a monetary cap on liability.\"}",
+"model": "deepseek-chat",
+"input_tokens": 611,
+"output_tokens": 188,
+"latency_ms": 5062.6368270022795,
+"stop_reason": "stop"
+},
+"9526f64908eeec92a293d42f200810d3887a7d1a501b59e65e4afc80dbf3efac": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause directly obligates Licensor not to grant the same right to any third party, thereby granting Company exclusive rights for the specified use, which matches the definition of Exclusivity.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 362,
+"output_tokens": 243,
+"latency_ms": 6034.084554063156,
+"stop_reason": "stop"
+},
+"168a76e527e94ae99432e99142e3c5aef91749649140e1cb0156e4dd4038198e": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quote directly grants a license to use Duval Identification, specifying scope (territory, field, duration) and implying exclusivity, fitting the definition exactly.\"}",
+"model": "deepseek-chat",
+"input_tokens": 392,
+"output_tokens": 255,
+"latency_ms": 6152.80887298286,
+"stop_reason": "stop"
+},
+"38d6d306df2bc1299a9bf03d6ae106d8b9083dbafc0898c2d963d245b50ed6e4": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The quote explicitly restricts assignment of rights without prior written consent, matching the definition of an Anti-Assignment clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 390,
+"output_tokens": 202,
+"latency_ms": 4879.506474011578,
+"stop_reason": "stop"
+},
+"71704aa9760fe7f5dc00a9c7f35b08b5aca65d7ea085bb5b33b57434d08bc3f6": {
+"text": "{\"verdict\": \"drop\", \"confidence\": 0.95, \"reason\": \"The flagged clause assigns pre-existing trademarks, not IP created under the agreement as required by the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 411,
+"output_tokens": 577,
+"latency_ms": 13603.202835074626,
+"stop_reason": "stop"
+},
+"ea2acf630721524dce80b73839539f6e374756700fce9a8b62ba6ae972c3a7ee": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The provision directly grants a termination right upon merger or consolidation of the Company, which is a canonical Change of Control trigger.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 419,
+"output_tokens": 419,
+"latency_ms": 9141.365317045711,
+"stop_reason": "stop"
+},
+"1cd0b0d8eaf7d2bf1a8f0905b3df5f29a5148fffc418ead6eff8900f6eee05d6": {
+"text": "",
+"model": "deepseek-chat",
+"input_tokens": 4349,
+"output_tokens": 4000,
+"latency_ms": 63477.451011072844,
+"stop_reason": "length"
+},
+"6440c8c1ea839cc3ecd7af5023602ab2b5bec114d9ef658e0bf85a5086fe80d1": {
+"text": "{\"findings\": [{\"clause_type\": \"Termination For Convenience\", \"quote\": \"Licensor reserves the right to terminate this Agreement immediately upon written notice for any reason, including if the usage of the Brand is not in compliance with the standards and policies.\", \"why\": \"Licensor can terminate for any reason without cause.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 2155,
+"output_tokens": 1117,
+"latency_ms": 23769.93989699986,
+"stop_reason": "stop"
+},
+"429f6c8190dbd5150319fd42c2a6890b6f4aa9e8dab2d95bd8efcfdbf696a0c8": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"Notwithstanding the foregoing, in the event that Licensee or any sublicensee is deemed to own any rights in the Brand, Licensee hereby irrevocably assigns (or shall cause such sublicensees to assign), without further consideration, such rights to Licensor together with all goodwill associated therewith.\",\n      \"why\": \"Assigns any inadvertently acquired trademark rights from Licensee to Licensor, shifting IP ownership without consideration.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Licensor hereby grants to Licensee a non-exclusive, non-transferable, and (subject to Section 1.2 hereof) non-sublicensable license for the use of the Brand solely for the Permitted Activity.\",\n      \"why\": \"Grants a limited trademark license; defining scope, restrictions, and permitted use, which limits Licensee's operational flexibility.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Licensor reserves the right to terminate this Agreement immediately upon written notice for any reason, including if the usage of the Brand is not in compliance with the standards and policies.\",\n      \"why\": \"Allows Licensor to terminate at will without cause, creating business uncertainty for Licensee.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Licensor hereby grants to Licensee a non-exclusive, non-transferable, and (subject to Section 1.2 hereof) non-sublicensable license for the use of the Brand solely for the Permitted Activity.\",\n      \"why\": \"The 'non-transferable' restriction prevents Licensee from assigning its rights, limiting its ability to transfer the agreement.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2051,
+"output_tokens": 2245,
+"latency_ms": 42307.0959050674,
+"stop_reason": "stop"
+},
+"6792c6c4e9378d8437a42192948e0ba463dec21b54ac84bcc5f2f2c4ba75604c": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Licensee may not assign, transfer, pledge, mortgage or otherwise encumber this Agreement or its right to use the Brand (or assume this Agreement in bankruptcy), in whole or in part, without the prior written consent of Licensor in its sole discretion, except for an assignment outside of bankruptcy to a successor organization that is solely the result of a name change by Licensee. For the avoidance of doubt, a merger, change of control, reorganization or sale of all or substantially all of the stock of Licensee shall be deemed an \\\"assignment\\\" requiring the above consent, regardless of whether Licensee is the surviving entity or whether such transaction constitutes an assignment under applicable law. Licensee acknowledges that its identity is a material condition that induced Licensor to enter into this Agreement. Any attempted action in violation of the foregoing shall be null and void ab initio and of no force or effect, and shall result in immediate termination of this Agreement. In the event of a permitted assignment hereunder, this Agreement shall be binding upon and inure to the benefit of the parties and their respective permitted assigns.\",\n      \"why\": \"Strictly prohibits assignment, encumbrance, or transfer of the agreement or brand rights without licensor's sole-discretion consent, with automatic termination for any violation.\"\n    },\n    {\n      \"clause_type\": \"Change Of Control\",\n      \"quote\": \"For the avoidance of doubt, a merger, change of control, reorganization or sale of all or substantially all of the stock of Licensee shall be deemed an \\\"assignment\\\" requiring the above consent, regardless of whether Licensee is the surviving entity or whether such transaction constitutes an assignment under applicable law.\",\n      \"why\": \"Explicitly treats a change of control event as an assignment, triggering the consent requirement.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2159,
+"output_tokens": 3092,
+"latency_ms": 54747.76507704519,
+"stop_reason": "stop"
+},
+"452dcbd7e5dad1f5647b51bc869fb5211f1a93eeece03b5526f5bd3f3b669bb7": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The quote explicitly states a right to terminate 'for any reason' upon written notice, which matches the definition of Termination for Convenience. It is located in a section titled 'Termination for Convenience' and the surrounding context confirms it is a substantive clause, not a mere mention.\"}",
+"model": "deepseek-chat",
+"input_tokens": 380,
+"output_tokens": 231,
+"latency_ms": 5621.816657017916,
+"stop_reason": "stop"
+},
+"380fa4f1b1a8198c73bf5e0af40b5a99f222f302dbcac1c0dedd3b43159d3095": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly deems a change of control (along with merger, reorganization, sale of stock) as an assignment requiring consent, directly fitting the definition of a Change Of Control provision.\"}",
+"model": "deepseek-chat",
+"input_tokens": 428,
+"output_tokens": 266,
+"latency_ms": 6478.358354070224,
+"stop_reason": "stop"
+},
+"c00ec063328290ff05936d394d3d44ecd63f40d14720b5641439083a0364429a": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quoted text is a comprehensive restriction on assignment/transfer of the agreement, requiring prior written consent, defining assignment broadly, and stating consequences of violation, directly matching the definition of an Anti-Assignment clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 764,
+"output_tokens": 273,
+"latency_ms": 6832.343821995892,
+"stop_reason": "stop"
+},
+"fdeef4ec22c2ba8645f781f6ecc8bbd1a59975fbc6f5a8f95cb43a02a2d7f256": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly assigns any rights in the Brand from Licensee to Licensor, matching the definition of an IP Ownership Assignment clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 429,
+"output_tokens": 405,
+"latency_ms": 8075.63770795241,
+"stop_reason": "stop"
+},
+"1e23de8853fe1eb6eaf90d7e9b097af93d36df0e38ace380cb80b8494b80cdf8": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"2. Covenants Not to Compete. (a) Member specifically acknowledges that, pursuant to the Franchise Agreement, and by virtue of its position with Franchisee, Member will receive valuable specialized training and Confidential Information, including, without limitation, information regarding the operational, sales, promotional, and marketing methods and techniques of Franchisor and the System. (b) Member covenants and agrees that during the term of the Franchise Agreement, except as otherwise approved in writing by Franchisor, Member shall not, either directly or indirectly, for itself, or through, on behalf of, or in conjunction with any person, persons, partnership, corporation, or entity: (i) Own, manage, engage in, be employed by, advise, make loans to, consult for, rent or lease to, or have any other interest in business that (directly or indirectly) operates, or grants franchises or licenses to operate, a restaurant featuring pizza and related food specialties or that offers products or services substantially similar to those then offered by Pizza Fusions Restaurants (\\\"Competitive Business\\\"); (ii) Divert or attempt to divert any business or customer, or potential business or customer, to any Competitive Business; or (iii) Induce any person to leave his or her employment with Franchisee or Franchisor. (c) Member covenants and agrees that during the Post-Term Period (defined below), except as otherwise approved in writing by Franchisor, Member shall not, either directly or indirectly, own, manage, engage in, be employed by, advise, make loans to, consult for, or have any other interest in any Competitive Business that is, or intends to operate, within a three (3) mile radius of the premises of your Franchised Business or within a three (3) mile radius of any Franchised Business then-operating or under construction to operate under the System. (d) As used in this Agreement, the term \\\"Post-Term Period\\\" shall mean a continuous uninterrupted period of two (2) years from the date of: (a) a transfer permitted under Section 14 of the Franchise Agreement; (b) expiration or termination of the Franchise Agreement (regardless of the cause for termination); (c) termination of Member's employment with Franchisee; and/or (d) a final order of a duly authorized arbitrator, panel of arbitrators, or a court of competent jurisdiction (after all appeals have been taken) with respect to any of the foregoing or with respect to the enforcement of this Agreement; either directly or indirectly (through, on behalf of, or in conjunction with any persons, partnership, corporation or entity).\",\n      \"why\": \"This section restricts Member from owning, operating, or being involved in any Competitive Business during the term of the Franchise Agreement and for two years post-termination within a defined territory, fitting the definition of a Non-Compete clause.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"(iii) Induce any person to leave his or her employment with Franchisee or Franchisor.\",\n      \"why\": \"This sub-clause prohibits Member from inducing employees of Franchisee or Franchisor to leave their employment, matching the No-Solicit Of Employees clause type.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 2141,
+"output_tokens": 3510,
+"latency_ms": 64545.88640294969,
+"stop_reason": "stop"
+},
+"7a7b6d43afc53123550d0c244d62ccd3b457bc244c23a04b0d6499c7c3c1a90c": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1149,
+"output_tokens": 599,
+"latency_ms": 12557.734519941732,
+"stop_reason": "stop"
+},
+"fc207b5e604ac94056fd300cbe63bd25d5aede985b49b9552b19839950f9f562": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Member covenants and agrees that during the term of the Franchise Agreement, except as otherwise approved in writing by Franchisor, Member shall not, either directly or indirectly, for itself, or through, on behalf of, or in conjunction with any person, persons, partnership, corporation, or entity: (i) Own, manage, engage in, be employed by, advise, make loans to, consult for, rent or lease to, or have any other interest in business that (directly or indirectly) operates, or grants franchises or licenses to operate, a restaurant featuring pizza and related food specialties or that offers products or services substantially similar to those then offered by Pizza Fusions Restaurants (\\\"Competitive Business\\\"); C - 1\\n\\n(ii) Divert or attempt to divert any business or customer, or potential business or customer, to any Competitive Business; or (iii) Induce any person to leave his or her employment with Franchisee or Franchisor.\",\n      \"why\": \"Restricts Member from owning, managing, or having any interest in a Competitive Business during the term, a clear non-compete.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Member covenants and agrees that during the Post-Term Period (defined below), except as otherwise approved in writing by Franchisor, Member shall not, either directly or indirectly,",
+"model": "deepseek-chat",
+"input_tokens": 2041,
+"output_tokens": 6000,
+"latency_ms": 112358.46382100135,
+"stop_reason": "length"
+},
+"8765474e21a41c6ce5558df3457a089a356d567ec17730043b62f461e7ddf4d4": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"LIMITATION OF GARMAN'S LIABILITY\\n\\n     The exclusive remedy of either party in a claim against the other under this Agreement shall be the recovery of its direct damages. In no event shall either party be liable to the other for the recovery of any special, indirect or consequential damages even if the defendant party had been advised of the possibility of such damages including but not limited to lost profits, lost revenues, failure to realize expected savings, loss of data and loss of use. The parties agree that the limitation of liability in this paragraph reflects the allocation of risk between the parties and the price of the licenced Software. The limitation of liability in this Section 15 shall not apply to breaches of Sections 13 and 14.\",\n      \"why\": \"The last sentence expressly carves out breaches of Sections 13 (IP indemnity) and 14 (Confidentiality) from the liability limitation, effectively uncapping liability for those breaches.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Sparkling may terminate this Agreement at any time upon ninety (90) calendar days written notice to Garman. If Sparkling terminates this Agreement pursuant to this Section 17(b), Sparkling shall cease using the Software at the end of the ninety (90) day notice period, and shall certify to Garman within thirty (30) calendar days of termination that Sparkling has destroyed or has returned to Garman all Software, Documentation and Codes.\",\n      \"why\": \"This grants Sparkling a unilateral right to terminate the Agreement without cause, simply by giving 90 days' written notice.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Neither party may assign this Agreement or any rights and obligations under this Agreement to any third party without the written consent of the other party.\",\n      \"why\": \"This clause prohibits assignment or transfer of the Agreement or any rights/obligations without the other party's prior written consent, a standard anti-assignment restriction.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"During the term of this Agreement and for a period of one year thereafter, both parties agree not to hire or allow its respective affiliates to hire any employee of the other party, or any person who was an employee of the other party during the previous six months and who was directly involved in the provision of services under this Agreement.\",\n      \"why\": \"This clause prohibits both parties from hiring each other's employees during the term and for one year after, covering recent employees involved in the services.\"\n    },\n    {\n      \"cl",
+"model": "deepseek-chat",
+"input_tokens": 5913,
+"output_tokens": 4000,
+"latency_ms": 74611.9809129741,
+"stop_reason": "length"
+},
+"851bd41cb58fba92ee61e50e8f8df64eedcbcae796b3a39f6b5f49bf3d3f297e": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1924,
+"output_tokens": 777,
+"latency_ms": 16576.40244497452,
+"stop_reason": "stop"
+},
+"c6911f3b0dd0f12d81871ca04454a5d5846e05b007794b9a1a88fcffe4aefd40": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Garman hereby grants to Sparkling, for the use of Sparkling and affiliated companies of Sparkling operating at Authorized Locations, a non-transferable and non-exclusive licence to use: (i) the Software, safely in executable object code format, at each AS400 at each of the Authorized Locations; and (ii) the Documentation. Sparkling's right, if any, to use the Software and Documentation at locations other than the Authorized Locations is subject to the payment of additional fees in accordance with the Fee Schedule.\",\n      \"why\": \"This clause grants a non-transferable, non-exclusive license to use the Software and Documentation, defining scope and limitations.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"not assign this Agreement or transfer, lease, export or grant a sublicence of the Work to any Person, except as and when authorized to do so by Garman in writing;\",\n      \"why\": \"This clause restricts assignment or transfer of the agreement or any sublicense without Garman's prior written consent.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1965,
+"output_tokens": 977,
+"latency_ms": 18654.279008042067,
+"stop_reason": "stop"
+},
+"15c09aa1b8d913f287e0ef71d6f034602aeb1b5bb4907f32265f475846a43e5e": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1079,
+"output_tokens": 195,
+"latency_ms": 4990.445003961213,
+"stop_reason": "stop"
+},
+"5d05676290cd0b94115789d207049328d7434edf2827c309f5affbd1b727f5aa": {
+"text": "{\n  \"findings\": []\n}",
+"model": "deepseek-chat",
+"input_tokens": 1926,
+"output_tokens": 1133,
+"latency_ms": 24752.89479806088,
+"stop_reason": "stop"
+},
+"d6fd4f05d0b26fa2320eb4dfc1eb93b14f41273731b66dd46a2719429f74a648": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Sparkling may terminate this Agreement at any time upon ninety (90) calendar days written notice to Garman. If Sparkling terminates this Agreement pursuant to this Section 17(b), Sparkling shall cease using the Software at the end of the ninety (90) day notice period, and shall certify to Garman within thirty (30) calendar days of termination that Sparkling has destroyed or has returned to Garman all Software, Documentation and Codes.\",\n      \"why\": \"Grants Sparkling the right to terminate for any reason on 90 days notice.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"If this Agreement is terminated by Sparkling, due to Garman's default, the license herein granted shall continue, but shall be converted to a perpetual license pursuant to which Sparkling shall not be required to pay any further fees to Garman hereunder, and Garman shall immediately return all fees paid under this Agreement for services not yet rendered.\",\n      \"why\": \"Converts the license to a perpetual one upon termination for default, granting an ongoing license without fees.\"\n    },\n    {\n      \"clause_type\": \"No-Solicit Of Employees\",\n      \"quote\": \"During the term of this Agreement and for a period of one year thereafter, both parties agree not to hire or allow its respective affiliates to hire any employee of the other party, or any person who was an employee of the other party during the previous six months and who was directly involved in the provision of services under this Agreement.\",\n      \"why\": \"Mutual non-solicitation of employees for one year post-termination.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"Neither party may assign this Agreement or any rights and obligations under this Agreement to any third party without the written consent of the other party.\",\n      \"why\": \"Restricts assignment without consent.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1946,
+"output_tokens": 2107,
+"latency_ms": 37421.01765901316,
+"stop_reason": "stop"
+},
+"854d33aca8843c58b27d05358f4f812e94316c83fcfe35388e8fcc2193066303": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Uncapped Liability\",\n      \"quote\": \"The limitation of liability in this Section 15 shall not apply to breaches of Sections 13 and 14.\",\n      \"why\": \"This carve-out removes the agreed limitation of liability for breaches of confidentiality and other specified sections, leaving liability potentially unlimited.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Garman hereby grants to Sparkling, a perpetual, fully paid, non-exclusive license entitling Sparkling to use and reproduce the Codes deposited with it pursuant to Section (a) to change, update, add to, or substitute the Codes, the Software or any part thereof, limited to Sparkling's needs for the use and improvement of the Software or Sparkling's operations, provided that Sparkling shall only be entitled to utilize such license if Sparkling terminates this Agreement pursuant to Section 17(c) due to Garman's default, or if Garman ceases to support the Software as required pursuant to this Agreement.\",\n      \"why\": \"This grants a perpetual, non-exclusive license to use and modify the source code under defined trigger events, setting out the scope and conditions of use.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Sparkling may terminate this Agreement at any time upon ninety (90) calendar days written notice to Garman.\",\n      \"why\": \"This gives Sparkling the right to terminate the agreement at any time without cause, on 90 days' notice.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1922,
+"output_tokens": 3208,
+"latency_ms": 65908.37858000305,
+"stop_reason": "stop"
+},
+"73942251d9b1337f3fc1a47239d7c20e14ea7e6dee50e4772062895a4a41a8dc": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"Direct restriction on assignment with consent requirement.\"}",
+"model": "deepseek-chat",
+"input_tokens": 392,
+"output_tokens": 157,
+"latency_ms": 4230.259465053678,
+"stop_reason": "stop"
+},
+"9312c3308f8056e42c9440e1eb52f7e79f1e8bdbb95f55f50c4ee745d66f75a8": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The text explicitly states that the limitation of liability (cap) does not apply to breaches of Sections 13 and 14, which is a clear carve-out making those liabilities uncapped, fitting the definition of an Uncapped Liability clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 372,
+"output_tokens": 264,
+"latency_ms": 5719.025066005997,
+"stop_reason": "stop"
+},
+"f10d5a2a6039ce3ca55ddba3d46a5e8d26f70435f14bf7af91f486ef23d2269b": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The text explicitly grants a non-exclusive, non-transferable license to use Software and Documentation, specifying scope of use, territory, and format, directly matching the license grant definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 536,
+"output_tokens": 310,
+"latency_ms": 6714.508467004634,
+"stop_reason": "stop"
+},
+"4ab56c873aa665cf78d1dece9d755f05a0ed9b01b47b760e9b7d3342f4411b91": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"Direct grant of a non-exclusive, perpetual license with defined scope and conditions.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 567,
+"output_tokens": 420,
+"latency_ms": 9190.863598953001,
+"stop_reason": "stop"
+},
+"b4edc054a817d48e6a14e2aedea67ae6bd11ed6eccaef079177e703d4c163bc7": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"Grants Sparkling right to terminate at any time upon notice, without cause, fitting definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 485,
+"output_tokens": 216,
+"latency_ms": 5233.812831924297,
+"stop_reason": "stop"
+},
+"0bddac80c735b9147a3793723858a8319e7488320394a9f29134b8bbd2060d87": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.98, \"reason\": \"The flagged text is a direct contractual prohibition against hiring the counterparty's employees, matching the definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 468,
+"output_tokens": 321,
+"latency_ms": 6685.522551997565,
+"stop_reason": "stop"
+},
+"825c40e7319623c5fc43e201f00e911aa223e4cbc110f641f88ecda5b93a766f": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quote explicitly restricts assignment of the Agreement and rights/obligations without written consent, exactly matching the Anti-Assignment definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 360,
+"output_tokens": 192,
+"latency_ms": 4690.4442210216075,
+"stop_reason": "stop"
+},
+"b85fbecc28a4c11f4c317a564015618ee2009e3f7ee750b90a219150aabd1da7": {
+"text": "{\"verdict\": \"drop\", \"confidence\": 0.95, \"reason\": \"The text describes a conversion of an existing license to a perpetual one upon termination due to default, not the initial grant of license rights; it is a termination-related provision.\"}",
+"model": "deepseek-chat",
+"input_tokens": 455,
+"output_tokens": 374,
+"latency_ms": 8827.458359999582,
+"stop_reason": "stop"
+},
+"f3f546abd4017dd43b102ff5d802521e044320a6e53f7d308c34fb743ab78d41": {
+"text": "{\n  \"findings\": [\n   ",
+"model": "deepseek-chat",
+"input_tokens": 4535,
+"output_tokens": 4000,
+"latency_ms": 76835.82224091515,
+"stop_reason": "length"
+},
+"7290edcc475d9b34a84bfe4b65233d7bdf3bdfdbdbc4971ef8088b1abe9b222b": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1336,
+"output_tokens": 431,
+"latency_ms": 10066.673515946604,
+"stop_reason": "stop"
+},
+"b916a444dc5ec66fba4e98481e38714e09885c812f2a1627bd71fc4751ccba40": {
+"text": "{\"findings\": [{\"clause_type\": \"Renewal Term\", \"quote\": \"This Agreement shall be for the term of one year; thereafter, the Agreement shall renew automatically under these same terms and agreements unless superseded by future agreements.\", \"why\": \"Automatic renewal clause creating an evergreen term unless superseded.\"}, {\"clause_type\": \"Audit Rights\", \"quote\": \"Equidata may audit, at Equidata's expense, the Marketing Affiliate's marketing, practices and activities for the purpose of assuring compliance with this Agreement. Equidata reserves the right to site inspect Marketing Affiliate's physical location of business at any time.\", \"why\": \"Grants Equidata the right to audit and inspect Marketing Affiliate's activities and premises.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 2012,
+"output_tokens": 1454,
+"latency_ms": 28756.115851108916,
+"stop_reason": "stop"
+},
+"09a101435dfde82c7eb273998c930af4cf273a3db04e73030771f7c3997bab3b": {
+"text": "{\"findings\": [{\"clause_type\": \"License Grant\", \"quote\": \"Subject to the terms and conditions of this Agreement, Marketing Affiliate may display Marketing Materials at its principal place(s) of business, or at the principal place(s) of its third party partners, together with a link from the Marketing Affiliate Web Site to Fquidata (and its partners) Web Site. Marketing Materials may also be used in the marketing of potential customers through direct mail and personal solicitation as well as inbound and outbound telemarketing. Marketing Affiliate may not otherwise offer for sale, market, sell or distribute the Services of Equidata without express written permission.\", \"why\": \"Grants Marketing Affiliate a limited right to use Marketing Materials, which constitute IP, with specified scope and restrictions.\"}]}",
+"model": "deepseek-chat",
+"input_tokens": 2023,
+"output_tokens": 1674,
+"latency_ms": 32579.405849101022,
+"stop_reason": "stop"
+},
+"12db090d219cf661417fb9b14ea0f412e77d663f439f7a3020143485756cdd5c": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 2135,
+"output_tokens": 1579,
+"latency_ms": 35659.95786793064,
+"stop_reason": "stop"
+},
+"71964d442868c2995f56ac0a1a775f191a3625a5ce2b4dbff086176342bbbc64": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 1.0,\n  \"reason\": \"The text explicitly grants Equidata audit rights over marketing activities and physical locations to verify compliance with the Agreement, matching the Audit Rights definition.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 427,
+"output_tokens": 222,
+"latency_ms": 5297.994507942349,
+"stop_reason": "stop"
+},
+"1aa4f287071deb92f8796615b678dcb8ccd3f8e3a5aa1237906fa2073ed4a82b": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause grants permission to use Marketing Materials (likely IP) with specified scope (display locations, marketing channels) and limitations, fitting the License Grant definition.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 559,
+"output_tokens": 585,
+"latency_ms": 28815.435059019364,
+"stop_reason": "stop"
+},
+"4674243301c459656b66ecb63c425031010fac8ed5e6667ca88cc86fd17b28ce": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Party A irrevocably undertakes that Party A will take Party B as its exclusive and sole partner to provide the business consultancy and technical services as well as technical consultancy to Party A and its subsidiaries. Party A shall not establish any same or similar cooperative relationship with any third party in respect of such businesses nor shall it make any same or similar arrangement, unless with the prior written consent of Party B.\",\n      \"why\": \"This clause grants Party B exclusive rights as Party A's sole partner for the specified services and prohibits Party A from dealing with third parties, meeting the Exclusivity type.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Party A irrevocably undertakes that, without Party B's consent, Party A shall not conduct any other business or make any commercial arrangement, including without limitation being engaged in or otherwise participating in any commercial activities and businesses independently or together with any other person or entity, nor shall it carry out any activities that may be competitive with or cause adverse effect to Party B's business.\",\n      \"why\": \"This clause restricts Party A from engaging in any competitive activities or businesses that could harm Party B, constituting a Non-Compete.\"\n    },\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"Except as otherwise agreed hereunder, if Party A or its subsidiaries fail to pay the Service Fee in full on schedule according to provisions of Article 4.1 and Article 4.2, then Party A or its subsidiaries shall, in addition to the continuance of the payment of Service Fee in full, it shall pay Party B the liquidated damages at a daily interest rate of 0.03% in respect of the outstanding Service Fee.\",\n      \"why\": \"This clause prescribes a pre-agreed daily interest rate as liquidated damages for late payment, independent of actual damages.\"\n    },\n    {\n      \"clause_type\": \"Termination For Convenience\",\n      \"quote\": \"Party B shall have the right to",
+"model": "deepseek-chat",
+"input_tokens": 4172,
+"output_tokens": 4000,
+"latency_ms": 70252.66879599076,
+"stop_reason": "length"
+},
+"474dabef146e69037929e5005b90cec387e1615672a448a0c64ade200ae2285d": {
+"text": "{\"findings\": []}",
+"model": "deepseek-chat",
+"input_tokens": 1283,
+"output_tokens": 283,
+"latency_ms": 7076.224306947552,
+"stop_reason": "stop"
+},
+"b020f3689fb57a9da01a4fc4ac1e66b7a93494b0201bbde3516a8a52f37ab725": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"The demand for liquidated damages and specific performance in respect of any breach during the Term of Cooperation are all remedies that the non-breaching Party shall have under this Agreement. The non-breaching Party shall waive the right to request termination of this Agreement it may have according to any applicable laws as a result of the violation acts committed by the breaching Party.\",\n      \"why\": \"Explicitly references liquidated damages as a remedy for breach, indicating a pre-agreed sum or formula available to the non-breaching party.\"\n    },\n    {\n      \"clause_type\": \"Ip Ownership Assignment\",\n      \"quote\": \"The Parties agree that any and all intellectual property researched and developed, created and invented by the Parties (including their employees) in the course of performance of this Agreement shall be owned by Party B. For the purpose of this Article 12.3, \\\"Intellectual Property\\\" means the patent, patent application right, trademark, service mark, logo, image, trade name, internet domain name, design right, copyright (including copyright of computer software) and moral rights, database right, right of semiconductor design drawing, utility model, proprietary technology and other intellectual property that are registered and unregistered including those that have applied for registration, as well as all other rights or protection methods with same or similar effect on a global scope.\",\n      \"why\": \"Assigns all IP created during the agreement to Party B, directly transferring ownership rights.\"\n    },\n    {\n      \"clause_type\": \"Anti-Assignment\",\n      \"quote\": \"The rights and obligations of each Party under this Agreement shall not be transferred, except for the transfer by Party B to its affiliates.\",\n      \"why\": \"Restricts assignment of the agreement without exception only for Party B to its affiliates.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1912,
+"output_tokens": 1771,
+"latency_ms": 32936.942524975166,
+"stop_reason": "stop"
+},
+"f2d66c198d6eaa5d06fbc71b1647c39cc3eed524a43772cdbef25eb44d427255": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Party A irrevocably undertakes that Party A will take Party B as its exclusive and sole partner to provide the business consultancy and technical services as well as technical consultancy to Party A and its subsidiaries. Party A shall not establish any same or similar cooperative relationship with any third party in respect of such businesses nor shall it make any same or similar arrangement, unless with the prior written consent of Party B.\",\n      \"why\": \"Grants exclusive rights to Party B and restricts Party A from dealing with third parties.\"\n    },\n    {\n      \"clause_type\": \"Non-Compete\",\n      \"quote\": \"Party A irrevocably undertakes that, without Party B's consent, Party A shall not conduct any other business or make any commercial arrangement, including without limitation being engaged in or otherwise participating in any commercial activities and businesses independently or together with any other person or entity, nor shall it carry out any activities that may be competitive with or cause adverse effect to Party B's business.\",\n      \"why\": \"Restricts Party A from engaging in competitive activities.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1931,
+"output_tokens": 1964,
+"latency_ms": 34151.06992900837,
+"stop_reason": "stop"
+},
+"2ca031fa1868e80c3d2104c2ceda8e16400e56772a56ac263b9a92b3250c11c4": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"3. Liquidated Damages\",\n      \"quote\": \"Except as otherwise agreed hereunder, if Party A or its subsidiaries fail to pay the Service Fee in full on schedule according to provisions of Article 4.1 and Article 4.2, then Party A or its subsidiaries shall, in addition to the continuance of the payment of Service Fee in full, it shall pay Party B the liquidated damages at a daily interest rate of 0.03% in respect of the outstanding Service Fee.\",\n      \"why\": \"Pre-agreed formula (daily interest) for late payment, expressed as liquidated damages, independent of actual damages.\"\n    },\n    {\n      \"clause_type\": \"11. Termination For Convenience\",\n      \"quote\": \"Party B shall have the right to terminate this Agreement in advance without the prior written consent from Party A, by sending a written notice to Party A but Party A may not terminate or rescind this Agreement;\",\n      \"why\": \"Grants Party B a unilateral right to terminate at any time without cause, while denying Party A any termination right.\"\n    },\n    {\n      \"clause_type\": \"1. Uncapped Liability\",\n      \"quote\": \"Each Party shall be responsible for and hold the other Party harmless from any loss, damages and claim arising out of violation of any representations and warranties hereunder.\",\n      \"why\": \"Indemnity obligation covers any loss without a monetary cap, creating uncapped liability for breach of representations and warranties.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1986,
+"output_tokens": 2386,
+"latency_ms": 43937.88305402268,
+"stop_reason": "stop"
+},
+"c69bb76ec07de6d1eadf9038615455ce7244a9c06e3ebdc76bbaed9bc558d75c": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The flagged quote directly restricts the transfer of rights and obligations under the agreement, with a specific exception, fitting the definition of an anti-assignment clause.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 350,
+"output_tokens": 262,
+"latency_ms": 5929.028303013183,
+"stop_reason": "stop"
+},
+"720d6a95833de855e0c283125387b8724b899630a0fc9eee9e7fe2bc393fc05e": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly grants Party B exclusive rights as the sole partner for specified services and prohibits Party A from engaging third parties without consent, directly matching the exclusivity definition.\"}",
+"model": "deepseek-chat",
+"input_tokens": 461,
+"output_tokens": 337,
+"latency_ms": 7700.18299901858,
+"stop_reason": "stop"
+},
+"f98cf480824365574601bb321ecbd91406b0d93307608512dd59db275a3f8240": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 1.0, \"reason\": \"The quoted text directly assigns ownership of IP created under the agreement to Party B, fitting the definition precisely.\"}",
+"model": "deepseek-chat",
+"input_tokens": 600,
+"output_tokens": 191,
+"latency_ms": 4826.576770981774,
+"stop_reason": "stop"
+},
+"76ba94422bfde6dfb81bc21945bc0385249bb4969386873dca632be571ad80c8": {
+"text": "{\"verdict\": \"drop\", \"confidence\": 0.95, \"reason\": \"The clause mentions liquidated damages as an available remedy but does not set forth a pre-agreed fixed sum or formula; it is a remedies/waiver clause, not a liquidated damages provision.\"}",
+"model": "deepseek-chat",
+"input_tokens": 447,
+"output_tokens": 609,
+"latency_ms": 13305.59251201339,
+"stop_reason": "stop"
+},
+"02da286c4f81f8e4fbb752e6e5a84cac2db812bcf38f79b36bed33a4cce51b1b": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause explicitly bars Party A from carrying out competitive activities without Party B's consent, directly matching the non-compete definition.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 467,
+"output_tokens": 564,
+"latency_ms": 13457.406817004085,
+"stop_reason": "stop"
+},
+"2ca23f24568f319ed371c4243f322f507cebc1ce34d5614f2d8cf4c751860257": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"In the event that Oceanic Time Warner Cable removes the above content and or terminates this agreement prior to December 31, 2006, Oceanic Time Warner Cable agrees to pay a cancellation fee of Five Thousand Dollars ($5,000) per month multiplied by the number of months remain on the agreement.\",\n      \"why\": \"Pre-agreed fixed sum (cancellation fee) payable on early termination, independent of actual damages.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Watchit shall have the exclusive right to sell third party advertising as sponsors of their content and will have the right to brand the content under the Watchit brand and place a \\\"bug\\\" on the screen identifying the content with a Watchit trademark.\",\n      \"why\": \"Grants Watchit exclusive right to sell advertising, precluding Oceanic from doing so.\"\n    },\n    {\n      \"clause_type\": \"License Grant\",\n      \"quote\": \"Oceanic Time Warner Cable will use the content solely on channel 777, the Las Vegas channel.\",\n      \"why\": \"Grants Oceanic a license to use the content, limited to a specific channel, defining the scope of usage rights.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1144,
+"output_tokens": 2759,
+"latency_ms": 50863.67100896314,
+"stop_reason": "stop"
+},
+"df3827b64e7ee070808a4b390b47a80a015992cdfa3fd4b4e710dffa044996d6": {
+"text": "{\n  \"findings\": [\n    {\n      \"clause_type\": \"Liquidated Damages\",\n      \"quote\": \"In the event that Oceanic Time Warner Cable removes the above content and or terminates this agreement prior to December 31, 2006, Oceanic Time Warner Cable agrees to pay a cancellation fee of Five Thousand Dollars ($5,000) per month multiplied by the number of months remain on the agreement.\",\n      \"why\": \"Fixed sum formula payable on early termination/removal, independent of actual damages.\"\n    },\n    {\n      \"clause_type\": \"Exclusivity\",\n      \"quote\": \"Watchit shall have the exclusive right to sell third party advertising as sponsors of their content and will have the right to brand the content under the Watchit brand and place a \\\"bug\\\" on the screen identifying the content with a Watchit trademark.\",\n      \"why\": \"Grants Watchit exclusive right to sell advertising, requiring Oceanic to forgo selling such ads.\"\n    }\n  ]\n}",
+"model": "deepseek-chat",
+"input_tokens": 1236,
+"output_tokens": 2211,
+"latency_ms": 40266.32156595588,
+"stop_reason": "stop"
+},
+"d8dbff9f8fcd1f2e07de4a596c0d17ad79a6d1d665bd0a983e63383ff1d1ce58": {
+"text": "{\"verdict\": \"keep\", \"confidence\": 0.95, \"reason\": \"The clause explicitly grants Watchit the exclusive right to sell third-party advertising, which directly matches the definition of an exclusivity clause.\"}",
+"model": "deepseek-chat",
+"input_tokens": 407,
+"output_tokens": 287,
+"latency_ms": 6830.68886899855,
+"stop_reason": "stop"
+},
+"8d173198f6f00a90d0cbcff671308b730af13ebc0c756d70368eabfd61e9b374": {
+"text": "{\n  \"verdict\": \"keep\",\n  \"confidence\": 0.95,\n  \"reason\": \"The clause states a pre-agreed formula ($5,000 per month times remaining months) payable upon early removal or termination, which fits the definition of liquidated damages as a fixed sum payable on breach/termination independent of actual proven damages.\"\n}",
+"model": "deepseek-chat",
+"input_tokens": 441,
+"output_tokens": 316,
+"latency_ms": 7333.657965995371,
+"stop_reason": "stop"
+}
+}

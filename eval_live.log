@@ -5,3 +5,11 @@ Loaded 20 held-out contracts (191 gold spans).
   ~266 calls · ~361,629 in + ~220,800 out tokens
   estimated cost: $0.34  (cap $1.00)
 
+Recorded 224 fixtures (224 live calls) → /home/tpeng/projects/fieldagent/evals/fixtures/deepseek_fixtures.json
+
+=== HEADLINE ===
+Detection F1 = 0.548  (P=0.741 / R=0.435), 95% CI [0.4597, 0.6375]
+Agentic lift = +0.415 F1  (vs single-shot 0.133)
+Verifier contribution = +-0.014 F1
+
+Wrote /home/tpeng/projects/fieldagent/evals/results/metrics.{json,md} + per_contract.json
