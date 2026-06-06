@@ -69,14 +69,15 @@ export default function Home() {
             <span className="text-[13px] font-medium">the agentic lift is model-specific</span>
           </div>
           <p className="text-[12.5px] text-secondary leading-relaxed">
-            On DeepSeek, chunked extraction beats single-shot by <span className="font-mono">+0.45 F1</span> —
-            but that gap is an artifact of DeepSeek&apos;s single-shot response <em>truncating</em> under
-            reasoning-token pressure (17/20). On <strong>Claude Sonnet</strong> ({demo.cross_model.n_contracts}-contract
-            subset), which finishes its one-pass response, single-shot
-            (<span className="font-mono accent">F1 {demo.cross_model.single_shot.f1.toFixed(3)}</span>) <strong>ties</strong> the
-            chunked pipeline (<span className="font-mono">{demo.cross_model.pipeline_chunked_no_verifier.f1.toFixed(3)}</span>) —
-            chunking lift <span className="font-mono" style={{ color: 'var(--color-medium)' }}>{demo.cross_model.chunking_lift_f1.toFixed(3)}</span>.
-            Cross-model validation caught what a single-model eval would have shipped as a headline.
+            An earlier run showed a <span className="font-mono">+0.45 F1</span> &ldquo;agentic lift&rdquo; over single-shot —
+            but that was an artifact: deepseek-v4-pro&apos;s single-shot response <em>truncates</em> under
+            reasoning-token pressure (17/20 hit a 4k cap → ~0 findings). Give it an 8k budget and DeepSeek
+            single-shot jumps to <span className="font-mono accent">F1 {r.arms.single_shot.f1.toFixed(3)}</span>,
+            collapsing the lift to <span className="font-mono" style={{ color: 'var(--color-medium)' }}>+{r.agentic_lift_f1.toFixed(3)}</span> (CIs overlap).
+            On <strong>Claude Sonnet</strong> ({demo.cross_model.n_contracts} contracts) single-shot
+            (<span className="font-mono accent">{demo.cross_model.single_shot.f1.toFixed(3)}</span>) likewise <strong>ties</strong> chunked
+            (<span className="font-mono">{demo.cross_model.pipeline_chunked_no_verifier.f1.toFixed(3)}</span>, lift {demo.cross_model.chunking_lift_f1.toFixed(3)}).
+            Chunking buys robustness to output-budget limits, not raw detection lift — and a single-model eval would have shipped &ldquo;+0.45&rdquo; as a headline.
           </p>
         </div>
       )}

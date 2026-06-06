@@ -74,3 +74,12 @@ was an artifact of DeepSeek single-shot truncating. Repositioned README + writeu
 with this honest cross-model finding. Robust claims unchanged: detection F1 0.548, recall 0.59,
 +0.21 over keyword floor. DeepSeek single-shot fair re-run still pending credit, but now superseded by
 the cross-model result.
+
+## Fair DeepSeek single-shot completed (credit topped up) — lift confirmed small on BOTH models
+Re-ran the DeepSeek single-shot baseline at 8000 tokens for all 20 contracts (107 findings vs 0.7
+truncated; 18/20 finish, 2 large still truncate; $0.147). Fair single-shot **F1 0.476** (was 0.098).
+**Agentic lift collapses +0.45 → +0.07 F1** (CIs [0.460,0.637] vs [0.400,0.549] overlap → within noise),
+confirming the cross-model finding ON DeepSeek itself. No more "pending credit" / "upper bound" — the
+committed fixtures are now the 8k run and `make eval-dry` reproduces 0.476/0.548. README + writeup
+(§4/§5) + demo updated to the fair, final numbers. Robust claims unchanged: detection F1 0.548,
+recall 0.59, +0.21 over keyword floor.

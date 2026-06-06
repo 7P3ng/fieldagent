@@ -63,7 +63,7 @@ _(from `evals/results/metrics.md`; reproduce with `make eval-dry`)_
 | Arm | P | R | F1 | 95% CI |
 |---|---|---|---|---|
 | Keyword / regex floor | 0.490 | 0.257 | 0.337 | [0.275, 0.392] |
-| Single-shot LLM (steelmanned baseline) | 0.769 | 0.052 | 0.098 | [0.000, 0.213] |
+| Single-shot LLM (steelmanned, 8k-token budget) | 0.664 | 0.372 | 0.476 | [0.400, 0.549] |
 | Pipeline − verifier (chunked) | 0.721 | 0.461 | 0.562 | [0.473, 0.654] |
 | **Pipeline (full, agentic)** | 0.741 | 0.435 | **0.548** | [0.460, 0.637] |
 
@@ -71,26 +71,25 @@ _(from `evals/results/metrics.md`; reproduce with `make eval-dry`)_
 is 0.592** (a prediction of the correct type overlaps the gold span at all): of the 56% of gold
 not counted at IoU 0.5, ~16 pts are clauses *found in the right place but quoted too tightly* to
 clear the span threshold, and ~41% are true misses.
-**Claim 2 — agentic lift:** the clean, baseline-independent claim is **+0.211 F1 over a
-keyword/regex floor** (0.337 → 0.548). A naive single-shot LLM scores far lower (0.098 F1), but
-that number is *output-budget-confounded* (see the ablation) — treat the single-shot gap as an
-upper bound, not a headline.
+**Claim 2 — agentic lift (the honest version):** once the single-shot baseline gets an adequate
+output budget, the lift is **small and within noise — +0.07 F1** (full 0.548 vs fair single-shot 0.476;
+95% CIs [0.460, 0.637] and [0.400, 0.549] overlap). The baseline-independent claim is **+0.211 F1 over
+a keyword/regex floor** (0.337 → 0.548). An earlier run reported "+0.45 vs single-shot" — a truncation
+artifact, dissected in the ablation and section 5.
 
 ### Ablation reading
-- **The single-shot baseline is output-budget-confounded — disclosed, not hidden.** The committed
-  single-shot fixtures cap the response at 4 000 tokens, and deepseek-v4-pro's hidden reasoning eats
-  that budget: **17/20 single-shot responses truncate** (`stop_reason=length`) into unparseable JSON
-  → near-zero findings (0.052 recall, 0.098 F1). This is the brief's own documented gotcha, so the
-  headline "+0.45 vs single-shot" **overstates** the gap. A fair re-run at 8 000 tokens was started;
-  the two contracts that completed before the shared DeepSeek account hit *Insufficient Balance*
-  returned **5 and 7 complete findings** (vs 0 truncated) — a fair single-shot would score materially
-  higher and the true lift is smaller (~+0.2–0.3, unquantified pending credit). The clean,
-  truncation-free comparison is the **+0.211 F1 over the keyword floor**; `make eval-live` re-records
-  the fair single-shot baseline once credit is restored.
-- **Chunking still helps, baseline-independently.** Per-window focused extraction recovers **122
-  candidate spans → 88 TP** (recall 0.461) where a single 4 K-budget pass collapses. The magnitude of
-  the *single-shot* gap is confounded; the direction (chunking > one naive pass) and the floor
-  comparison are not.
+- **The "+0.45 lift" was a single-shot truncation artifact — now resolved.** The first single-shot
+  run capped output at 4 000 tokens; deepseek-v4-pro's hidden reasoning ate that budget and **17/20
+  responses truncated** (`stop_reason=length`) into unparseable JSON → 0.098 F1. Re-running single-shot
+  at **8 000 tokens** (107 findings across 20 contracts, vs ~13 before; 18/20 now finish, 2 large
+  contracts still truncate) lifts the fair single-shot to **F1 0.476** — and the agentic lift collapses
+  from +0.45 to **+0.07**, the two arms' CIs overlapping ([0.460, 0.637] vs [0.400, 0.549]). The
+  apparent lift was almost entirely the baseline being output-truncated, not chunked extraction being
+  better. (Committed fixtures are the 8 K run; `make eval-dry` reproduces 0.476 / 0.548.)
+- **What chunking actually buys: robustness to output limits.** Per-window extraction recovers 122
+  candidate spans → 88 TP regardless of a per-response token ceiling, whereas a single pass over a long
+  contract is hostage to its output budget. A real engineering property — just not the "+0.45 detection
+  lift" it first looked like.
 - **Verification: no F1 effect distinguishable from noise.** full − (pipeline−verifier) =
   **−0.014 F1**. The skeptic pass dropped 5 false positives *and* 5 true positives, shifting
   precision 0.721 → 0.741 and recall 0.461 → 0.435 — but the two arms' 95% CIs overlap almost
@@ -101,36 +100,34 @@ upper bound, not a headline.
   to recover, and we say so rather than overclaim it.
 - **IoU sensitivity:** full-pipeline F1 across IoU ∈ {0.1, 0.3, 0.5, 0.7} = {0.654, 0.640, 0.548,
   0.462}; the +0.21 lift over the keyword floor (which barely moves with IoU) holds throughout, so
-  the result is not an artifact of the 0.5 threshold. (Single-shot numbers inherit the truncation
-  confound above.)
+  the result is not an artifact of the 0.5 threshold.
 
 ## 5. Cross-model validation — the lift is model-specific
 
-The single-model result above has a trap, and the eval caught it. The DeepSeek "+0.45 over
-single-shot" is real arithmetic, but it measures the wrong thing: deepseek-v4-pro's single-shot
-response **truncates** (17/20 hit the 4 K output cap, reasoning eats the budget before the JSON),
-so the baseline collapses to ~0 findings for a reason that has nothing to do with chunking.
+The headline "+0.45 agentic lift" looked great — and the eval caught it as an artifact, two ways.
 
-To separate "chunking helps" from "the DeepSeek baseline is broken," I re-ran the two arms on a
-second model — **Claude Sonnet** — over the 8 smallest held-out contracts (63 gold spans), elicited
-single-shot *first and standalone* so it is not primed by chunk focus, and graded with the identical
-span-IoU metric. (Plan-auth via in-session subagents — not a paid API call, not the Agent-SDK credit
-path; `evals/cross_model.py` grades, `evals/results/cross_model_claude.json` holds the numbers.)
+**(1) Fix the output budget on DeepSeek.** deepseek-v4-pro's single-shot response truncated (17/20 hit
+a 4 K-token cap; reasoning ate the budget before the JSON), collapsing the baseline to 0.098 F1. Re-run
+the *same* single-shot at 8 K tokens and it scores **0.476** — the lift falls from +0.45 to **+0.07**
+(CIs overlap). The gap was the baseline being truncated, not chunking winning.
 
-| Model | Single-shot F1 | Chunked (no-verifier) F1 | Chunking lift |
+**(2) Confirm on a second model.** I re-ran the two arms on **Claude Sonnet** (8 smallest held-out
+contracts, 63 gold spans), single-shot elicited *first and standalone*, identical span-IoU grading.
+(Plan-auth via in-session subagents — not a paid API call, not the Agent-SDK credit path;
+`evals/cross_model.py` grades, `evals/results/cross_model_claude.json` holds the numbers.)
+
+| Model · arm | Single-shot F1 | Chunked (no-verifier) F1 | Chunking lift |
 |---|---|---|---|
-| DeepSeek-v4-pro | 0.098 *(single-shot truncates 17/20)* | 0.562 | **+0.46** |
-| Claude Sonnet (8-contract subset) | **0.567** (P 0.60 / R 0.54), CI [0.514, 0.636] | 0.555, CI [0.509, 0.615] | **−0.012** |
+| DeepSeek-v4-pro — single-shot @4k (truncated) | 0.098 | 0.562 | +0.46 *(artifact)* |
+| **DeepSeek-v4-pro — single-shot @8k (fair)** | **0.476**, CI [0.400, 0.549] | 0.562 | **+0.086** |
+| **Claude Sonnet (8-contract subset)** | **0.567**, CI [0.514, 0.636] | 0.555, CI [0.509, 0.615] | **−0.012** |
 
-**The lift does not replicate.** Claude finishes its one-pass response (57 findings located, recall
-0.54) and single-shot *ties* the chunked pipeline — the two CIs overlap almost completely. So the
-DeepSeek lift is an **output-budget artifact**, not evidence that chunked focused extraction beats a
-single pass. Chunking's real value is **robustness to a model's output-budget limits**, not raw
-detection superiority; on a model without that limit there is nothing to recover.
-
-This is the whole reason cross-model evaluation belongs in the harness: a single-model run would have
-shipped "+0.45 agentic lift" as the headline. The honest, baseline-independent claims survive — the
-pipeline beats the keyword floor by +0.21 F1, and detection F1/recall stand on their own.
+**The lift does not survive on either model once the baseline is not output-truncated** — +0.07–0.09 on
+DeepSeek (CIs overlap) and −0.01 on Claude. Chunking's real value is **robustness to a model's
+output-budget limits**, not raw detection superiority: given an adequate budget, a single pass matches
+the chunked pipeline. A single-model, single-budget eval would have shipped "+0.45" as a headline —
+which is exactly why cross-model + budget-sensitivity checks belong in the harness. The claims that
+survive: detection F1 0.548 / recall 0.59, and the pipeline beating the keyword floor by +0.21 F1.
 
 ## 6. Threats to validity
 
@@ -150,10 +147,11 @@ pipeline beats the keyword floor by +0.21 F1, and detection F1/recall stand on t
 - **Verifier effect is within noise.** The −0.014 F1 and the 0.72→0.74 precision shift are not
   separable from sampling noise at n=20 (overlapping CIs). The verifier is retained as the shared
   design pattern, not because it is shown to help here.
-- **Single-shot baseline is output-budget-limited on DeepSeek** (the §5 finding). The committed
-  single-shot fixtures truncate at 4 000 tokens, so the DeepSeek single-shot F1 is a floor and the
-  "+0.45 vs single-shot" an artifact — superseded by the cross-model result, which shows no lift on
-  Claude. The robust claims (pipeline F1, detection recall, +0.21 over the keyword floor) do not
+- **The agentic lift is small and budget-sensitive** (the section-5 finding). At an adequate output
+  budget the DeepSeek lift is +0.07 (CIs overlap) and the Claude lift −0.01; the large "+0.45" only
+  appears when the single-shot baseline is output-truncated. 2/20 DeepSeek single-shot responses still
+  truncate even at 8 K, so the fair single-shot (0.476) is a slight floor and the true lift is, if
+  anything, smaller. The robust claims (detection F1/recall, +0.21 over the keyword floor) do not
   depend on it.
 - **Cross-model run is a small subset.** The Claude validation is 8 contracts / 63 gold spans, single
   model, elicited via subagents; treat it as directional (the lift vanishes) rather than a precise

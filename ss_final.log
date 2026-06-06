@@ -1,0 +1,23 @@
+loaded 244 fixtures
+evicted 20 single-shot keys -> 224
+  [1/20] ADIANUTRITION,INC_04_01_20   findings= 0 stop=length out_tok=8000
+  [2/20] ADMA BioManufacturing, LLC   findings= 0 stop=length out_tok=8000
+  [3/20] AMERICASSHOPPINGMALLINC_12   findings= 6 stop=stop out_tok=6401
+  [4/20] BLACKBOXSTOCKSINC_08_05_20   findings= 6 stop=stop out_tok=5742
+  [5/20] DRIVENDELIVERIES,INC_05_22   findings= 7 stop=stop out_tok=6221
+  [6/20] ETELOS,INC_03_09_2004-EX-1   findings= 6 stop=stop out_tok=6358
+  [7/20] GAINSCOINC_01_21_2010-EX-1   findings= 7 stop=stop out_tok=7103
+  [8/20] HfEnterprisesInc_20191223_   findings= 7 stop=stop out_tok=4814
+  [9/20] IVILLAGEINC_03_17_1999-EX-   findings= 6 stop=stop out_tok=6776
+  [10/20] InnerscopeHearingTechnolog   findings= 8 stop=stop out_tok=6449
+  [11/20] LUCIDINC_04_15_2011-EX-10.   findings= 9 stop=stop out_tok=4847
+  [12/20] MEDALISTDIVERSIFIEDREIT,IN   findings= 8 stop=stop out_tok=5748
+  [13/20] MERITLIFEINSURANCECO_06_19   findings= 6 stop=stop out_tok=5519
+  [14/20] MOSSIMOINC_04_14_2000-EX-1   findings= 8 stop=stop out_tok=4032
+  [15/20] MorganStanleyDirectLending   findings= 4 stop=stop out_tok=5165
+  [16/20] PfHospitalityGroupInc_2015   findings= 0 stop=stop out_tok=3901
+  [17/20] SPARKLINGSPRINGWATERHOLDIN   findings= 6 stop=stop out_tok=4268
+  [18/20] SteelVaultCorp_20081224_10   findings= 5 stop=stop out_tok=5903
+  [19/20] TUNIUCORP_03_06_2014-EX-10   findings= 5 stop=stop out_tok=3576
+  [20/20] WatchitMediaInc_20061201_8   findings= 3 stop=stop out_tok=1876
+DONE: 107 findings/20 (avg 5.3); truncated 2/20; live_calls=20; spend=$0.147; fixtures=244

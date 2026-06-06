@@ -17,12 +17,12 @@
     ]
    },
    "single_shot": {
-    "precision": 0.7692,
-    "recall": 0.0524,
-    "f1": 0.098,
+    "precision": 0.6636,
+    "recall": 0.3717,
+    "f1": 0.4765,
     "ci95": [
-     0.0,
-     0.2126
+     0.4,
+     0.5493
     ]
    },
    "pipeline_no_verifier": {
@@ -44,24 +44,24 @@
     ]
    }
   },
-  "agentic_lift_f1": 0.4498,
+  "agentic_lift_f1": 0.0713,
   "verifier_contribution_f1": -0.0144,
   "iou_threshold_sweep": {
    "0.1": {
     "pipeline_full": 0.6535,
-    "single_shot": 0.098
+    "single_shot": 0.604
    },
    "0.3": {
     "pipeline_full": 0.6403,
-    "single_shot": 0.098
+    "single_shot": 0.5705
    },
    "0.5": {
     "pipeline_full": 0.5479,
-    "single_shot": 0.098
+    "single_shot": 0.4765
    },
    "0.7": {
     "pipeline_full": 0.462,
-    "single_shot": 0.0686
+    "single_shot": 0.3423
    }
   },
   "per_type": [
