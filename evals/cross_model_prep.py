@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
 from evals.run_eval import load_heldout
 from fieldagent import baselines
@@ -40,7 +41,7 @@ def ss_prompt(text: str) -> tuple[str, str]:
 
 def main() -> int:
     cases = sorted(load_heldout(), key=lambda c: len(c.text))[:N]
-    spec = []
+    spec: list[dict[str, Any]] = []
     n_calls = 0
     for c in cases:
         sys_ss, p_ss = ss_prompt(c.text)

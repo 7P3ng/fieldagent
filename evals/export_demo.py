@@ -143,8 +143,10 @@ def main() -> int:
              for t, v in full["per_type"].items()],
             key=lambda x: -x["gold"]),
     }
+    xm_path = _ROOT / "evals" / "results" / "cross_model_claude.json"
+    cross_model = json.loads(xm_path.read_text()) if xm_path.exists() else None
     data = {"generated_at": metrics["meta"].get("model", ""), "results": results,
-            "contracts": contracts}
+            "contracts": contracts, "cross_model": cross_model}
     _OUT.write_text(json.dumps(data, indent=1))
     print(f"wrote {_OUT}: {len(contracts)} contracts, "
           f"{sum(len(c['findings']) for c in contracts)} findings")

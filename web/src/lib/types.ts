@@ -61,8 +61,19 @@ export interface Results {
   per_type: PerTypeRow[]
 }
 
+export interface CrossModelArm { p: number; r: number; f1: number; ci: [number, number] }
+export interface CrossModel {
+  model: string
+  n_contracts: number
+  auth: string
+  single_shot: CrossModelArm
+  pipeline_chunked_no_verifier: CrossModelArm
+  chunking_lift_f1: number
+}
+
 export interface DemoData {
   results: Results
   contracts: ContractCase[]
+  cross_model: CrossModel | null
   generated_at: string
 }

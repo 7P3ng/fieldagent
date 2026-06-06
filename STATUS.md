@@ -65,3 +65,12 @@ account hit **402 Insufficient Balance**.
 
 **needs operator:** top up the shared DeepSeek credit, then `FIELDAGENT_LIVE=1 make eval-live`
 re-records the fair single-shot baseline at 8 000 tokens and regenerates the honest lift number.
+
+## Cross-model validation (Claude, plan auth) — REPOSITIONED
+Ran the lift comparison on a second model (Claude Sonnet, 8 contracts) via in-session subagents on
+the Max-20x plan (no claude -p, no paid API). **Finding: the agentic chunking lift is model-specific.**
+Claude single-shot F1 0.567 ties Claude chunked 0.555 (lift −0.01, CIs overlap) — the DeepSeek "+0.45"
+was an artifact of DeepSeek single-shot truncating. Repositioned README + writeup (§5) + demo to LEAD
+with this honest cross-model finding. Robust claims unchanged: detection F1 0.548, recall 0.59,
++0.21 over keyword floor. DeepSeek single-shot fair re-run still pending credit, but now superseded by
+the cross-model result.

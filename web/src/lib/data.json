@@ -1121,5 +1121,37 @@
     }
    ]
   }
- ]
+ ],
+ "cross_model": {
+  "model": "claude-sonnet-4-6",
+  "n_contracts": 8,
+  "auth": "Max-20x plan (subagents, no claude -p)",
+  "gold_spans": 63,
+  "single_shot": {
+   "p": 0.596,
+   "r": 0.54,
+   "f1": 0.5667,
+   "ci": [
+    0.5139,
+    0.6355
+   ],
+   "tp": 34,
+   "fp": 23,
+   "fn": 29
+  },
+  "pipeline_chunked_no_verifier": {
+   "p": 0.589,
+   "r": 0.524,
+   "f1": 0.5546,
+   "ci": [
+    0.5085,
+    0.6154
+   ],
+   "tp": 33,
+   "fp": 23,
+   "fn": 30
+  },
+  "chunking_lift_f1": -0.0121,
+  "single_shot_findings_located": 57
+ }
 }

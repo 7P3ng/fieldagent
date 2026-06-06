@@ -104,7 +104,35 @@ upper bound, not a headline.
   the result is not an artifact of the 0.5 threshold. (Single-shot numbers inherit the truncation
   confound above.)
 
-## 5. Threats to validity
+## 5. Cross-model validation — the lift is model-specific
+
+The single-model result above has a trap, and the eval caught it. The DeepSeek "+0.45 over
+single-shot" is real arithmetic, but it measures the wrong thing: deepseek-v4-pro's single-shot
+response **truncates** (17/20 hit the 4 K output cap, reasoning eats the budget before the JSON),
+so the baseline collapses to ~0 findings for a reason that has nothing to do with chunking.
+
+To separate "chunking helps" from "the DeepSeek baseline is broken," I re-ran the two arms on a
+second model — **Claude Sonnet** — over the 8 smallest held-out contracts (63 gold spans), elicited
+single-shot *first and standalone* so it is not primed by chunk focus, and graded with the identical
+span-IoU metric. (Plan-auth via in-session subagents — not a paid API call, not the Agent-SDK credit
+path; `evals/cross_model.py` grades, `evals/results/cross_model_claude.json` holds the numbers.)
+
+| Model | Single-shot F1 | Chunked (no-verifier) F1 | Chunking lift |
+|---|---|---|---|
+| DeepSeek-v4-pro | 0.098 *(single-shot truncates 17/20)* | 0.562 | **+0.46** |
+| Claude Sonnet (8-contract subset) | **0.567** (P 0.60 / R 0.54), CI [0.514, 0.636] | 0.555, CI [0.509, 0.615] | **−0.012** |
+
+**The lift does not replicate.** Claude finishes its one-pass response (57 findings located, recall
+0.54) and single-shot *ties* the chunked pipeline — the two CIs overlap almost completely. So the
+DeepSeek lift is an **output-budget artifact**, not evidence that chunked focused extraction beats a
+single pass. Chunking's real value is **robustness to a model's output-budget limits**, not raw
+detection superiority; on a model without that limit there is nothing to recover.
+
+This is the whole reason cross-model evaluation belongs in the harness: a single-model run would have
+shipped "+0.45 agentic lift" as the headline. The honest, baseline-independent claims survive — the
+pipeline beats the keyword floor by +0.21 F1, and detection F1/recall stand on their own.
+
+## 6. Threats to validity
 
 - **Single domain / dataset.** CUAD is one (well-constructed) corpus of mostly US commercial
   contracts; F1 here need not transfer to other jurisdictions, languages, or contract families.
@@ -122,16 +150,20 @@ upper bound, not a headline.
 - **Verifier effect is within noise.** The −0.014 F1 and the 0.72→0.74 precision shift are not
   separable from sampling noise at n=20 (overlapping CIs). The verifier is retained as the shared
   design pattern, not because it is shown to help here.
-- **Single-shot baseline is output-budget-limited.** The committed single-shot fixtures truncate at
-  4 000 tokens (v4-pro reasoning), so the single-shot F1 is a floor and "+0.45 vs single-shot" an
-  upper bound. The robust claims (pipeline F1, detection recall, +0.21 over the keyword floor) do not
-  depend on it; a fair re-run is gated on DeepSeek credit.
+- **Single-shot baseline is output-budget-limited on DeepSeek** (the §5 finding). The committed
+  single-shot fixtures truncate at 4 000 tokens, so the DeepSeek single-shot F1 is a floor and the
+  "+0.45 vs single-shot" an artifact — superseded by the cross-model result, which shows no lift on
+  Claude. The robust claims (pipeline F1, detection recall, +0.21 over the keyword floor) do not
+  depend on it.
+- **Cross-model run is a small subset.** The Claude validation is 8 contracts / 63 gold spans, single
+  model, elicited via subagents; treat it as directional (the lift vanishes) rather than a precise
+  Claude F1. A full Claude harness run is future work (needs an in-process Claude client).
 - **One model.** Numbers are deepseek-v4-pro. Cross-model (Claude/GPT) is gated on a key and not
   run here; the harness populates a cross-model table when `ANTHROPIC_API_KEY` is present.
 - **Verifier shares a family with the extractor.** Skeptic and extractor are the same model in
   different roles; some correlated blind spots survive. A cross-model verifier is future work.
 
-## 6. Reproduce
+## 7. Reproduce
 
 ```bash
 python -m venv .venv && .venv/bin/pip install -e ".[dev]"

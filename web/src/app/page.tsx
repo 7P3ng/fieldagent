@@ -58,6 +58,29 @@ export default function Home() {
         <span className="ml-auto text-tertiary">model: {r.model}</span>
       </div>
 
+      {/* Cross-model finding callout */}
+      {demo.cross_model && (
+        <div className="surface-1 border rounded-lg p-4 mb-8" style={{ borderColor: 'var(--color-medium-line)' }}>
+          <div className="flex items-center gap-2 mb-1.5">
+            <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded"
+                  style={{ color: 'var(--color-medium)', background: 'var(--color-medium-bg)' }}>
+              cross-model finding
+            </span>
+            <span className="text-[13px] font-medium">the agentic lift is model-specific</span>
+          </div>
+          <p className="text-[12.5px] text-secondary leading-relaxed">
+            On DeepSeek, chunked extraction beats single-shot by <span className="font-mono">+0.45 F1</span> —
+            but that gap is an artifact of DeepSeek&apos;s single-shot response <em>truncating</em> under
+            reasoning-token pressure (17/20). On <strong>Claude Sonnet</strong> ({demo.cross_model.n_contracts}-contract
+            subset), which finishes its one-pass response, single-shot
+            (<span className="font-mono accent">F1 {demo.cross_model.single_shot.f1.toFixed(3)}</span>) <strong>ties</strong> the
+            chunked pipeline (<span className="font-mono">{demo.cross_model.pipeline_chunked_no_verifier.f1.toFixed(3)}</span>) —
+            chunking lift <span className="font-mono" style={{ color: 'var(--color-medium)' }}>{demo.cross_model.chunking_lift_f1.toFixed(3)}</span>.
+            Cross-model validation caught what a single-model eval would have shipped as a headline.
+          </p>
+        </div>
+      )}
+
       {/* Contract selector */}
       <div className="flex gap-1.5 mb-4 flex-wrap">
         {demo.contracts.map((c, i) => (
