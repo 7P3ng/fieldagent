@@ -1,0 +1,47 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -e ".[dev]" ruff mypy
+      - name: Lint (ruff)
+        run: ruff check core fieldagent evals cli tests
+      - name: Types (mypy)
+        run: mypy core fieldagent evals cli
+      - name: Test (pytest — includes offline F1 reproduction)
+        run: python -m pytest -q
+
+      - name: Cache CUAD
+        id: cuad
+        uses: actions/cache@v4
+        with:
+          path: evals/benchmark/raw/CUAD_v1.json
+          key: cuad-v1-ed0b77d8
+      - name: Fetch CUAD (sha256-pinned)
+        run: python evals/benchmark/fetch_cuad.py
+      - name: Dry-run eval reproduces headline tables (zero cost)
+        run: python evals/run_eval.py --target deepseek
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm ci
+      - run: npm run build
