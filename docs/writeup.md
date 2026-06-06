@@ -54,8 +54,7 @@ The spec's instinct is per-clause focused extraction. On the 20-contract held-ou
 deepseek-v4-pro — whose hidden reasoning is **billed as output tokens** — `chunks × 15` calls
 would exceed the project's $1 cost gate. A single focused call per chunk preserves the two
 agentic levers that actually beat single-shot — **chunking** (no long-context recall loss) and
-**verification** (FP cut) — and lets us isolate each in the ablation. The live run cost
-**⟦$X.XX⟧** (estimate $0.34).
+**verification** (FP cut) — and lets us isolate each in the ablation. The live run cost **≈$0.5** (estimate $0.34, 224 calls).
 
 ## 4. Results
 
@@ -63,22 +62,29 @@ _(from `evals/results/metrics.md`; reproduce with `make eval-dry`)_
 
 | Arm | P | R | F1 | 95% CI |
 |---|---|---|---|---|
-| Keyword / regex floor | ⟦⟧ | ⟦⟧ | ⟦⟧ | ⟦⟧ |
-| Single-shot LLM (baseline) | ⟦⟧ | ⟦⟧ | ⟦⟧ | ⟦⟧ |
-| Pipeline − verifier (chunked) | ⟦⟧ | ⟦⟧ | ⟦⟧ | ⟦⟧ |
-| **Pipeline (full, agentic)** | ⟦⟧ | ⟦⟧ | **⟦⟧** | ⟦⟧ |
+| Keyword / regex floor | 0.490 | 0.257 | 0.337 | [0.275, 0.392] |
+| Single-shot LLM (baseline) | 0.700 | 0.073 | 0.133 | [0.018, 0.282] |
+| Pipeline − verifier (chunked) | 0.721 | 0.461 | 0.562 | [0.473, 0.654] |
+| **Pipeline (full, agentic)** | 0.741 | 0.435 | **0.548** | [0.460, 0.637] |
 
-**Claim 1 — detection:** F1 = **⟦Z⟧** (P ⟦⟧ / R ⟦⟧) on held-out CUAD.
-**Claim 2 — agentic lift:** full − single-shot = **+⟦N⟧ F1**; the verifier alone contributes
-**+⟦M⟧ F1** (full − no-verifier). Both with 95% CIs above.
+**Claim 1 — detection:** F1 = **0.548** (P 0.741 / R 0.435) on held-out CUAD.
+**Claim 2 — agentic lift:** full − single-shot = **+0.415 F1** (0.133 → 0.548). The chunked
+no-verifier arm is 0.562 and the full pipeline 0.548 — see the ablation.
 
 ### Ablation reading
-- **Chunking** lever = (pipeline−verifier) − single-shot: ⟦…⟧. Long contracts dilute a single
-  pass; windowing recovers clauses buried mid-document.
-- **Verification** lever = full − (pipeline−verifier): ⟦…⟧. The skeptic pass trades a little
-  recall for a larger precision gain, lifting F1 by cutting confident-but-wrong flags.
-- **IoU sensitivity:** the lift holds across IoU ∈ {0.1, 0.3, 0.5, 0.7} (see metrics.md), so it
-  is not an artifact of the 0.5 threshold.
+- **Chunking dominates the lift.** (pipeline−verifier) − single-shot = **+0.429 F1**. The
+  single-shot model, asked to read a whole 15–28 K-char contract in one pass, *under-extracts*
+  badly: it claimed only **21 findings across 20 contracts** (avg 1.1/contract; 20 of 21 located
+  cleanly, so this is genuine recall collapse, not a parsing artifact). Windowing into focused
+  chunks recovers **122 candidate spans → 88 true positives** — the recall jumps 0.073 → 0.461.
+- **Verification is precision-positive, F1-neutral.** full − (pipeline−verifier) = **−0.014 F1**:
+  the skeptic pass dropped 5 false positives *and* 5 true positives, nudging precision 0.721 →
+  0.741 while shaving recall 0.461 → 0.435. Reported as measured — *not* threshold-tuned on the
+  held-out set to manufacture a positive number. For a red-flag tool, fewer false alarms at equal
+  F1 is a favorable trade.
+- **IoU sensitivity:** the lift holds across IoU ∈ {0.1, 0.3, 0.5, 0.7} — full pipeline F1
+  {0.654, 0.640, 0.548, 0.462} vs single-shot {0.171, 0.161, 0.133, 0.085} — so it is not an
+  artifact of the 0.5 threshold.
 
 ## 5. Threats to validity
 

@@ -7,12 +7,14 @@
 **Live demo:** https://fieldagent.thomaspeng.ca  ·  **Dataset:** [CUAD v1](https://www.atticusprojectai.org/cuad) (CC BY 4.0)
 
 ## Headline numbers
-_(populated by the eval harness in Phase 4 — `make eval-dry` reproduces them offline, zero cost)_
+_(`make eval-dry` reproduces these offline from committed fixtures, zero cost — a test asserts it)_
 
 | Claim | Result |
 |---|---|
-| **Detection** | F1 = _TBD_ (P=_TBD_ / R=_TBD_) on 20 held-out CUAD contracts, 15 risk clause types |
-| **Agentic lift** | full pipeline vs. single-shot = **+_TBD_ F1 pts** · verifier contribution = **+_TBD_** |
+| **Detection** | **F1 = 0.548** (P = 0.74 / R = 0.44), 95% CI [0.46, 0.64] — 20 held-out CUAD contracts, 15 risk clause types, 191 gold spans, span-IoU ≥ 0.5 |
+| **Agentic lift** | full pipeline vs. single-shot LLM = **+0.415 F1** (0.133 → 0.548). Chunking is the dominant driver; the skeptic verifier raises precision 0.72 → 0.74 (≈F1-neutral). |
+
+![demo](docs/assets/demo.gif)
 
 ## What it does
 Reads a real contract and flags **risk-bearing clauses** — exact offending span, a severity, and a

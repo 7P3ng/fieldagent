@@ -53,9 +53,9 @@ export function ResultsPanel({ r }: { r: Results }) {
           </div>
           <div>
             <div className="font-mono text-2xl" style={{ color: 'var(--color-low)' }}>
-              +{r.verifier_contribution_f1.toFixed(3)}
+              {r.verifier_contribution_f1 >= 0 ? '+' : ''}{r.verifier_contribution_f1.toFixed(3)}
             </div>
-            <div className="text-[11px] text-tertiary mt-0.5">verifier contribution</div>
+            <div className="text-[11px] text-tertiary mt-0.5">verifier ΔF1 (precision {(r.arms.pipeline_no_verifier.precision*100).toFixed(0)}→{(r.arms.pipeline_full.precision*100).toFixed(0)})</div>
           </div>
         </div>
       </div>
