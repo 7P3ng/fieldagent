@@ -21,3 +21,4 @@ evals/benchmark/raw/
 evals/benchmark/CUAD_v1.json
 *.zip
 evals/fixtures/claude_prompts.json
+*.log
